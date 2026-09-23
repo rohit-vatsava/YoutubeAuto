@@ -1,0 +1,334 @@
+{
+  "version": "1.0",
+  "entities": {
+    "NVIDIA": [
+      "nvidia"
+    ],
+    "AMD": [
+      "amd"
+    ],
+    "Intel": [
+      "intel"
+    ],
+    "Apple": [
+      "apple"
+    ],
+    "Microsoft": [
+      "microsoft"
+    ],
+    "Google": [
+      "google"
+    ],
+    "OpenAI": [
+      "openai"
+    ],
+    "Anthropic": [
+      "anthropic"
+    ],
+    "Meta": [
+      "meta"
+    ],
+    "Amazon": [
+      "amazon",
+      "aws"
+    ],
+    "Cloudflare": [
+      "cloudflare"
+    ],
+    "IBM": [
+      "ibm"
+    ],
+    "Oracle": [
+      "oracle"
+    ],
+    "GitHub": [
+      "github"
+    ],
+    "Docker": [
+      "docker"
+    ],
+    "Linux": [
+      "linux"
+    ],
+    "Kubernetes": [
+      "kubernetes",
+      "k8s"
+    ],
+    "React": [
+      "react"
+    ],
+    "Python": [
+      "python"
+    ],
+    "Rust": [
+      "rust"
+    ],
+    "TypeScript": [
+      "typescript"
+    ],
+    "JavaScript": [
+      "javascript"
+    ],
+    "PostgreSQL": [
+      "postgres",
+      "postgresql"
+    ],
+    "Redis": [
+      "redis"
+    ],
+    "Cursor": [
+      "cursor"
+    ],
+    "Ilya Sutskever": [
+      "ilya sutskever"
+    ],
+    "Sam Altman": [
+      "sam altman"
+    ],
+    "Elon Musk": [
+      "elon musk"
+    ],
+    "Jensen Huang": [
+      "jensen huang"
+    ],
+    "DeepSeek": [
+      "deepseek"
+    ],
+    "Samsung": [
+      "samsung"
+    ],
+    "TSMC": [
+      "tsmc"
+    ],
+    "Qualcomm": [
+      "qualcomm"
+    ],
+    "Tesla": [
+      "tesla"
+    ],
+    "Broadcom": [
+      "broadcom"
+    ],
+    "Salesforce": [
+      "salesforce"
+    ],
+    "Adobe": [
+      "adobe"
+    ],
+    "Figma": [
+      "figma"
+    ],
+    "Vercel": [
+      "vercel"
+    ],
+    "Supabase": [
+      "supabase"
+    ],
+    "Vulkan": [
+      "vulkan"
+    ],
+    "CUDA": [
+      "cuda"
+    ],
+    "Raspberry Pi": [
+      "raspberry pi"
+    ]
+  },
+  "products": {
+    "ChatGPT": [
+      "chatgpt"
+    ],
+    "GPT": [
+      "gpt"
+    ],
+    "Claude": [
+      "claude"
+    ],
+    "Gemini": [
+      "gemini"
+    ],
+    "Llama": [
+      "llama"
+    ],
+    "Grok": [
+      "grok"
+    ],
+    "Copilot": [
+      "copilot"
+    ],
+    "Blackwell": [
+      "blackwell"
+    ],
+    "Rubin": [
+      "rubin"
+    ],
+    "Ryzen": [
+      "ryzen"
+    ],
+    "GeForce RTX": [
+      "rtx",
+      "geforce"
+    ],
+    "Radeon": [
+      "radeon"
+    ],
+    "EPYC": [
+      "epyc"
+    ],
+    "Xeon": [
+      "xeon"
+    ],
+    "Windows": [
+      "windows"
+    ],
+    "macOS": [
+      "macos"
+    ],
+    "iPhone": [
+      "iphone"
+    ],
+    "MacBook": [
+      "macbook"
+    ],
+    "VS Code": [
+      "vs code",
+      "vscode"
+    ],
+    "Node.js": [
+      "node.js",
+      "nodejs"
+    ],
+    "Bun": [
+      "bun"
+    ],
+    "Deno": [
+      "deno"
+    ],
+    "Git": [
+      "git"
+    ],
+    "OpenClaw": [
+      "openclaw"
+    ],
+    "Codex": [
+      "codex"
+    ]
+  },
+  "events": {
+    "release": [
+      "release",
+      "released",
+      "launch",
+      "launches",
+      "launched",
+      "announces",
+      "announced",
+      "announcement",
+      "introducing",
+      "unveils",
+      "unveiled"
+    ],
+    "security": [
+      "cve",
+      "vulnerability",
+      "vulnerabilities",
+      "breach",
+      "ransomware",
+      "exploit",
+      "hacked",
+      "cyberattack",
+      "zero-day"
+    ],
+    "acquisition": [
+      "acquires",
+      "acquired",
+      "acquisition",
+      "merger",
+      "buys",
+      "buyout"
+    ],
+    "business_shift": [
+      "bankrupt",
+      "bankruptcy",
+      "layoffs",
+      "antitrust",
+      "lawsuit",
+      "shutdown",
+      "shuts down",
+      "quitting",
+      "resigns",
+      "resignation"
+    ],
+    "research": [
+      "paper",
+      "research paper",
+      "study"
+    ],
+    "architecture": [
+      "architecture",
+      "chiplet",
+      "chiplets"
+    ],
+    "comparison": [
+      "versus",
+      "vs",
+      "compared",
+      "comparison"
+    ]
+  },
+  "hype": [
+    "changes everything",
+    "you won't believe",
+    "biggest breakthrough",
+    "insane",
+    "mind blowing",
+    "shocking"
+  ],
+  "vague": [
+    "this new ai",
+    "new ai",
+    "this changes",
+    "you won't believe"
+  ],
+  "poor_production": [
+    "unboxing",
+    "hands-on",
+    "hands on",
+    "benchmark",
+    "benchmarks",
+    "tested",
+    "testing",
+    "hardware review"
+  ],
+  "medium_production": [
+    "my opinion",
+    "my thoughts",
+    "reaction",
+    "reacts",
+    "rant"
+  ],
+  "hardware_terms": [
+    "iphone",
+    "macbook",
+    "rtx",
+    "radeon",
+    "ryzen",
+    "geforce",
+    "gpu",
+    "cpu",
+    "laptop",
+    "headphones",
+    "monitor",
+    "pc",
+    "quest",
+    "graphics card",
+    "motherboard"
+  ],
+  "hardware_review_markers": [
+    "review",
+    "reviews",
+    "impressions",
+    "reviewed",
+    "faster than"
+  ]
+}

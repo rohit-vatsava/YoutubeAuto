@@ -1,0 +1,120 @@
+{
+  "AI coding tools": [
+    "coding agent",
+    "coding agents",
+    "ai coding",
+    "copilot",
+    "cursor",
+    "claude code",
+    "codex"
+  ],
+  "AI models and capabilities": [
+    "large language model",
+    "llm",
+    "gpt",
+    "claude",
+    "gemini",
+    "deepseek",
+    "reasoning model",
+    "model release"
+  ],
+  "Generative visual media": [
+    "image generation",
+    "video generation",
+    "text to video",
+    "text-to-video",
+    "diffusion",
+    "sora",
+    "veo",
+    "midjourney"
+  ],
+  "Computing hardware": [
+    "gpu",
+    "gpus",
+    "nvidia",
+    "chip",
+    "chips",
+    "semiconductor",
+    "quantum computing",
+    "processor"
+  ],
+  "Software security": [
+    "security",
+    "vulnerability",
+    "ransomware",
+    "data breach",
+    "malware",
+    "cyberattack"
+  ],
+  "Software development": [
+    "javascript",
+    "typescript",
+    "python",
+    "rust",
+    "framework",
+    "database",
+    "open source",
+    "open-source"
+  ],
+  "Technology businesses": [
+    "acquisition",
+    "antitrust",
+    "startup",
+    "layoffs",
+    "bankruptcy"
+  ],
+  "Robotics and automation": [
+    "robot",
+    "robots",
+    "robotics",
+    "humanoid",
+    "autonomous"
+  ],
+  "developer tools": [
+    "typescript",
+    "rust",
+    "python",
+    "github",
+    "vscode",
+    "cursor",
+    "docker",
+    "kubernetes"
+  ],
+  "cloud infrastructure": [
+    "aws",
+    "azure",
+    "cloudflare",
+    "server",
+    "postgres",
+    "database"
+  ],
+  "cybersecurity": [
+    "ransomware",
+    "vulnerability",
+    "cve",
+    "cybersecurity",
+    "breach"
+  ],
+  "chips and computing hardware": [
+    "nvidia",
+    "amd",
+    "intel",
+    "blackwell",
+    "ryzen",
+    "rtx",
+    "semiconductor"
+  ],
+  "technology business": [
+    "acquisition",
+    "merger",
+    "antitrust",
+    "bankruptcy",
+    "layoffs"
+  ],
+  "enterprise software": [
+    "saas",
+    "salesforce",
+    "oracle",
+    "ibm"
+  ]
+}

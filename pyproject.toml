@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tech-uncovered-radar"
+version = "0.3.0"
+description = "Tech Uncovered: Radar, Intelligence, and evidence-first scripts"
+requires-python = ">=3.11"
+dependencies = ["python-dotenv>=1.0,<2"]
+
+[tool.setuptools.packages.find]
+include = ["tech_uncovered*"]
+
+[tool.setuptools.package-data]
+tech_uncovered = ["schema.sql", "migrations/*.sql", "scripting/*.cjs", "scripting/assets/*.bin", "scripting/assets/*.txt"]

@@ -1,0 +1,60 @@
+{
+  "sources": {
+    "evidence-0": {
+      "reference": "https://example.invalid/primary/0",
+      "publisher": "Fictional product documentation",
+      "source_type": "PRIMARY",
+      "relation": "SUPPORTS",
+      "published_at": "2026-09-17",
+      "excerpt": "Orbit 2 adds an inspectable optimization trace.",
+      "note": "Synthetic evidence, not a real citation"
+    },
+    "evidence-1": {
+      "reference": "https://example.invalid/primary/1",
+      "publisher": "Fictional product documentation",
+      "source_type": "PRIMARY",
+      "relation": "SUPPORTS",
+      "published_at": "2026-09-15",
+      "excerpt": "Pebble 1 documents an offline inference interface.",
+      "note": "Synthetic evidence, not a real citation"
+    },
+    "evidence-2": {
+      "reference": "https://example.invalid/primary/2",
+      "publisher": "Fictional product documentation",
+      "source_type": "PRIMARY",
+      "relation": "SUPPORTS",
+      "published_at": "2026-09-13",
+      "excerpt": "Lattice 3 exposes a versioned snapshot interface.",
+      "note": "Synthetic evidence, not a real citation"
+    }
+  },
+  "assessments": {
+    "claim-0": {
+      "claim_text": "Orbit 2 adds an inspectable optimization trace.",
+      "status": "VERIFIED",
+      "evidence_ids": [
+        "evidence-0"
+      ],
+      "rationale": "Fictional primary documentation supports this fixture claim.",
+      "assessed_by": "synthetic-fixture-author"
+    },
+    "claim-1": {
+      "claim_text": "Pebble 1 documents an offline inference interface.",
+      "status": "VERIFIED",
+      "evidence_ids": [
+        "evidence-1"
+      ],
+      "rationale": "Fictional primary documentation supports this fixture claim.",
+      "assessed_by": "synthetic-fixture-author"
+    },
+    "claim-2": {
+      "claim_text": "Lattice 3 exposes a versioned snapshot interface.",
+      "status": "PARTIALLY_VERIFIED",
+      "evidence_ids": [
+        "evidence-2"
+      ],
+      "rationale": "Fictional primary documentation supports this fixture claim.",
+      "assessed_by": "synthetic-fixture-author"
+    }
+  }
+}

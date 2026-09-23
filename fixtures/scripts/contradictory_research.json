@@ -1,0 +1,660 @@
+{
+  "synthetic": true,
+  "as_of": "2026-09-20T12:00:00+00:00",
+  "intelligence_file": "intelligence.json",
+  "sources": [
+    {
+      "source_id": "src-nacre",
+      "url": "https://nacre.example/releases/local-preview",
+      "title": "Fictional Nacre preview release notes",
+      "publisher": "Nacre (fictional)",
+      "publication_date": "2026-09-18T09:00:00+00:00",
+      "retrieved_at": "2026-09-20T12:00:00+00:00",
+      "source_type": "OFFICIAL",
+      "primary_or_secondary": "PRIMARY",
+      "authority_score": 85,
+      "freshness_score": 95,
+      "relevance_score": 100,
+      "source_priority": 0,
+      "notes": [],
+      "text": "Correction: Nacre has not released a desktop search preview. The September 18, 2026 notice described a cancelled internal prototype, not a public product release. The index is stored on the same computer. This preview has no upload function and sends neither the selected files nor the index to a server. A file outside the selected folder is outside this search index. After editing files, the user must press Rebuild to refresh the index. Until then, a search may return an older passage. Local storage does not guarantee that search results reflect the latest edits. The preview supports plain text files only, not PDFs. It does not understand every document format. Its useful boundary is a searchable copy of a chosen folder, not an automatic answer engine.",
+      "content_hash": "6ca40cab9ed91a3d31fc626a9dbfdd360fe3e954dc2ec5080dac36c5f74ff41c",
+      "syndication_group": "",
+      "metadata_basis": "fictional_fixture"
+    }
+  ],
+  "packet": {
+    "topic": "Fictional Nacre local search preview",
+    "final_research_question": "What does local search actually keep on your computer?",
+    "confirmed_story": "The fictional preview searches a local text-file index; updates require rebuilding.",
+    "what_changed": "A folder search preview was released.",
+    "why_now": "Fictional fixture release two days before the fixture observation.",
+    "why_it_matters": "Local storage and fresh search results are different properties.",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "text": "Nacre released its fictional desktop search preview on September 18, 2026. The preview builds an index of text files in a folder selected by the user. It searches that local index rather than the whole internet.",
+        "materiality": "CRITICAL",
+        "claim_type": "FACT",
+        "evidence_ids": [],
+        "contradicting_evidence_ids": [
+          "src-nacre"
+        ],
+        "status": "VERIFIED",
+        "confidence": 0.98,
+        "rationale": "The dated correction directly contradicts the release claim.",
+        "passages": [
+          {
+            "source_id": "src-nacre",
+            "quote": "Correction: Nacre has not released a desktop search preview. The September 18, 2026 notice described a cancelled internal prototype, not a public product release.",
+            "relation": "CONTRADICTS"
+          }
+        ],
+        "supported_wording": "Nacre released its fictional desktop search preview on September 18, 2026. The preview builds an index of text files in a folder selected by the user. It searches that local index rather than the whole internet.",
+        "limitations": [],
+        "requires_attribution": false
+      },
+      {
+        "claim_id": "c2",
+        "text": "The index is stored on the same computer. This preview has no upload function and sends neither the selected files nor the index to a server. A file outside the selected folder is outside this search index.",
+        "materiality": "CRITICAL",
+        "claim_type": "FACT",
+        "evidence_ids": [
+          "src-nacre"
+        ],
+        "contradicting_evidence_ids": [],
+        "status": "VERIFIED",
+        "confidence": 0.98,
+        "rationale": "Direct fictional technical release specification, scoped to this preview.",
+        "passages": [
+          {
+            "source_id": "src-nacre",
+            "quote": "The index is stored on the same computer. This preview has no upload function and sends neither the selected files nor the index to a server. A file outside the selected folder is outside this search index.",
+            "relation": "SUPPORTS"
+          }
+        ],
+        "supported_wording": "The index is stored on the same computer. This preview has no upload function and sends neither the selected files nor the index to a server. A file outside the selected folder is outside this search index.",
+        "limitations": [],
+        "requires_attribution": false
+      },
+      {
+        "claim_id": "c3",
+        "text": "After editing files, the user must press Rebuild to refresh the index. Until then, a search may return an older passage. Local storage does not guarantee that search results reflect the latest edits.",
+        "materiality": "CRITICAL",
+        "claim_type": "FACT",
+        "evidence_ids": [
+          "src-nacre"
+        ],
+        "contradicting_evidence_ids": [],
+        "status": "VERIFIED",
+        "confidence": 0.98,
+        "rationale": "Direct fictional technical release specification, scoped to this preview.",
+        "passages": [
+          {
+            "source_id": "src-nacre",
+            "quote": "After editing files, the user must press Rebuild to refresh the index. Until then, a search may return an older passage. Local storage does not guarantee that search results reflect the latest edits.",
+            "relation": "SUPPORTS"
+          }
+        ],
+        "supported_wording": "After editing files, the user must press Rebuild to refresh the index. Until then, a search may return an older passage. Local storage does not guarantee that search results reflect the latest edits.",
+        "limitations": [],
+        "requires_attribution": false
+      },
+      {
+        "claim_id": "c4",
+        "text": "The preview supports plain text files only, not PDFs. It does not understand every document format. Its useful boundary is a searchable copy of a chosen folder, not an automatic answer engine.",
+        "materiality": "CRITICAL",
+        "claim_type": "FACT",
+        "evidence_ids": [
+          "src-nacre"
+        ],
+        "contradicting_evidence_ids": [],
+        "status": "VERIFIED",
+        "confidence": 0.98,
+        "rationale": "Direct fictional technical release specification, scoped to this preview.",
+        "passages": [
+          {
+            "source_id": "src-nacre",
+            "quote": "The preview supports plain text files only, not PDFs. It does not understand every document format. Its useful boundary is a searchable copy of a chosen folder, not an automatic answer engine.",
+            "relation": "SUPPORTS"
+          }
+        ],
+        "supported_wording": "The preview supports plain text files only, not PDFs. It does not understand every document format. Its useful boundary is a searchable copy of a chosen folder, not an automatic answer engine.",
+        "limitations": [],
+        "requires_attribution": false
+      }
+    ],
+    "useful_numbers": [],
+    "timeline": [],
+    "entities": [],
+    "unsupported_competitor_claims": [],
+    "safe_angle": "Show the boundary between local data and current data.",
+    "angles_to_avoid": [],
+    "research_gaps": [],
+    "confidence": 0.98,
+    "freshness": {
+      "established": true,
+      "event_date": "2026-09-18T09:00:00+00:00",
+      "evidence_ids": [
+        "src-nacre"
+      ]
+    },
+    "canonical_story_resolved": true,
+    "core_claim_ids": [
+      "c1",
+      "c2",
+      "c3",
+      "c4"
+    ],
+    "resolved_requirement_ids": [],
+    "remaining_questions_material": false,
+    "research_status": "SUFFICIENT",
+    "source_assessments": [
+      {
+        "source_id": "src-nacre",
+        "source_type": "OFFICIAL",
+        "primary_or_secondary": "PRIMARY",
+        "credible_for_claim_ids": [
+          "c1",
+          "c2",
+          "c3",
+          "c4"
+        ],
+        "authority_score": 85,
+        "relevance_score": 100,
+        "freshness_score": 95,
+        "rationale": "The fictional release specification directly defines scope and behavior of its own preview; no comparative performance claim."
+      }
+    ],
+    "requirement_resolutions": [
+      {
+        "requirement_id": "requirement-f15cf353a1d1fbfa",
+        "claim_ids": [
+          "c1",
+          "c2"
+        ],
+        "rationale": "Dated release plus explicit local-storage boundary."
+      }
+    ]
+  },
+  "angle": {
+    "angle": "Local does not mean up to date: show the missing refresh step.",
+    "audience_question": "What does local search actually keep on your computer?",
+    "payoff": "Separate where data lives from when it was refreshed.",
+    "why_this_angle": "A practical boundary explanation rather than a release recap.",
+    "evidence_basis": [
+      "c1",
+      "c2",
+      "c3",
+      "c4"
+    ],
+    "do_not_say": [
+      "Fully private in every configuration",
+      "Works with PDFs",
+      "Always current"
+    ],
+    "required_nuance": [
+      "Preview only; manual rebuild; plain text only"
+    ],
+    "visual_opportunities": [
+      "Draw a folder, an index and a refresh button"
+    ],
+    "refinement_status": "REFRAMED_FROM_ORIGINAL",
+    "originality_status": "CLEAR",
+    "originality_rationale": "Fictional comparator covers the release; this treatment explains freshness using a changed file. Fixture explicitly supplies this comparison context."
+  },
+  "outline": {
+    "beats": [
+      {
+        "name": "CONTEXT",
+        "purpose": "Nacre’s fictional desktop preview searches text files inside a folder you choose.",
+        "claim_ids": [
+          "c1"
+        ]
+      },
+      {
+        "name": "EXPLANATION",
+        "purpose": "It builds an index on your computer, and this preview sends neither that index nor your files to a server.",
+        "claim_ids": [
+          "c1",
+          "c2"
+        ]
+      },
+      {
+        "name": "EXPLANATION",
+        "purpose": "But keeping data nearby does not make the index current.",
+        "claim_ids": [
+          "c3"
+        ]
+      },
+      {
+        "name": "EXPLANATION",
+        "purpose": "Edit a file, and you still need to press Rebuild before the search reflects that change.",
+        "claim_ids": [
+          "c3"
+        ]
+      },
+      {
+        "name": "EXPLANATION",
+        "purpose": "Skip that step, and an old passage can show up instead.",
+        "claim_ids": [
+          "c3"
+        ]
+      },
+      {
+        "name": "EXPLANATION",
+        "purpose": "There is another boundary: the preview handles plain text, not PDFs.",
+        "claim_ids": [
+          "c4"
+        ]
+      },
+      {
+        "name": "PAYOFF",
+        "purpose": "So picture a searchable copy of one folder, with a refresh button you control.",
+        "claim_ids": [
+          "c1",
+          "c3",
+          "c4"
+        ]
+      },
+      {
+        "name": "PAYOFF",
+        "purpose": "The useful distinction is where your data lives versus when your search last caught up.",
+        "claim_ids": [
+          "c2",
+          "c3"
+        ]
+      }
+    ]
+  },
+  "draft": {
+    "title_working": "Local search still needs a refresh",
+    "title_claim_ids": [
+      "c3"
+    ],
+    "hook_candidates": [
+      {
+        "hook_id": "h1",
+        "text": "Your files can stay local while your search results fall behind.",
+        "claim_ids": [
+          "c2",
+          "c3"
+        ],
+        "source_ids": [
+          "src-nacre"
+        ],
+        "evidence_passage_ids": [
+          "passage-e35f87a409cfa45f",
+          "passage-00e7a08c882c40f0"
+        ],
+        "scores": {
+          "Clarity": 95,
+          "Specificity": 91,
+          "Curiosity": 93,
+          "Stakes": 81,
+          "Novelty": 87,
+          "FactualSafety": 100,
+          "Brevity": 93
+        },
+        "rationale": "Scoped to local index freshness; contrast creates curiosity without claiming superiority. Human-authored fixture rubric."
+      },
+      {
+        "hook_id": "h2",
+        "text": "A local search index still needs a refresh button.",
+        "claim_ids": [
+          "c3"
+        ],
+        "source_ids": [
+          "src-nacre"
+        ],
+        "evidence_passage_ids": [
+          "passage-00e7a08c882c40f0"
+        ],
+        "scores": {
+          "Clarity": 94,
+          "Specificity": 90,
+          "Curiosity": 92,
+          "Stakes": 80,
+          "Novelty": 86,
+          "FactualSafety": 100,
+          "Brevity": 92
+        },
+        "rationale": "Scoped to local index freshness; contrast creates curiosity without claiming superiority. Human-authored fixture rubric."
+      },
+      {
+        "hook_id": "h3",
+        "text": "Keeping files on your computer does not keep searches up to date.",
+        "claim_ids": [
+          "c2",
+          "c3"
+        ],
+        "source_ids": [
+          "src-nacre"
+        ],
+        "evidence_passage_ids": [
+          "passage-e35f87a409cfa45f",
+          "passage-00e7a08c882c40f0"
+        ],
+        "scores": {
+          "Clarity": 93,
+          "Specificity": 89,
+          "Curiosity": 91,
+          "Stakes": 79,
+          "Novelty": 85,
+          "FactualSafety": 100,
+          "Brevity": 91
+        },
+        "rationale": "Scoped to local index freshness; contrast creates curiosity without claiming superiority. Human-authored fixture rubric."
+      },
+      {
+        "hook_id": "h4",
+        "text": "This folder search has a catch: you have to rebuild its index.",
+        "claim_ids": [
+          "c1",
+          "c3"
+        ],
+        "source_ids": [
+          "src-nacre"
+        ],
+        "evidence_passage_ids": [
+          "passage-4a2ca5fe7fef180f",
+          "passage-00e7a08c882c40f0"
+        ],
+        "scores": {
+          "Clarity": 92,
+          "Specificity": 88,
+          "Curiosity": 90,
+          "Stakes": 78,
+          "Novelty": 84,
+          "FactualSafety": 100,
+          "Brevity": 90
+        },
+        "rationale": "Scoped to local index freshness; contrast creates curiosity without claiming superiority. Human-authored fixture rubric."
+      },
+      {
+        "hook_id": "h5",
+        "text": "Local search and fresh search are two different promises.",
+        "claim_ids": [
+          "c2",
+          "c3"
+        ],
+        "source_ids": [
+          "src-nacre"
+        ],
+        "evidence_passage_ids": [
+          "passage-e35f87a409cfa45f",
+          "passage-00e7a08c882c40f0"
+        ],
+        "scores": {
+          "Clarity": 91,
+          "Specificity": 87,
+          "Curiosity": 89,
+          "Stakes": 77,
+          "Novelty": 83,
+          "FactualSafety": 100,
+          "Brevity": 89
+        },
+        "rationale": "Scoped to local index freshness; contrast creates curiosity without claiming superiority. Human-authored fixture rubric."
+      }
+    ],
+    "selected_hook_id": "h1",
+    "sections": [
+      {
+        "name": "CONTEXT",
+        "sentences": [
+          {
+            "text": "Nacre’s fictional desktop preview searches text files inside a folder you choose.",
+            "claim_ids": [
+              "c1"
+            ],
+            "source_ids": [
+              "src-nacre"
+            ],
+            "evidence_passage_ids": [
+              "passage-4a2ca5fe7fef180f"
+            ],
+            "sentence_id": "s1",
+            "statement_type": "FACT",
+            "materiality": "IMPORTANT"
+          }
+        ]
+      },
+      {
+        "name": "EXPLANATION",
+        "sentences": [
+          {
+            "text": "It builds an index on your computer, and this preview sends neither that index nor your files to a server.",
+            "claim_ids": [
+              "c1",
+              "c2"
+            ],
+            "source_ids": [
+              "src-nacre"
+            ],
+            "evidence_passage_ids": [
+              "passage-4a2ca5fe7fef180f",
+              "passage-e35f87a409cfa45f"
+            ],
+            "sentence_id": "s2",
+            "statement_type": "FACT",
+            "materiality": "IMPORTANT"
+          }
+        ]
+      },
+      {
+        "name": "EXPLANATION",
+        "sentences": [
+          {
+            "text": "But keeping data nearby does not make the index current.",
+            "claim_ids": [
+              "c3"
+            ],
+            "source_ids": [
+              "src-nacre"
+            ],
+            "evidence_passage_ids": [
+              "passage-00e7a08c882c40f0"
+            ],
+            "sentence_id": "s3",
+            "statement_type": "FACT",
+            "materiality": "IMPORTANT"
+          }
+        ]
+      },
+      {
+        "name": "EXPLANATION",
+        "sentences": [
+          {
+            "text": "Edit a file, and you still need to press Rebuild before the search reflects that change.",
+            "claim_ids": [
+              "c3"
+            ],
+            "source_ids": [
+              "src-nacre"
+            ],
+            "evidence_passage_ids": [
+              "passage-00e7a08c882c40f0"
+            ],
+            "sentence_id": "s4",
+            "statement_type": "FACT",
+            "materiality": "IMPORTANT"
+          }
+        ]
+      },
+      {
+        "name": "EXPLANATION",
+        "sentences": [
+          {
+            "text": "Skip that step, and an old passage can show up instead.",
+            "claim_ids": [
+              "c3"
+            ],
+            "source_ids": [
+              "src-nacre"
+            ],
+            "evidence_passage_ids": [
+              "passage-00e7a08c882c40f0"
+            ],
+            "sentence_id": "s5",
+            "statement_type": "FACT",
+            "materiality": "IMPORTANT"
+          }
+        ]
+      },
+      {
+        "name": "EXPLANATION",
+        "sentences": [
+          {
+            "text": "There is another boundary: the preview handles plain text, not PDFs.",
+            "claim_ids": [
+              "c4"
+            ],
+            "source_ids": [
+              "src-nacre"
+            ],
+            "evidence_passage_ids": [
+              "passage-ed5e69374a13a9c1"
+            ],
+            "sentence_id": "s6",
+            "statement_type": "FACT",
+            "materiality": "IMPORTANT"
+          }
+        ]
+      },
+      {
+        "name": "PAYOFF",
+        "sentences": [
+          {
+            "text": "So picture a searchable copy of one folder, with a refresh button you control.",
+            "claim_ids": [
+              "c1",
+              "c3",
+              "c4"
+            ],
+            "source_ids": [
+              "src-nacre"
+            ],
+            "evidence_passage_ids": [
+              "passage-4a2ca5fe7fef180f",
+              "passage-00e7a08c882c40f0",
+              "passage-ed5e69374a13a9c1"
+            ],
+            "sentence_id": "s7",
+            "statement_type": "FACT",
+            "materiality": "IMPORTANT"
+          }
+        ]
+      },
+      {
+        "name": "PAYOFF",
+        "sentences": [
+          {
+            "text": "The useful distinction is where your data lives versus when your search last caught up.",
+            "claim_ids": [
+              "c2",
+              "c3"
+            ],
+            "source_ids": [
+              "src-nacre"
+            ],
+            "evidence_passage_ids": [
+              "passage-e35f87a409cfa45f",
+              "passage-00e7a08c882c40f0"
+            ],
+            "sentence_id": "s8",
+            "statement_type": "FACT",
+            "materiality": "IMPORTANT"
+          }
+        ]
+      }
+    ],
+    "visual_notes": [
+      "Draw folder → local index; animate an edit and the Rebuild button."
+    ],
+    "pronunciation_notes": [
+      "Nacre: NAY-ker."
+    ],
+    "uncertainty_notes": [
+      "Fictional fixture; no real product claim."
+    ],
+    "on_screen_text": []
+  },
+  "quality": {
+    "components": {
+      "HookStrength": 90,
+      "Clarity": 94,
+      "NarrativeFlow": 91,
+      "InformationDensity": 90,
+      "Originality": 88,
+      "AudienceFit": 92,
+      "PayoffStrength": 93,
+      "ProductionFeasibility": 96
+    },
+    "rationale": {
+      "HookStrength": "Human-authored fixture assessment of a concrete visual explanation.",
+      "Clarity": "Human-authored fixture assessment of a concrete visual explanation.",
+      "NarrativeFlow": "Human-authored fixture assessment of a concrete visual explanation.",
+      "InformationDensity": "Human-authored fixture assessment of a concrete visual explanation.",
+      "Originality": "Human-authored fixture assessment of a concrete visual explanation.",
+      "AudienceFit": "Human-authored fixture assessment of a concrete visual explanation.",
+      "PayoffStrength": "Human-authored fixture assessment of a concrete visual explanation.",
+      "ProductionFeasibility": "Human-authored fixture assessment of a concrete visual explanation."
+    },
+    "spoken_naturalness": {
+      "flags": [],
+      "notes": "Short varied sentences, plain words and a concrete payoff; no forced CTA."
+    },
+    "originality_status": "CLEAR",
+    "originality_rationale": "Fictional comparator covers the release; this treatment explains freshness using a changed file. Fixture explicitly supplies this comparison context.",
+    "warnings": []
+  },
+  "approved_sentence_texts": [
+    "Your files can stay local while your search results fall behind.",
+    "A local search index still needs a refresh button.",
+    "Keeping files on your computer does not keep searches up to date.",
+    "This folder search has a catch: you have to rebuild its index.",
+    "Local search and fresh search are two different promises.",
+    "Nacre’s fictional desktop preview searches text files inside a folder you choose.",
+    "It builds an index on your computer, and this preview sends neither that index nor your files to a server.",
+    "But keeping data nearby does not make the index current.",
+    "Edit a file, and you still need to press Rebuild before the search reflects that change.",
+    "Skip that step, and an old passage can show up instead.",
+    "There is another boundary: the preview handles plain text, not PDFs.",
+    "So picture a searchable copy of one folder, with a refresh button you control.",
+    "The useful distinction is where your data lives versus when your search last caught up."
+  ],
+  "approved_title": "Local search still needs a refresh",
+  "story_resolution": {
+    "canonical_subject": "Nacre desktop search preview",
+    "named_entities": [
+      "Nacre"
+    ],
+    "alleged_event": "cancelled desktop search prototype",
+    "event_date_if_known": "2026-09-18T09:00:00+00:00",
+    "identifiers": {
+      "products": [
+        "desktop search"
+      ],
+      "companies": [
+        "Nacre"
+      ],
+      "people": []
+    },
+    "resolvability_score": 95,
+    "ambiguity_flags": [],
+    "suggested_queries": [
+      "Nacre desktop search preview official release"
+    ],
+    "status": "RESOLVED",
+    "evidence": [
+      {
+        "url": "https://nacre.example/releases/local-preview",
+        "quote": "Correction: Nacre has not released a desktop search preview. The September 18, 2026 notice described a cancelled internal prototype, not a public product release.",
+        "source_type": "OFFICIAL",
+        "independent_of_competitor": true,
+        "indicates_event": true,
+        "authority_reason": "Fictional official release specification/correction establishes an identifiable story."
+      }
+    ]
+  }
+}

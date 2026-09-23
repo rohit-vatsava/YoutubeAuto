@@ -1,0 +1,189 @@
+{
+  "competitor_config_version": "2.0",
+  "channels": [
+    {
+      "display_name": "Fireship",
+      "handle": "@Fireship",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "cohort": "AI_FRONTIER",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator"
+    },
+    {
+      "display_name": "AI Explained",
+      "handle": "@aiexplained-official",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "cohort": "AI_FRONTIER",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator"
+    },
+    {
+      "display_name": "Two Minute Papers",
+      "handle": "@TwoMinutePapers",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "cohort": "AI_FRONTIER",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator"
+    },
+    {
+      "display_name": "The AI Grid",
+      "handle": "@TheAiGrid",
+      "channel_id": "UCbY9xX3_jW5c2fjlZVBI4cg",
+      "cohort": "AI_FRONTIER",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator"
+    },
+    {
+      "display_name": "Theo - t3.gg",
+      "handle": "@t3dotgg",
+      "channel_id": "UCbRP3c757lWg9M-U7TyEkXA",
+      "cohort": "DEV_SOFTWARE",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator"
+    },
+    {
+      "display_name": "ThePrimeTime",
+      "handle": "@theprimetimeagen",
+      "channel_id": "UCUyeluBRhGPCW4rPe_UvBZQ",
+      "cohort": "DEV_SOFTWARE",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator"
+    },
+    {
+      "display_name": "Hussein Nasser",
+      "handle": "@hnasr",
+      "channel_id": "UC_ML5xP23TOWKUcc-oAE_Eg",
+      "cohort": "DEV_SOFTWARE",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator"
+    },
+    {
+      "display_name": "Jeff Geerling",
+      "handle": "@jeffgeerling",
+      "channel_id": "UCR-DXc1voovS8nhAvccRZhg",
+      "cohort": "DEV_SOFTWARE",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator"
+    },
+    {
+      "display_name": "NetworkChuck",
+      "handle": "@networkchuck",
+      "channel_id": "UC9x0AN7BWHpCDHSm9NiJFJQ",
+      "cohort": "SECURITY_INFRA",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator"
+    },
+    {
+      "display_name": "John Hammond",
+      "handle": "@_johnhammond",
+      "channel_id": "UCVeW9qkBjo3zosnqUbG7CFw",
+      "cohort": "SECURITY_INFRA",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator"
+    },
+    {
+      "display_name": "David Bombal",
+      "handle": "@davidbombal",
+      "channel_id": "UCP7WmQ_U4GB3K51Od9QvM0w",
+      "cohort": "SECURITY_INFRA",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator"
+    },
+    {
+      "display_name": "Gamers Nexus",
+      "handle": "@gamersnexus",
+      "channel_id": "UChIs72whgZI9w6d6FhwGGHA",
+      "cohort": "HARDWARE_CHIPS",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator"
+    },
+    {
+      "display_name": "Hardware Unboxed",
+      "handle": "@hardwareunboxed",
+      "channel_id": "UCI8iQa1hv7oV_Z8D35vVuSg",
+      "cohort": "HARDWARE_CHIPS",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator"
+    },
+    {
+      "display_name": "Dave2D",
+      "handle": "@dave2d",
+      "channel_id": "UCVYamHliCI9rw1tHR1xbkfw",
+      "cohort": "HARDWARE_CHIPS",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator",
+      "max_uploads": 50,
+      "window_days": 180
+    },
+    {
+      "display_name": "NVIDIA",
+      "handle": "@nvidia",
+      "channel_id": "UCHuiy8bXnmK5nisYHUd1J5g",
+      "cohort": "HARDWARE_CHIPS",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "vendor_official"
+    },
+    {
+      "display_name": "ColdFusion",
+      "handle": "@ColdFusion",
+      "channel_id": "UC4QZ_LsYcvcq7qOsOhpAX4A",
+      "cohort": "TECH_BUSINESS",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "media_explainer"
+    },
+    {
+      "display_name": "Asianometry",
+      "handle": "@asianometry",
+      "channel_id": "UC1LpsuAUaKoMzzJSEt5WImw",
+      "cohort": "TECH_BUSINESS",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "media_explainer"
+    },
+    {
+      "display_name": "Futurepedia",
+      "handle": "@futurepedia_io",
+      "channel_id": "UC_RovKmk0OCbuZjA8f08opw",
+      "cohort": "AI_TOOLS_SOFTWARE",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator"
+    },
+    {
+      "display_name": "Matt Wolfe",
+      "handle": "@mreflow",
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "cohort": "AI_TOOLS_SOFTWARE",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "independent_creator"
+    },
+    {
+      "display_name": "IBM Technology",
+      "handle": "@ibmtechnology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "cohort": "AI_TOOLS_SOFTWARE",
+      "enabled": true,
+      "weight": 1.0,
+      "source_role": "vendor_official",
+      "max_uploads": 100,
+      "window_days": 90
+    }
+  ]
+}

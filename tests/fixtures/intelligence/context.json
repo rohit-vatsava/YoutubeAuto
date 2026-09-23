@@ -1,0 +1,373 @@
+{
+  "videos": {
+    "fiction-0-10": {
+      "source": "fictional editorial note fiction-0-10",
+      "language": "en",
+      "provenance_note": "Entirely fictional test material authored for this project.",
+      "text": "This fictional presentation describes Orbit 2. Orbit 2 adds an inspectable optimization trace.",
+      "context": {
+        "canonical_subject": "Orbit compiler",
+        "entities": [
+          "Orbit 2"
+        ],
+        "technologies": [
+          "software compiler"
+        ],
+        "products_models": [
+          "Orbit 2"
+        ],
+        "core_event": "Orbit 2 adds an inspectable optimization trace.",
+        "what_changed": "Orbit 2 adds an inspectable optimization trace.",
+        "why_now": "Fictional Orbit 2 release dated 2026-09-17; evaluate relevance before production.",
+        "audience_relevance": "technology explainers",
+        "competitor_angle": "demonstration",
+        "hook_pattern": "demonstration",
+        "emotional_frame": "curiosity",
+        "novelty_type": "capability",
+        "evergreen_or_news": "news",
+        "time_sensitivity": "days",
+        "content_depth": "short explainer",
+        "context_summary": "A release-oriented introduction to Orbit 2, focused on the announcement.",
+        "event_key": "Orbit 2 release",
+        "event_type": "release",
+        "event_date": "2026-09-17",
+        "claims": [
+          {
+            "claim_id": "claim-0",
+            "text": "Orbit 2 adds an inspectable optimization trace.",
+            "material": true,
+            "supports_event_date": "2026-09-17"
+          }
+        ]
+      }
+    },
+    "fiction-0-11": {
+      "source": "fictional editorial note fiction-0-11",
+      "language": "en",
+      "provenance_note": "Entirely fictional test material authored for this project.",
+      "text": "This fictional presentation describes Pebble 1. Pebble 1 documents an offline inference interface.",
+      "context": {
+        "canonical_subject": "Pebble local AI model",
+        "entities": [
+          "Pebble 1"
+        ],
+        "technologies": [
+          "local AI model"
+        ],
+        "products_models": [
+          "Pebble 1"
+        ],
+        "core_event": "Pebble 1 documents an offline inference interface.",
+        "what_changed": "Pebble 1 documents an offline inference interface.",
+        "why_now": "Fictional Pebble 1 release dated 2026-09-15; evaluate relevance before production.",
+        "audience_relevance": "technology explainers",
+        "competitor_angle": "breakthrough",
+        "hook_pattern": "demonstration",
+        "emotional_frame": "curiosity",
+        "novelty_type": "capability",
+        "evergreen_or_news": "news",
+        "time_sensitivity": "days",
+        "content_depth": "short explainer",
+        "context_summary": "A release-oriented introduction to Pebble 1, focused on the announcement.",
+        "event_key": "Pebble 1 release",
+        "event_type": "release",
+        "event_date": "2026-09-15",
+        "claims": [
+          {
+            "claim_id": "claim-1",
+            "text": "Pebble 1 documents an offline inference interface.",
+            "material": true,
+            "supports_event_date": "2026-09-15"
+          }
+        ]
+      }
+    },
+    "fiction-0-12": {
+      "source": "fictional editorial note fiction-0-12",
+      "language": "en",
+      "provenance_note": "Entirely fictional test material authored for this project.",
+      "text": "This fictional presentation describes Lattice 3. Lattice 3 exposes a versioned snapshot interface.",
+      "context": {
+        "canonical_subject": "Lattice database snapshots",
+        "entities": [
+          "Lattice 3"
+        ],
+        "technologies": [
+          "database"
+        ],
+        "products_models": [
+          "Lattice 3"
+        ],
+        "core_event": "Lattice 3 exposes a versioned snapshot interface.",
+        "what_changed": "Lattice 3 exposes a versioned snapshot interface.",
+        "why_now": "Fictional Lattice 3 release dated 2026-09-13; evaluate relevance before production.",
+        "audience_relevance": "technology explainers",
+        "competitor_angle": "what changed",
+        "hook_pattern": "demonstration",
+        "emotional_frame": "curiosity",
+        "novelty_type": "capability",
+        "evergreen_or_news": "news",
+        "time_sensitivity": "days",
+        "content_depth": "short explainer",
+        "context_summary": "A release-oriented introduction to Lattice 3, focused on the announcement.",
+        "event_key": "Lattice 3 release",
+        "event_type": "release",
+        "event_date": "2026-09-13",
+        "claims": [
+          {
+            "claim_id": "claim-2",
+            "text": "Lattice 3 exposes a versioned snapshot interface.",
+            "material": true,
+            "supports_event_date": "2026-09-13"
+          }
+        ]
+      }
+    },
+    "fiction-1-10": {
+      "source": "fictional editorial note fiction-1-10",
+      "language": "en",
+      "provenance_note": "Entirely fictional test material authored for this project.",
+      "text": "This fictional presentation describes Orbit 2. Orbit 2 adds an inspectable optimization trace.",
+      "context": {
+        "canonical_subject": "Orbit compiler",
+        "entities": [
+          "Orbit 2"
+        ],
+        "technologies": [
+          "software compiler"
+        ],
+        "products_models": [
+          "Orbit 2"
+        ],
+        "core_event": "Orbit 2 adds an inspectable optimization trace.",
+        "what_changed": "Orbit 2 adds an inspectable optimization trace.",
+        "why_now": "Fictional Orbit 2 release dated 2026-09-17; evaluate relevance before production.",
+        "audience_relevance": "technology explainers",
+        "competitor_angle": "demonstration",
+        "hook_pattern": "demonstration",
+        "emotional_frame": "curiosity",
+        "novelty_type": "capability",
+        "evergreen_or_news": "news",
+        "time_sensitivity": "days",
+        "content_depth": "short explainer",
+        "context_summary": "A release-oriented introduction to Orbit 2, focused on the announcement.",
+        "event_key": "Orbit 2 release",
+        "event_type": "release",
+        "event_date": "2026-09-17",
+        "claims": [
+          {
+            "claim_id": "claim-0",
+            "text": "Orbit 2 adds an inspectable optimization trace.",
+            "material": true,
+            "supports_event_date": "2026-09-17"
+          }
+        ]
+      }
+    },
+    "fiction-1-11": {
+      "source": "fictional editorial note fiction-1-11",
+      "language": "en",
+      "provenance_note": "Entirely fictional test material authored for this project.",
+      "text": "This fictional presentation describes Pebble 1. Pebble 1 documents an offline inference interface.",
+      "context": {
+        "canonical_subject": "Pebble local AI model",
+        "entities": [
+          "Pebble 1"
+        ],
+        "technologies": [
+          "local AI model"
+        ],
+        "products_models": [
+          "Pebble 1"
+        ],
+        "core_event": "Pebble 1 documents an offline inference interface.",
+        "what_changed": "Pebble 1 documents an offline inference interface.",
+        "why_now": "Fictional Pebble 1 release dated 2026-09-15; evaluate relevance before production.",
+        "audience_relevance": "technology explainers",
+        "competitor_angle": "breakthrough",
+        "hook_pattern": "demonstration",
+        "emotional_frame": "curiosity",
+        "novelty_type": "capability",
+        "evergreen_or_news": "news",
+        "time_sensitivity": "days",
+        "content_depth": "short explainer",
+        "context_summary": "A release-oriented introduction to Pebble 1, focused on the announcement.",
+        "event_key": "Pebble 1 release",
+        "event_type": "release",
+        "event_date": "2026-09-15",
+        "claims": [
+          {
+            "claim_id": "claim-1",
+            "text": "Pebble 1 documents an offline inference interface.",
+            "material": true,
+            "supports_event_date": "2026-09-15"
+          }
+        ]
+      }
+    },
+    "fiction-1-12": {
+      "source": "fictional editorial note fiction-1-12",
+      "language": "en",
+      "provenance_note": "Entirely fictional test material authored for this project.",
+      "text": "This fictional presentation describes Lattice 3. Lattice 3 exposes a versioned snapshot interface.",
+      "context": {
+        "canonical_subject": "Lattice database snapshots",
+        "entities": [
+          "Lattice 3"
+        ],
+        "technologies": [
+          "database"
+        ],
+        "products_models": [
+          "Lattice 3"
+        ],
+        "core_event": "Lattice 3 exposes a versioned snapshot interface.",
+        "what_changed": "Lattice 3 exposes a versioned snapshot interface.",
+        "why_now": "Fictional Lattice 3 release dated 2026-09-13; evaluate relevance before production.",
+        "audience_relevance": "technology explainers",
+        "competitor_angle": "what changed",
+        "hook_pattern": "demonstration",
+        "emotional_frame": "curiosity",
+        "novelty_type": "capability",
+        "evergreen_or_news": "news",
+        "time_sensitivity": "days",
+        "content_depth": "short explainer",
+        "context_summary": "A release-oriented introduction to Lattice 3, focused on the announcement.",
+        "event_key": "Lattice 3 release",
+        "event_type": "release",
+        "event_date": "2026-09-13",
+        "claims": [
+          {
+            "claim_id": "claim-2",
+            "text": "Lattice 3 exposes a versioned snapshot interface.",
+            "material": true,
+            "supports_event_date": "2026-09-13"
+          }
+        ]
+      }
+    },
+    "fiction-2-10": {
+      "source": "fictional editorial note fiction-2-10",
+      "language": "en",
+      "provenance_note": "Entirely fictional test material authored for this project.",
+      "text": "This fictional presentation describes Orbit 2. Orbit 2 adds an inspectable optimization trace.",
+      "context": {
+        "canonical_subject": "Orbit compiler",
+        "entities": [
+          "Orbit 2"
+        ],
+        "technologies": [
+          "software compiler"
+        ],
+        "products_models": [
+          "Orbit 2"
+        ],
+        "core_event": "Orbit 2 adds an inspectable optimization trace.",
+        "what_changed": "Orbit 2 adds an inspectable optimization trace.",
+        "why_now": "Fictional Orbit 2 release dated 2026-09-17; evaluate relevance before production.",
+        "audience_relevance": "technology explainers",
+        "competitor_angle": "demonstration",
+        "hook_pattern": "demonstration",
+        "emotional_frame": "curiosity",
+        "novelty_type": "capability",
+        "evergreen_or_news": "news",
+        "time_sensitivity": "days",
+        "content_depth": "short explainer",
+        "context_summary": "A release-oriented introduction to Orbit 2, focused on the announcement.",
+        "event_key": "Orbit 2 release",
+        "event_type": "release",
+        "event_date": "2026-09-17",
+        "claims": [
+          {
+            "claim_id": "claim-0",
+            "text": "Orbit 2 adds an inspectable optimization trace.",
+            "material": true,
+            "supports_event_date": "2026-09-17"
+          }
+        ]
+      }
+    },
+    "fiction-2-11": {
+      "source": "fictional editorial note fiction-2-11",
+      "language": "en",
+      "provenance_note": "Entirely fictional test material authored for this project.",
+      "text": "This fictional presentation describes Pebble 1. Pebble 1 documents an offline inference interface.",
+      "context": {
+        "canonical_subject": "Pebble local AI model",
+        "entities": [
+          "Pebble 1"
+        ],
+        "technologies": [
+          "local AI model"
+        ],
+        "products_models": [
+          "Pebble 1"
+        ],
+        "core_event": "Pebble 1 documents an offline inference interface.",
+        "what_changed": "Pebble 1 documents an offline inference interface.",
+        "why_now": "Fictional Pebble 1 release dated 2026-09-15; evaluate relevance before production.",
+        "audience_relevance": "technology explainers",
+        "competitor_angle": "breakthrough",
+        "hook_pattern": "demonstration",
+        "emotional_frame": "curiosity",
+        "novelty_type": "capability",
+        "evergreen_or_news": "news",
+        "time_sensitivity": "days",
+        "content_depth": "short explainer",
+        "context_summary": "A release-oriented introduction to Pebble 1, focused on the announcement.",
+        "event_key": "Pebble 1 release",
+        "event_type": "release",
+        "event_date": "2026-09-15",
+        "claims": [
+          {
+            "claim_id": "claim-1",
+            "text": "Pebble 1 documents an offline inference interface.",
+            "material": true,
+            "supports_event_date": "2026-09-15"
+          }
+        ]
+      }
+    },
+    "fiction-2-12": {
+      "source": "fictional editorial note fiction-2-12",
+      "language": "en",
+      "provenance_note": "Entirely fictional test material authored for this project.",
+      "text": "This fictional presentation describes Lattice 3. Lattice 3 exposes a versioned snapshot interface.",
+      "context": {
+        "canonical_subject": "Lattice database snapshots",
+        "entities": [
+          "Lattice 3"
+        ],
+        "technologies": [
+          "database"
+        ],
+        "products_models": [
+          "Lattice 3"
+        ],
+        "core_event": "Lattice 3 exposes a versioned snapshot interface.",
+        "what_changed": "Lattice 3 exposes a versioned snapshot interface.",
+        "why_now": "Fictional Lattice 3 release dated 2026-09-13; evaluate relevance before production.",
+        "audience_relevance": "technology explainers",
+        "competitor_angle": "what changed",
+        "hook_pattern": "demonstration",
+        "emotional_frame": "curiosity",
+        "novelty_type": "capability",
+        "evergreen_or_news": "news",
+        "time_sensitivity": "days",
+        "content_depth": "short explainer",
+        "context_summary": "A release-oriented introduction to Lattice 3, focused on the announcement.",
+        "event_key": "Lattice 3 release",
+        "event_type": "release",
+        "event_date": "2026-09-13",
+        "claims": [
+          {
+            "claim_id": "claim-2",
+            "text": "Lattice 3 exposes a versioned snapshot interface.",
+            "material": true,
+            "supports_event_date": "2026-09-13"
+          }
+        ]
+      }
+    }
+  }
+}

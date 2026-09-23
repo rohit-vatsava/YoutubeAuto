@@ -1,0 +1,92 @@
+{
+  "synthetic": true,
+  "intelligence_run_id": "intelligence-fictional-scripts",
+  "radar_run_id": "radar-fictional-scripts",
+  "generated_at": "2026-09-20T12:00:00+00:00",
+  "metadata": {
+    "mode": "synthetic",
+    "status": "complete"
+  },
+  "candidates": [
+    {
+      "video_id": "fictional-video",
+      "title": "Nacre releases folder search",
+      "url": "https://video.example/fictional",
+      "observed_at": "2026-09-20T12:00:00+00:00",
+      "channel": "Fictional Computing",
+      "snapshot_hash": "fixture-video-hash"
+    }
+  ],
+  "transcripts": {},
+  "story_briefs": [],
+  "trend_clusters": [
+    {
+      "cluster_id": "cluster-fictional-search",
+      "supporting_video_ids": [
+        "fictional-video"
+      ],
+      "theme": "Local search"
+    }
+  ],
+  "ideas": [
+    {
+      "idea_id": "idea-fictional-nacre",
+      "topic": "local search",
+      "audience_question": "What does local search actually keep on your computer?",
+      "proposed_angle": "Explain the privacy boundary using a folder and a network cable",
+      "source_video_ids": [
+        "fictional-video"
+      ],
+      "radar_run_id": "radar-fictional-scripts",
+      "intelligence_run_id": "intelligence-fictional-scripts",
+      "cluster_id": "cluster-fictional-search",
+      "idea_score": 82,
+      "rank": 1,
+      "production_ready": false,
+      "similarity_status": "CLEAR",
+      "risk_flags": [
+        "CONTEXT_LIMITED"
+      ],
+      "required_research": [
+        "Establish the release and its actual privacy boundary"
+      ],
+      "story_context": [
+        {
+          "canonical_subject": "Nacre local search preview",
+          "entities": [
+            "Nacre"
+          ],
+          "products_models": [
+            "Nacre"
+          ],
+          "core_event": "Nacre local search preview release",
+          "confidence": 0.2,
+          "flags": [
+            "CONTEXT_LIMITED"
+          ],
+          "story_type": "EVENT_STORY"
+        }
+      ],
+      "category": "RECOMMENDED FOR RESEARCH",
+      "scoring_version": "fixture",
+      "scores": {
+        "DemandSignal": 80,
+        "Freshness": 80,
+        "Originality": 80,
+        "AudienceFit": 80,
+        "ProductionFit": 80,
+        "EvidenceQuality": 80,
+        "Expandability": 80,
+        "SaturationRisk": 80
+      },
+      "score_rationale": {},
+      "canonical_subject": "Nacre local search preview",
+      "named_entities": [
+        "Nacre"
+      ],
+      "alleged_event": "Nacre local search preview release",
+      "subject_type": "PRODUCT",
+      "story_type": "EVENT_STORY"
+    }
+  ]
+}

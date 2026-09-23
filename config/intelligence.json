@@ -1,0 +1,54 @@
+{
+  "weights": {
+    "DemandSignal": 0.22,
+    "Freshness": 0.15,
+    "Originality": 0.15,
+    "AudienceFit": 0.15,
+    "ProductionFit": 0.1,
+    "EvidenceQuality": 0.1,
+    "Expandability": 0.08,
+    "SaturationRisk": 0.05
+  },
+  "evidence_threshold": 60,
+  "originality_threshold": 40,
+  "recommendation_threshold": 65,
+  "similarity_review": 55,
+  "similarity_reject": 80,
+  "cluster_window_days": 14,
+  "stale_news_days": 30,
+  "entity_aliases": {
+    "large language model": "llm",
+    "artificial intelligence": "ai"
+  },
+  "primary_terms": [
+    "ai",
+    "software",
+    "computing",
+    "llm",
+    "model",
+    "gpu",
+    "processor",
+    "security",
+    "compiler",
+    "database",
+    "robotics",
+    "chip",
+    "coding"
+  ],
+  "adjacent_terms": [
+    "technology",
+    "startup",
+    "device",
+    "internet",
+    "digital"
+  ],
+  "selection_order": [
+    "opportunity_score",
+    "researchability_score",
+    "velocity_adjusted_score"
+  ],
+  "researchability_threshold": 60,
+  "intake_limit": 30,
+  "intake_quality_band": 7,
+  "preview_score_window": 7
+}

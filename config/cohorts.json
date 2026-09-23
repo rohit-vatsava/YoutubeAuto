@@ -1,0 +1,43 @@
+{
+  "cohort_config_version": "1.0",
+  "current_window_days": 30,
+  "researchable_threshold": 60,
+  "cohorts": {
+    "AI_FRONTIER": {
+      "label": "AI / frontier",
+      "commercial_value": "HIGH",
+      "max_uploads": 100,
+      "window_days": 90
+    },
+    "DEV_SOFTWARE": {
+      "label": "Developer tools / software",
+      "commercial_value": "HIGH",
+      "max_uploads": 100,
+      "window_days": 90
+    },
+    "SECURITY_INFRA": {
+      "label": "Security / infrastructure",
+      "commercial_value": "HIGH",
+      "max_uploads": 100,
+      "window_days": 90
+    },
+    "HARDWARE_CHIPS": {
+      "label": "Hardware / chips",
+      "commercial_value": "HIGH",
+      "max_uploads": 100,
+      "window_days": 90
+    },
+    "TECH_BUSINESS": {
+      "label": "Tech business",
+      "commercial_value": "MEDIUM_HIGH",
+      "max_uploads": 50,
+      "window_days": 180
+    },
+    "AI_TOOLS_SOFTWARE": {
+      "label": "AI tools / software",
+      "commercial_value": "HIGH",
+      "max_uploads": 50,
+      "window_days": 180
+    }
+  }
+}

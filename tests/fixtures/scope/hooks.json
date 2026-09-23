@@ -1,0 +1,1453 @@
+{
+  "candidate": {
+    "candidate_id": "candidate-cb3571e9-0d9c-4fb0-9390-6271c471f877",
+    "stage": "script_generation",
+    "raw_generated_content": {
+      "title_working": "GPT-6 Astra: What the Docs Actually List",
+      "title_claim_ids": [
+        "claim-6508cc49e0d34119",
+        "claim-api-capabilities"
+      ],
+      "hook_candidates": [
+        {
+          "hook_id": "hook-1",
+          "text": "GPT-6 Astra\u2019s documentation lists a lot of tools. That is not the same as a proven workflow result.",
+          "claim_ids": [
+            "claim-6508cc49e0d34119",
+            "claim-api-capabilities"
+          ],
+          "source_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "evidence_passage_ids": [
+            "passage-e1afa9ae3b02daae",
+            "passage-cb0d63f9c9fe4d3b"
+          ],
+          "scores": {
+            "Clarity": 95,
+            "Specificity": 88,
+            "Curiosity": 82,
+            "Stakes": 76,
+            "Novelty": 72,
+            "FactualSafety": 99,
+            "Brevity": 93
+          },
+          "rationale": "Sets the documentation-first frame and immediately distinguishes listed support from an unproven outcome.",
+          "factual": true
+        },
+        {
+          "hook_id": "hook-2",
+          "text": "OpenAI lists five reasoning settings for GPT-6 Astra. Here\u2019s what the documentation actually establishes.",
+          "claim_ids": [
+            "claim-api-capabilities"
+          ],
+          "source_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "evidence_passage_ids": [
+            "passage-beac863116ee521a"
+          ],
+          "scores": {
+            "Clarity": 91,
+            "Specificity": 94,
+            "Curiosity": 81,
+            "Stakes": 65,
+            "Novelty": 78,
+            "FactualSafety": 99,
+            "Brevity": 91
+          },
+          "rationale": "Leads with a concrete documented control while avoiding claims about its effects.",
+          "factual": true
+        },
+        {
+          "hook_id": "hook-3",
+          "text": "Web search, code tools, computer use: OpenAI lists them for GPT-6 Astra in the Responses API. Test before you assume.",
+          "claim_ids": [
+            "claim-api-capabilities"
+          ],
+          "source_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "evidence_passage_ids": [
+            "passage-cb0d63f9c9fe4d3b"
+          ],
+          "scores": {
+            "Clarity": 93,
+            "Specificity": 96,
+            "Curiosity": 80,
+            "Stakes": 79,
+            "Novelty": 74,
+            "FactualSafety": 98,
+            "Brevity": 88
+          },
+          "rationale": "Names documented tool categories, preserves the Responses API scope, and introduces the deployment-testing boundary.",
+          "factual": true
+        },
+        {
+          "hook_id": "hook-4",
+          "text": "What can GPT-6 Astra be configured to use? OpenAI\u2019s documentation gives a list, not a workflow guarantee.",
+          "claim_ids": [
+            "claim-6508cc49e0d34119",
+            "claim-api-capabilities"
+          ],
+          "source_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "evidence_passage_ids": [
+            "passage-e1afa9ae3b02daae",
+            "passage-cb0d63f9c9fe4d3b"
+          ],
+          "scores": {
+            "Clarity": 94,
+            "Specificity": 84,
+            "Curiosity": 85,
+            "Stakes": 78,
+            "Novelty": 77,
+            "FactualSafety": 99,
+            "Brevity": 95
+          },
+          "rationale": "Directly answers the audience question and maintains the stated evidence boundary.",
+          "factual": true
+        },
+        {
+          "hook_id": "hook-5",
+          "text": "GPT-6 Astra is documented for research, coding, and computer use. The important part is what you still need to test.",
+          "claim_ids": [
+            "claim-api-capabilities"
+          ],
+          "source_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "evidence_passage_ids": [
+            "passage-624e95628ac6987c",
+            "passage-cb0d63f9c9fe4d3b"
+          ],
+          "scores": {
+            "Clarity": 92,
+            "Specificity": 89,
+            "Curiosity": 86,
+            "Stakes": 80,
+            "Novelty": 73,
+            "FactualSafety": 98,
+            "Brevity": 90
+          },
+          "rationale": "Uses OpenAI\u2019s documented use list as a concrete entry point, then pivots safely to evaluation.",
+          "factual": true
+        }
+      ],
+      "selected_hook_id": "hook-4",
+      "sections": [
+        {
+          "name": "Setup",
+          "sentences": [
+            {
+              "sentence_id": "s1",
+              "text": "OpenAI\u2019s documentation identifies GPT-6 Astra as a model for complex reasoning, coding, computer use, research, and document creation.",
+              "statement_type": "attributed documentation observation",
+              "materiality": "material",
+              "claim_ids": [
+                "claim-6508cc49e0d34119",
+                "claim-api-capabilities"
+              ],
+              "source_ids": [
+                "source-9942c8c35a485d17"
+              ],
+              "evidence_passage_ids": [
+                "passage-e1afa9ae3b02daae",
+                "passage-624e95628ac6987c"
+              ],
+              "factual": true
+            }
+          ]
+        },
+        {
+          "name": "Explanation",
+          "sentences": [
+            {
+              "sentence_id": "s2",
+              "text": "For the Responses API, the documentation lists web search, file search, image generation, Code Interpreter, hosted shell, apply patch, skills, computer use, MCP, and tool search.",
+              "statement_type": "attributed documentation observation",
+              "materiality": "material",
+              "claim_ids": [
+                "claim-api-capabilities"
+              ],
+              "source_ids": [
+                "source-9942c8c35a485d17"
+              ],
+              "evidence_passage_ids": [
+                "passage-cb0d63f9c9fe4d3b"
+              ],
+              "factual": true
+            },
+            {
+              "sentence_id": "s3",
+              "text": "It also lists reasoning.effort settings: low, medium, high, xhigh, and max.",
+              "statement_type": "attributed documentation observation",
+              "materiality": "material",
+              "claim_ids": [
+                "claim-api-capabilities"
+              ],
+              "source_ids": [
+                "source-9942c8c35a485d17"
+              ],
+              "evidence_passage_ids": [
+                "passage-beac863116ee521a"
+              ],
+              "factual": true
+            },
+            {
+              "sentence_id": "s4",
+              "text": "Think of those as a configuration checklist, not a verdict on what will work for your deployment.",
+              "statement_type": "editorial guidance",
+              "materiality": "material",
+              "claim_ids": [],
+              "source_ids": [],
+              "evidence_passage_ids": [],
+              "factual": false
+            }
+          ]
+        },
+        {
+          "name": "Boundary",
+          "sentences": [
+            {
+              "sentence_id": "s5",
+              "text": "Listed tool support does not show that a tool is enabled, appropriate, or reliable in every deployment.",
+              "statement_type": "evidence limitation",
+              "materiality": "material",
+              "claim_ids": [
+                "claim-api-capabilities"
+              ],
+              "source_ids": [
+                "source-9942c8c35a485d17"
+              ],
+              "evidence_passage_ids": [
+                "passage-cb0d63f9c9fe4d3b"
+              ],
+              "factual": true
+            },
+            {
+              "sentence_id": "s6",
+              "text": "And the supplied documentation does not prove a specific workflow payoff.",
+              "statement_type": "evidence limitation",
+              "materiality": "material",
+              "claim_ids": [
+                "claim-api-capabilities"
+              ],
+              "source_ids": [
+                "source-9942c8c35a485d17"
+              ],
+              "evidence_passage_ids": [
+                "passage-cb0d63f9c9fe4d3b"
+              ],
+              "factual": true
+            }
+          ]
+        },
+        {
+          "name": "Payoff",
+          "sentences": [
+            {
+              "sentence_id": "s7",
+              "text": "So pick the documented settings and tools you need, test them in the actual environment, and measure the result yourself.",
+              "statement_type": "editorial guidance",
+              "materiality": "material",
+              "claim_ids": [],
+              "source_ids": [],
+              "evidence_passage_ids": [],
+              "factual": false
+            },
+            {
+              "sentence_id": "s8",
+              "text": "That is the gap between an API feature list and a deployment decision.",
+              "statement_type": "editorial framing",
+              "materiality": "material",
+              "claim_ids": [],
+              "source_ids": [],
+              "evidence_passage_ids": [],
+              "factual": false
+            }
+          ]
+        }
+      ],
+      "visual_notes": [
+        "Open on a restrained card reading \u201cDocumentation \u2260 workflow guarantee.\u201d",
+        "Show a Responses API map with two branches: \u201creasoning.effort\u201d and \u201clisted tools.\u201d",
+        "Animate the full reasoning range in order: low, medium, high, xhigh, max.",
+        "Display the tool list as grouped labels rather than implying every tool is enabled in every deployment.",
+        "End on a three-step frame: \u201cDocumented configuration \u2192 deployment test \u2192 measured result.\u201d"
+      ],
+      "pronunciation_notes": [
+        "Say \u201cAstra\u201d as \u201cASS-truh.\u201d",
+        "Say \u201cMCP\u201d letter by letter: \u201cM-C-P.\u201d",
+        "Say \u201cxhigh\u201d as \u201cex-high.\u201d",
+        "Say \u201cAPI\u201d letter by letter."
+      ],
+      "uncertainty_notes": [
+        "All capability statements are attributed to OpenAI\u2019s documentation.",
+        "Tool support is explicitly limited to use with the Responses API.",
+        "Listed support does not establish deployment-specific availability, appropriateness, or reliability.",
+        "The supplied evidence establishes no specific workflow payoff.",
+        "The documentation was observed at 2026-09-22T03:00:09.615656+00:00; this is not evidence of launch timing or independent performance."
+      ],
+      "on_screen_text": [
+        {
+          "sentence_id": "ost-1",
+          "text": "OpenAI documentation: GPT-6 Astra",
+          "statement_type": "attributed documentation label",
+          "materiality": "material",
+          "claim_ids": [
+            "claim-6508cc49e0d34119"
+          ],
+          "source_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "evidence_passage_ids": [
+            "passage-e1afa9ae3b02daae"
+          ],
+          "factual": true
+        },
+        {
+          "sentence_id": "ost-2",
+          "text": "Responses API listed tools: web search \u2022 file search \u2022 image generation \u2022 Code Interpreter \u2022 hosted shell \u2022 apply patch \u2022 skills \u2022 computer use \u2022 MCP \u2022 tool search",
+          "statement_type": "attributed documentation observation",
+          "materiality": "material",
+          "claim_ids": [
+            "claim-api-capabilities"
+          ],
+          "source_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "evidence_passage_ids": [
+            "passage-cb0d63f9c9fe4d3b"
+          ],
+          "factual": true
+        },
+        {
+          "sentence_id": "ost-3",
+          "text": "reasoning.effort: low \u2022 medium \u2022 high \u2022 xhigh \u2022 max",
+          "statement_type": "attributed documentation observation",
+          "materiality": "material",
+          "claim_ids": [
+            "claim-api-capabilities"
+          ],
+          "source_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "evidence_passage_ids": [
+            "passage-beac863116ee521a"
+          ],
+          "factual": true
+        },
+        {
+          "sentence_id": "ost-4",
+          "text": "Listed support \u2260 guaranteed availability, appropriateness, reliability, or workflow payoff.",
+          "statement_type": "evidence limitation",
+          "materiality": "material",
+          "claim_ids": [
+            "claim-api-capabilities"
+          ],
+          "source_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "evidence_passage_ids": [
+            "passage-cb0d63f9c9fe4d3b"
+          ],
+          "factual": true
+        }
+      ],
+      "scope_contract_version": 2,
+      "title_proposition": {
+        "text": "GPT-6 Astra: What the Docs Actually List",
+        "claim_ids": [
+          "claim-6508cc49e0d34119",
+          "claim-api-capabilities"
+        ],
+        "evidence_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "passage_ids": [
+          "passage-e1afa9ae3b02daae",
+          "passage-624e95628ac6987c",
+          "passage-beac863116ee521a",
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "factual": true
+      }
+    },
+    "generated_factual_assertions": [
+      {
+        "hook_id": "hook-1",
+        "text": "GPT-6 Astra\u2019s documentation lists a lot of tools. That is not the same as a proven workflow result.",
+        "claim_ids": [
+          "claim-6508cc49e0d34119",
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-e1afa9ae3b02daae",
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "scores": {
+          "Clarity": 95,
+          "Specificity": 88,
+          "Curiosity": 82,
+          "Stakes": 76,
+          "Novelty": 72,
+          "FactualSafety": 99,
+          "Brevity": 93
+        },
+        "rationale": "Sets the documentation-first frame and immediately distinguishes listed support from an unproven outcome.",
+        "factual": true
+      },
+      {
+        "hook_id": "hook-2",
+        "text": "OpenAI lists five reasoning settings for GPT-6 Astra. Here\u2019s what the documentation actually establishes.",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-beac863116ee521a"
+        ],
+        "scores": {
+          "Clarity": 91,
+          "Specificity": 94,
+          "Curiosity": 81,
+          "Stakes": 65,
+          "Novelty": 78,
+          "FactualSafety": 99,
+          "Brevity": 91
+        },
+        "rationale": "Leads with a concrete documented control while avoiding claims about its effects.",
+        "factual": true
+      },
+      {
+        "hook_id": "hook-3",
+        "text": "Web search, code tools, computer use: OpenAI lists them for GPT-6 Astra in the Responses API. Test before you assume.",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "scores": {
+          "Clarity": 93,
+          "Specificity": 96,
+          "Curiosity": 80,
+          "Stakes": 79,
+          "Novelty": 74,
+          "FactualSafety": 98,
+          "Brevity": 88
+        },
+        "rationale": "Names documented tool categories, preserves the Responses API scope, and introduces the deployment-testing boundary.",
+        "factual": true
+      },
+      {
+        "hook_id": "hook-4",
+        "text": "What can GPT-6 Astra be configured to use? OpenAI\u2019s documentation gives a list, not a workflow guarantee.",
+        "claim_ids": [
+          "claim-6508cc49e0d34119",
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-e1afa9ae3b02daae",
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "scores": {
+          "Clarity": 94,
+          "Specificity": 84,
+          "Curiosity": 85,
+          "Stakes": 78,
+          "Novelty": 77,
+          "FactualSafety": 99,
+          "Brevity": 95
+        },
+        "rationale": "Directly answers the audience question and maintains the stated evidence boundary.",
+        "factual": true
+      },
+      {
+        "hook_id": "hook-5",
+        "text": "GPT-6 Astra is documented for research, coding, and computer use. The important part is what you still need to test.",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-624e95628ac6987c",
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "scores": {
+          "Clarity": 92,
+          "Specificity": 89,
+          "Curiosity": 86,
+          "Stakes": 80,
+          "Novelty": 73,
+          "FactualSafety": 98,
+          "Brevity": 90
+        },
+        "rationale": "Uses OpenAI\u2019s documented use list as a concrete entry point, then pivots safely to evaluation.",
+        "factual": true
+      },
+      {
+        "sentence_id": "s1",
+        "text": "OpenAI\u2019s documentation identifies GPT-6 Astra as a model for complex reasoning, coding, computer use, research, and document creation.",
+        "statement_type": "attributed documentation observation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-6508cc49e0d34119",
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-e1afa9ae3b02daae",
+          "passage-624e95628ac6987c"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "s2",
+        "text": "For the Responses API, the documentation lists web search, file search, image generation, Code Interpreter, hosted shell, apply patch, skills, computer use, MCP, and tool search.",
+        "statement_type": "attributed documentation observation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "s3",
+        "text": "It also lists reasoning.effort settings: low, medium, high, xhigh, and max.",
+        "statement_type": "attributed documentation observation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-beac863116ee521a"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "s4",
+        "text": "Think of those as a configuration checklist, not a verdict on what will work for your deployment.",
+        "statement_type": "editorial guidance",
+        "materiality": "material",
+        "claim_ids": [],
+        "source_ids": [],
+        "evidence_passage_ids": [],
+        "factual": false
+      },
+      {
+        "sentence_id": "s5",
+        "text": "Listed tool support does not show that a tool is enabled, appropriate, or reliable in every deployment.",
+        "statement_type": "evidence limitation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "s6",
+        "text": "And the supplied documentation does not prove a specific workflow payoff.",
+        "statement_type": "evidence limitation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "s7",
+        "text": "So pick the documented settings and tools you need, test them in the actual environment, and measure the result yourself.",
+        "statement_type": "editorial guidance",
+        "materiality": "material",
+        "claim_ids": [],
+        "source_ids": [],
+        "evidence_passage_ids": [],
+        "factual": false
+      },
+      {
+        "sentence_id": "s8",
+        "text": "That is the gap between an API feature list and a deployment decision.",
+        "statement_type": "editorial framing",
+        "materiality": "material",
+        "claim_ids": [],
+        "source_ids": [],
+        "evidence_passage_ids": [],
+        "factual": false
+      },
+      {
+        "sentence_id": "ost-1",
+        "text": "OpenAI documentation: GPT-6 Astra",
+        "statement_type": "attributed documentation label",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-6508cc49e0d34119"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-e1afa9ae3b02daae"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "ost-2",
+        "text": "Responses API listed tools: web search \u2022 file search \u2022 image generation \u2022 Code Interpreter \u2022 hosted shell \u2022 apply patch \u2022 skills \u2022 computer use \u2022 MCP \u2022 tool search",
+        "statement_type": "attributed documentation observation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "ost-3",
+        "text": "reasoning.effort: low \u2022 medium \u2022 high \u2022 xhigh \u2022 max",
+        "statement_type": "attributed documentation observation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-beac863116ee521a"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "ost-4",
+        "text": "Listed support \u2260 guaranteed availability, appropriateness, reliability, or workflow payoff.",
+        "statement_type": "evidence limitation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "factual": true
+      },
+      {
+        "text": "GPT-6 Astra: What the Docs Actually List",
+        "claim_ids": [
+          "claim-6508cc49e0d34119",
+          "claim-api-capabilities"
+        ],
+        "evidence_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "passage_ids": [
+          "passage-e1afa9ae3b02daae",
+          "passage-624e95628ac6987c",
+          "passage-beac863116ee521a",
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "factual": true
+      }
+    ],
+    "proposed_claim_mappings": [
+      {
+        "hook_id": "hook-1",
+        "text": "GPT-6 Astra\u2019s documentation lists a lot of tools. That is not the same as a proven workflow result.",
+        "claim_ids": [
+          "claim-6508cc49e0d34119",
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-e1afa9ae3b02daae",
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "scores": {
+          "Clarity": 95,
+          "Specificity": 88,
+          "Curiosity": 82,
+          "Stakes": 76,
+          "Novelty": 72,
+          "FactualSafety": 99,
+          "Brevity": 93
+        },
+        "rationale": "Sets the documentation-first frame and immediately distinguishes listed support from an unproven outcome.",
+        "factual": true
+      },
+      {
+        "hook_id": "hook-2",
+        "text": "OpenAI lists five reasoning settings for GPT-6 Astra. Here\u2019s what the documentation actually establishes.",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-beac863116ee521a"
+        ],
+        "scores": {
+          "Clarity": 91,
+          "Specificity": 94,
+          "Curiosity": 81,
+          "Stakes": 65,
+          "Novelty": 78,
+          "FactualSafety": 99,
+          "Brevity": 91
+        },
+        "rationale": "Leads with a concrete documented control while avoiding claims about its effects.",
+        "factual": true
+      },
+      {
+        "hook_id": "hook-3",
+        "text": "Web search, code tools, computer use: OpenAI lists them for GPT-6 Astra in the Responses API. Test before you assume.",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "scores": {
+          "Clarity": 93,
+          "Specificity": 96,
+          "Curiosity": 80,
+          "Stakes": 79,
+          "Novelty": 74,
+          "FactualSafety": 98,
+          "Brevity": 88
+        },
+        "rationale": "Names documented tool categories, preserves the Responses API scope, and introduces the deployment-testing boundary.",
+        "factual": true
+      },
+      {
+        "hook_id": "hook-4",
+        "text": "What can GPT-6 Astra be configured to use? OpenAI\u2019s documentation gives a list, not a workflow guarantee.",
+        "claim_ids": [
+          "claim-6508cc49e0d34119",
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-e1afa9ae3b02daae",
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "scores": {
+          "Clarity": 94,
+          "Specificity": 84,
+          "Curiosity": 85,
+          "Stakes": 78,
+          "Novelty": 77,
+          "FactualSafety": 99,
+          "Brevity": 95
+        },
+        "rationale": "Directly answers the audience question and maintains the stated evidence boundary.",
+        "factual": true
+      },
+      {
+        "hook_id": "hook-5",
+        "text": "GPT-6 Astra is documented for research, coding, and computer use. The important part is what you still need to test.",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-624e95628ac6987c",
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "scores": {
+          "Clarity": 92,
+          "Specificity": 89,
+          "Curiosity": 86,
+          "Stakes": 80,
+          "Novelty": 73,
+          "FactualSafety": 98,
+          "Brevity": 90
+        },
+        "rationale": "Uses OpenAI\u2019s documented use list as a concrete entry point, then pivots safely to evaluation.",
+        "factual": true
+      },
+      {
+        "sentence_id": "s1",
+        "text": "OpenAI\u2019s documentation identifies GPT-6 Astra as a model for complex reasoning, coding, computer use, research, and document creation.",
+        "statement_type": "attributed documentation observation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-6508cc49e0d34119",
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-e1afa9ae3b02daae",
+          "passage-624e95628ac6987c"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "s2",
+        "text": "For the Responses API, the documentation lists web search, file search, image generation, Code Interpreter, hosted shell, apply patch, skills, computer use, MCP, and tool search.",
+        "statement_type": "attributed documentation observation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "s3",
+        "text": "It also lists reasoning.effort settings: low, medium, high, xhigh, and max.",
+        "statement_type": "attributed documentation observation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-beac863116ee521a"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "s4",
+        "text": "Think of those as a configuration checklist, not a verdict on what will work for your deployment.",
+        "statement_type": "editorial guidance",
+        "materiality": "material",
+        "claim_ids": [],
+        "source_ids": [],
+        "evidence_passage_ids": [],
+        "factual": false
+      },
+      {
+        "sentence_id": "s5",
+        "text": "Listed tool support does not show that a tool is enabled, appropriate, or reliable in every deployment.",
+        "statement_type": "evidence limitation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "s6",
+        "text": "And the supplied documentation does not prove a specific workflow payoff.",
+        "statement_type": "evidence limitation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "s7",
+        "text": "So pick the documented settings and tools you need, test them in the actual environment, and measure the result yourself.",
+        "statement_type": "editorial guidance",
+        "materiality": "material",
+        "claim_ids": [],
+        "source_ids": [],
+        "evidence_passage_ids": [],
+        "factual": false
+      },
+      {
+        "sentence_id": "s8",
+        "text": "That is the gap between an API feature list and a deployment decision.",
+        "statement_type": "editorial framing",
+        "materiality": "material",
+        "claim_ids": [],
+        "source_ids": [],
+        "evidence_passage_ids": [],
+        "factual": false
+      },
+      {
+        "sentence_id": "ost-1",
+        "text": "OpenAI documentation: GPT-6 Astra",
+        "statement_type": "attributed documentation label",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-6508cc49e0d34119"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-e1afa9ae3b02daae"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "ost-2",
+        "text": "Responses API listed tools: web search \u2022 file search \u2022 image generation \u2022 Code Interpreter \u2022 hosted shell \u2022 apply patch \u2022 skills \u2022 computer use \u2022 MCP \u2022 tool search",
+        "statement_type": "attributed documentation observation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "ost-3",
+        "text": "reasoning.effort: low \u2022 medium \u2022 high \u2022 xhigh \u2022 max",
+        "statement_type": "attributed documentation observation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-beac863116ee521a"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "ost-4",
+        "text": "Listed support \u2260 guaranteed availability, appropriateness, reliability, or workflow payoff.",
+        "statement_type": "evidence limitation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "factual": true
+      },
+      {
+        "text": "GPT-6 Astra: What the Docs Actually List",
+        "claim_ids": [
+          "claim-6508cc49e0d34119",
+          "claim-api-capabilities"
+        ],
+        "evidence_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "passage_ids": [
+          "passage-e1afa9ae3b02daae",
+          "passage-624e95628ac6987c",
+          "passage-beac863116ee521a",
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "factual": true
+      }
+    ],
+    "validation_result": "PENDING",
+    "rejected_spans": [],
+    "rejection_reasons": []
+  },
+  "packet": {
+    "idea_id": "idea-b3dae3b3cbeae769",
+    "topic": "GPT-6 Astra",
+    "claims": [
+      {
+        "claim_id": "claim-6508cc49e0d34119",
+        "text": "The publisher\u2019s documentation identifies GPT-6 Astra as a model.",
+        "materiality": "CRITICAL",
+        "claim_type": "IDENTITY_AVAILABILITY",
+        "evidence_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "contradicting_evidence_ids": [],
+        "status": "PARTIALLY_VERIFIED",
+        "confidence": 0.91,
+        "rationale": "Two retrieved OpenAI developer-documentation pages explicitly list GPT-6 Astra. They establish the documented product identity and strongly indicate availability in OpenAI\u2019s API documentation, but neither page supplies an announcement or release date.",
+        "passages": [
+          {
+            "passage_id": "passage-e1afa9ae3b02daae",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-6508cc49e0d34119"
+            ],
+            "text": "GPT-6 Astra is our most capable model, built for the hardest end-to-end work.",
+            "start_offset": 11303,
+            "end_offset": 11380,
+            "support_type": "PARTIAL",
+            "quote": "GPT-6 Astra is our most capable model, built for the hardest end-to-end work.",
+            "relation": "SUPPORTS"
+          }
+        ],
+        "supported_wording": "The publisher\u2019s documentation identifies GPT-6 Astra as a model.",
+        "limitations": [
+          "The supplied documentation has no publication date.",
+          "The supplied evidence does not say when the model was announced or released.",
+          "The phrase \u201cmost capable\u201d is OpenAI\u2019s vendor characterization, not an independently verified comparative finding.",
+          "Verification is limited to the exact attributed documentation observations; broader original wording is not established.",
+          "Observed at 2026-09-22T03:00:09.615656+00:00; not evidence of launch timing or independent performance."
+        ],
+        "requires_attribution": true,
+        "original_supported_wording": "OpenAI\u2019s API documentation lists GPT-6 Astra as a model.",
+        "verification_scope": "SUPPORTED_WORDING_ONLY",
+        "evidence_link_method": "STRUCTURED_DOCUMENTATION_OBSERVATION",
+        "documented_topics": [
+          "documented identity"
+        ],
+        "passage_ids": [
+          "passage-e1afa9ae3b02daae"
+        ]
+      },
+      {
+        "claim_id": "claim-api-capabilities",
+        "text": "OpenAI\u2019s documentation for GPT-6 Astra lists: \u201cUse it for complex reasoning, coding, computer use, research, and document creation.\u201d; \u201creasoning.effort supports low , medium , high , xhigh , and max .\u201d; \u201cTools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported \u201d.",
+        "materiality": "HIGH",
+        "claim_type": "TECHNICAL_DOCUMENTATION",
+        "evidence_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "contradicting_evidence_ids": [],
+        "status": "VERIFIED",
+        "confidence": 0.88,
+        "rationale": "The dedicated OpenAI model page explicitly names the described intended uses, reasoning-effort values, and supported API tools. These are product-documentation claims rather than independent performance validation.",
+        "passages": [
+          {
+            "passage_id": "passage-624e95628ac6987c",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "text": "Use it for complex reasoning, coding, computer use, research, and document creation.",
+            "start_offset": 11381,
+            "end_offset": 11465,
+            "support_type": "DIRECT",
+            "quote": "Use it for complex reasoning, coding, computer use, research, and document creation.",
+            "relation": "SUPPORTS"
+          },
+          {
+            "passage_id": "passage-beac863116ee521a",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "text": "reasoning.effort supports low , medium , high , xhigh , and max .",
+            "start_offset": 11466,
+            "end_offset": 11531,
+            "support_type": "DIRECT",
+            "quote": "reasoning.effort supports low , medium , high , xhigh , and max .",
+            "relation": "SUPPORTS"
+          },
+          {
+            "passage_id": "passage-cb0d63f9c9fe4d3b",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "text": "Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported",
+            "start_offset": 13047,
+            "end_offset": 13324,
+            "support_type": "DIRECT",
+            "quote": "Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported",
+            "relation": "SUPPORTS"
+          }
+        ],
+        "supported_wording": "OpenAI\u2019s documentation for GPT-6 Astra lists: \u201cUse it for complex reasoning, coding, computer use, research, and document creation.\u201d; \u201creasoning.effort supports low , medium , high , xhigh , and max .\u201d; \u201cTools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported \u201d.",
+        "limitations": [
+          "The source does not explain model architecture or provide a technical mechanism for the capabilities.",
+          "Supported tool availability does not show a tool will be appropriate, reliable, or enabled in every deployment.",
+          "No independent benchmark or comparable test is supplied.",
+          "Verification is limited to the exact attributed documentation observations; broader original wording is not established.",
+          "Observed at 2026-09-22T03:00:09.615656+00:00; not evidence of launch timing or independent performance."
+        ],
+        "requires_attribution": true,
+        "original_supported_wording": "According to OpenAI\u2019s API documentation, GPT-6 Astra can be used for complex reasoning, coding, computer use, research, and document creation; its listed tool support applies when using the Responses API.",
+        "verification_scope": "SUPPORTED_WORDING_ONLY",
+        "evidence_link_method": "STRUCTURED_DOCUMENTATION_OBSERVATION",
+        "documented_topics": [
+          "documented intended uses",
+          "configurable reasoning effort",
+          "Responses API tool support"
+        ],
+        "passage_ids": [
+          "passage-624e95628ac6987c",
+          "passage-beac863116ee521a",
+          "passage-cb0d63f9c9fe4d3b"
+        ]
+      }
+    ],
+    "source_records": [
+      {
+        "source_id": "source-9942c8c35a485d17",
+        "source_owner": "OpenAI"
+      },
+      {
+        "source_id": "source-c41a0804517643f8",
+        "source_owner": "OpenAI"
+      },
+      {
+        "source_id": "source-b325ff4a99b6be5f",
+        "source_owner": "OpenAI"
+      }
+    ],
+    "research_status": "SUFFICIENT",
+    "original_research_status": "PARTIAL",
+    "original_angle_outcome": "ANGLE_UNSUPPORTED",
+    "source_research_run_id": "research-b35c1191-2b9c-47f6-aaf0-bd4a2b981542",
+    "pivot_acceptance": {
+      "idea_id": "idea-b3dae3b3cbeae769",
+      "original_angle": "implications",
+      "accepted_angle": "OpenAI\u2019s documentation lists GPT-6 Astra as an API model with configurable reasoning effort and Responses-API tool support; what remains unproven is any specific workflow payoff.",
+      "accepted_at": "2026-09-22T03:14:33.571972+00:00",
+      "source_research_run_id": "research-b35c1191-2b9c-47f6-aaf0-bd4a2b981542",
+      "verified_claim_ids": [
+        "claim-api-capabilities"
+      ],
+      "partially_verified_claim_ids": [
+        "claim-6508cc49e0d34119"
+      ],
+      "allowed_claim_scope": {
+        "claim-6508cc49e0d34119": {
+          "supported_wording": "The publisher\u2019s documentation identifies GPT-6 Astra as a model.",
+          "limitations": [
+            "The supplied documentation has no publication date.",
+            "The supplied evidence does not say when the model was announced or released.",
+            "The phrase \u201cmost capable\u201d is OpenAI\u2019s vendor characterization, not an independently verified comparative finding.",
+            "Verification is limited to the exact attributed documentation observations; broader original wording is not established.",
+            "Observed at 2026-09-22T03:00:09.615656+00:00; not evidence of launch timing or independent performance."
+          ],
+          "evidence_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "passage_ids": [
+            "passage-e1afa9ae3b02daae"
+          ]
+        },
+        "claim-api-capabilities": {
+          "supported_wording": "OpenAI\u2019s documentation for GPT-6 Astra lists: \u201cUse it for complex reasoning, coding, computer use, research, and document creation.\u201d; \u201creasoning.effort supports low , medium , high , xhigh , and max .\u201d; \u201cTools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported \u201d.",
+          "limitations": [
+            "The source does not explain model architecture or provide a technical mechanism for the capabilities.",
+            "Supported tool availability does not show a tool will be appropriate, reliable, or enabled in every deployment.",
+            "No independent benchmark or comparable test is supplied.",
+            "Verification is limited to the exact attributed documentation observations; broader original wording is not established.",
+            "Observed at 2026-09-22T03:00:09.615656+00:00; not evidence of launch timing or independent performance."
+          ],
+          "evidence_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "passage_ids": [
+            "passage-624e95628ac6987c",
+            "passage-beac863116ee521a",
+            "passage-cb0d63f9c9fe4d3b"
+          ]
+        }
+      },
+      "forbidden_claims": [
+        "LAUNCH_DATE",
+        "BREAKING_NEWS",
+        "AGI",
+        "SUPERIORITY",
+        "BENCHMARK",
+        "COMPETITOR_COMPARISON",
+        "RELIABILITY",
+        "SAFETY_CONCLUSION",
+        "FINALLY_HERE",
+        "REALLY_GOOD",
+        "WORKFLOW_TRANSFORMATION",
+        "PRODUCTIVITY_IMPROVEMENT"
+      ],
+      "requires_new_research": false,
+      "editorial_status": "ACCEPTED",
+      "source_artifact_path": "/Users/rohit/Documents/ChatGPT/YouTube auto/reports/evidence-link-repair-fa04",
+      "source_artifact_hash": "7df783f761e23fc8f7d998161de3391f360fa428c9c537bb5b7d07ee1b7a5e1d"
+    },
+    "final_research_question": "OpenAI\u2019s documentation lists GPT-6 Astra as an API model with configurable reasoning effort and Responses-API tool support; what remains unproven is any specific workflow payoff.",
+    "safe_angle": "OpenAI\u2019s documentation lists GPT-6 Astra as an API model with configurable reasoning effort and Responses-API tool support; what remains unproven is any specific workflow payoff.",
+    "canonical_story_resolved": true,
+    "remaining_questions_material": false,
+    "research_gaps": [],
+    "unresolved_requirements": [],
+    "core_claim_ids": [
+      "claim-api-capabilities"
+    ],
+    "freshness": {
+      "mode": "EVERGREEN",
+      "established": true,
+      "event_date": "",
+      "evidence_ids": [
+        "source-9942c8c35a485d17"
+      ]
+    },
+    "why_now": "Evergreen documentation explainer using saved observations; no launch timing established.",
+    "confirmed_story": "OpenAI\u2019s documentation lists GPT-6 Astra as an API model with configurable reasoning effort and Responses-API tool support; what remains unproven is any specific workflow payoff.",
+    "angles_to_avoid": [
+      "LAUNCH_DATE",
+      "BREAKING_NEWS",
+      "AGI",
+      "SUPERIORITY",
+      "BENCHMARK",
+      "COMPETITOR_COMPARISON",
+      "RELIABILITY",
+      "SAFETY_CONCLUSION",
+      "FINALLY_HERE",
+      "REALLY_GOOD",
+      "WORKFLOW_TRANSFORMATION",
+      "PRODUCTIVITY_IMPROVEMENT"
+    ],
+    "verified_claims": [
+      {
+        "claim_id": "claim-api-capabilities",
+        "text": "OpenAI\u2019s documentation for GPT-6 Astra lists: \u201cUse it for complex reasoning, coding, computer use, research, and document creation.\u201d; \u201creasoning.effort supports low , medium , high , xhigh , and max .\u201d; \u201cTools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported \u201d.",
+        "materiality": "HIGH",
+        "claim_type": "TECHNICAL_DOCUMENTATION",
+        "evidence_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "contradicting_evidence_ids": [],
+        "status": "VERIFIED",
+        "confidence": 0.88,
+        "rationale": "The dedicated OpenAI model page explicitly names the described intended uses, reasoning-effort values, and supported API tools. These are product-documentation claims rather than independent performance validation.",
+        "passages": [
+          {
+            "passage_id": "passage-624e95628ac6987c",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "text": "Use it for complex reasoning, coding, computer use, research, and document creation.",
+            "start_offset": 11381,
+            "end_offset": 11465,
+            "support_type": "DIRECT",
+            "quote": "Use it for complex reasoning, coding, computer use, research, and document creation.",
+            "relation": "SUPPORTS"
+          },
+          {
+            "passage_id": "passage-beac863116ee521a",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "text": "reasoning.effort supports low , medium , high , xhigh , and max .",
+            "start_offset": 11466,
+            "end_offset": 11531,
+            "support_type": "DIRECT",
+            "quote": "reasoning.effort supports low , medium , high , xhigh , and max .",
+            "relation": "SUPPORTS"
+          },
+          {
+            "passage_id": "passage-cb0d63f9c9fe4d3b",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "text": "Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported",
+            "start_offset": 13047,
+            "end_offset": 13324,
+            "support_type": "DIRECT",
+            "quote": "Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported",
+            "relation": "SUPPORTS"
+          }
+        ],
+        "supported_wording": "OpenAI\u2019s documentation for GPT-6 Astra lists: \u201cUse it for complex reasoning, coding, computer use, research, and document creation.\u201d; \u201creasoning.effort supports low , medium , high , xhigh , and max .\u201d; \u201cTools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported \u201d.",
+        "limitations": [
+          "The source does not explain model architecture or provide a technical mechanism for the capabilities.",
+          "Supported tool availability does not show a tool will be appropriate, reliable, or enabled in every deployment.",
+          "No independent benchmark or comparable test is supplied.",
+          "Verification is limited to the exact attributed documentation observations; broader original wording is not established.",
+          "Observed at 2026-09-22T03:00:09.615656+00:00; not evidence of launch timing or independent performance."
+        ],
+        "requires_attribution": true,
+        "original_supported_wording": "According to OpenAI\u2019s API documentation, GPT-6 Astra can be used for complex reasoning, coding, computer use, research, and document creation; its listed tool support applies when using the Responses API.",
+        "verification_scope": "SUPPORTED_WORDING_ONLY",
+        "evidence_link_method": "STRUCTURED_DOCUMENTATION_OBSERVATION",
+        "documented_topics": [
+          "documented intended uses",
+          "configurable reasoning effort",
+          "Responses API tool support"
+        ],
+        "passage_ids": [
+          "passage-624e95628ac6987c",
+          "passage-beac863116ee521a",
+          "passage-cb0d63f9c9fe4d3b"
+        ]
+      }
+    ],
+    "uncertain_claims": [
+      {
+        "claim_id": "claim-6508cc49e0d34119",
+        "text": "The publisher\u2019s documentation identifies GPT-6 Astra as a model.",
+        "materiality": "CRITICAL",
+        "claim_type": "IDENTITY_AVAILABILITY",
+        "evidence_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "contradicting_evidence_ids": [],
+        "status": "PARTIALLY_VERIFIED",
+        "confidence": 0.91,
+        "rationale": "Two retrieved OpenAI developer-documentation pages explicitly list GPT-6 Astra. They establish the documented product identity and strongly indicate availability in OpenAI\u2019s API documentation, but neither page supplies an announcement or release date.",
+        "passages": [
+          {
+            "passage_id": "passage-e1afa9ae3b02daae",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-6508cc49e0d34119"
+            ],
+            "text": "GPT-6 Astra is our most capable model, built for the hardest end-to-end work.",
+            "start_offset": 11303,
+            "end_offset": 11380,
+            "support_type": "PARTIAL",
+            "quote": "GPT-6 Astra is our most capable model, built for the hardest end-to-end work.",
+            "relation": "SUPPORTS"
+          }
+        ],
+        "supported_wording": "The publisher\u2019s documentation identifies GPT-6 Astra as a model.",
+        "limitations": [
+          "The supplied documentation has no publication date.",
+          "The supplied evidence does not say when the model was announced or released.",
+          "The phrase \u201cmost capable\u201d is OpenAI\u2019s vendor characterization, not an independently verified comparative finding.",
+          "Verification is limited to the exact attributed documentation observations; broader original wording is not established.",
+          "Observed at 2026-09-22T03:00:09.615656+00:00; not evidence of launch timing or independent performance."
+        ],
+        "requires_attribution": true,
+        "original_supported_wording": "OpenAI\u2019s API documentation lists GPT-6 Astra as a model.",
+        "verification_scope": "SUPPORTED_WORDING_ONLY",
+        "evidence_link_method": "STRUCTURED_DOCUMENTATION_OBSERVATION",
+        "documented_topics": [
+          "documented identity"
+        ],
+        "passage_ids": [
+          "passage-e1afa9ae3b02daae"
+        ]
+      }
+    ],
+    "evidence_passages": [
+      {
+        "passage_id": "passage-e1afa9ae3b02daae",
+        "source_id": "source-9942c8c35a485d17",
+        "claim_ids": [
+          "claim-6508cc49e0d34119"
+        ],
+        "text": "GPT-6 Astra is our most capable model, built for the hardest end-to-end work.",
+        "start_offset": 11303,
+        "end_offset": 11380,
+        "support_type": "PARTIAL",
+        "quote": "GPT-6 Astra is our most capable model, built for the hardest end-to-end work.",
+        "relation": "SUPPORTS"
+      },
+      {
+        "passage_id": "passage-624e95628ac6987c",
+        "source_id": "source-9942c8c35a485d17",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "text": "Use it for complex reasoning, coding, computer use, research, and document creation.",
+        "start_offset": 11381,
+        "end_offset": 11465,
+        "support_type": "DIRECT",
+        "quote": "Use it for complex reasoning, coding, computer use, research, and document creation.",
+        "relation": "SUPPORTS"
+      },
+      {
+        "passage_id": "passage-beac863116ee521a",
+        "source_id": "source-9942c8c35a485d17",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "text": "reasoning.effort supports low , medium , high , xhigh , and max .",
+        "start_offset": 11466,
+        "end_offset": 11531,
+        "support_type": "DIRECT",
+        "quote": "reasoning.effort supports low , medium , high , xhigh , and max .",
+        "relation": "SUPPORTS"
+      },
+      {
+        "passage_id": "passage-cb0d63f9c9fe4d3b",
+        "source_id": "source-9942c8c35a485d17",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "text": "Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported",
+        "start_offset": 13047,
+        "end_offset": 13324,
+        "support_type": "DIRECT",
+        "quote": "Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported",
+        "relation": "SUPPORTS"
+      }
+    ],
+    "research_packet_id": "packet-fc889764-7ead-4ca3-beb5-a25ad1ed21ab",
+    "research_run_id": "research-e335324e-8b04-4ced-a2d2-8d53b0fe87ab",
+    "radar_run_id": "08fa34b9-4afd-437a-b5a2-784687ce5d3c",
+    "intelligence_run_id": "5c2883e3-c90f-4170-a32a-bd2345209a3e",
+    "created_at": "2026-09-22T08:46:43.815588+00:00"
+  }
+}

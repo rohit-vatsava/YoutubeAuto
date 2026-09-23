@@ -1,0 +1,312 @@
+{
+  "title_working": "Local search still needs a refresh",
+  "title_claim_ids": [
+    "c3"
+  ],
+  "hook_candidates": [
+    {
+      "hook_id": "h1",
+      "text": "Your files can stay local while your search results fall behind.",
+      "claim_ids": [
+        "c2",
+        "c3"
+      ],
+      "source_ids": [
+        "src-nacre"
+      ],
+      "evidence_passage_ids": [
+        "passage-e35f87a409cfa45f",
+        "passage-00e7a08c882c40f0"
+      ],
+      "scores": {
+        "Clarity": 95,
+        "Specificity": 91,
+        "Curiosity": 93,
+        "Stakes": 81,
+        "Novelty": 87,
+        "FactualSafety": 100,
+        "Brevity": 93
+      },
+      "rationale": "Scoped to local index freshness; contrast creates curiosity without claiming superiority. Human-authored fixture rubric."
+    },
+    {
+      "hook_id": "h2",
+      "text": "A local search index still needs a refresh button.",
+      "claim_ids": [
+        "c3"
+      ],
+      "source_ids": [
+        "src-nacre"
+      ],
+      "evidence_passage_ids": [
+        "passage-00e7a08c882c40f0"
+      ],
+      "scores": {
+        "Clarity": 94,
+        "Specificity": 90,
+        "Curiosity": 92,
+        "Stakes": 80,
+        "Novelty": 86,
+        "FactualSafety": 100,
+        "Brevity": 92
+      },
+      "rationale": "Scoped to local index freshness; contrast creates curiosity without claiming superiority. Human-authored fixture rubric."
+    },
+    {
+      "hook_id": "h3",
+      "text": "Keeping files on your computer does not keep searches up to date.",
+      "claim_ids": [
+        "c2",
+        "c3"
+      ],
+      "source_ids": [
+        "src-nacre"
+      ],
+      "evidence_passage_ids": [
+        "passage-e35f87a409cfa45f",
+        "passage-00e7a08c882c40f0"
+      ],
+      "scores": {
+        "Clarity": 93,
+        "Specificity": 89,
+        "Curiosity": 91,
+        "Stakes": 79,
+        "Novelty": 85,
+        "FactualSafety": 100,
+        "Brevity": 91
+      },
+      "rationale": "Scoped to local index freshness; contrast creates curiosity without claiming superiority. Human-authored fixture rubric."
+    },
+    {
+      "hook_id": "h4",
+      "text": "This folder search has a catch: you have to rebuild its index.",
+      "claim_ids": [
+        "c1",
+        "c3"
+      ],
+      "source_ids": [
+        "src-nacre"
+      ],
+      "evidence_passage_ids": [
+        "passage-4a2ca5fe7fef180f",
+        "passage-00e7a08c882c40f0"
+      ],
+      "scores": {
+        "Clarity": 92,
+        "Specificity": 88,
+        "Curiosity": 90,
+        "Stakes": 78,
+        "Novelty": 84,
+        "FactualSafety": 100,
+        "Brevity": 90
+      },
+      "rationale": "Scoped to local index freshness; contrast creates curiosity without claiming superiority. Human-authored fixture rubric."
+    },
+    {
+      "hook_id": "h5",
+      "text": "Local search and fresh search are two different promises.",
+      "claim_ids": [
+        "c2",
+        "c3"
+      ],
+      "source_ids": [
+        "src-nacre"
+      ],
+      "evidence_passage_ids": [
+        "passage-e35f87a409cfa45f",
+        "passage-00e7a08c882c40f0"
+      ],
+      "scores": {
+        "Clarity": 91,
+        "Specificity": 87,
+        "Curiosity": 89,
+        "Stakes": 77,
+        "Novelty": 83,
+        "FactualSafety": 100,
+        "Brevity": 89
+      },
+      "rationale": "Scoped to local index freshness; contrast creates curiosity without claiming superiority. Human-authored fixture rubric."
+    }
+  ],
+  "selected_hook_id": "h1",
+  "sections": [
+    {
+      "name": "CONTEXT",
+      "sentences": [
+        {
+          "text": "Nacre’s fictional desktop preview searches text files inside a folder you choose.",
+          "claim_ids": [
+            "c1"
+          ],
+          "source_ids": [
+            "src-nacre"
+          ],
+          "evidence_passage_ids": [
+            "passage-4a2ca5fe7fef180f"
+          ],
+          "sentence_id": "s1",
+          "statement_type": "FACT",
+          "materiality": "IMPORTANT"
+        }
+      ]
+    },
+    {
+      "name": "EXPLANATION",
+      "sentences": [
+        {
+          "text": "It builds an index on your computer, and this preview sends neither that index nor your files to a server.",
+          "claim_ids": [
+            "c1",
+            "c2"
+          ],
+          "source_ids": [
+            "src-nacre"
+          ],
+          "evidence_passage_ids": [
+            "passage-4a2ca5fe7fef180f",
+            "passage-e35f87a409cfa45f"
+          ],
+          "sentence_id": "s2",
+          "statement_type": "FACT",
+          "materiality": "IMPORTANT"
+        }
+      ]
+    },
+    {
+      "name": "EXPLANATION",
+      "sentences": [
+        {
+          "text": "But keeping data nearby does not make the index current.",
+          "claim_ids": [
+            "c3"
+          ],
+          "source_ids": [
+            "src-nacre"
+          ],
+          "evidence_passage_ids": [
+            "passage-00e7a08c882c40f0"
+          ],
+          "sentence_id": "s3",
+          "statement_type": "FACT",
+          "materiality": "IMPORTANT"
+        }
+      ]
+    },
+    {
+      "name": "EXPLANATION",
+      "sentences": [
+        {
+          "text": "Edit a file, and you still need to press Rebuild before the search reflects that change.",
+          "claim_ids": [
+            "c3"
+          ],
+          "source_ids": [
+            "src-nacre"
+          ],
+          "evidence_passage_ids": [
+            "passage-00e7a08c882c40f0"
+          ],
+          "sentence_id": "s4",
+          "statement_type": "FACT",
+          "materiality": "IMPORTANT"
+        }
+      ]
+    },
+    {
+      "name": "EXPLANATION",
+      "sentences": [
+        {
+          "text": "Skip that step, and an old passage can show up instead.",
+          "claim_ids": [
+            "c3"
+          ],
+          "source_ids": [
+            "src-nacre"
+          ],
+          "evidence_passage_ids": [
+            "passage-00e7a08c882c40f0"
+          ],
+          "sentence_id": "s5",
+          "statement_type": "FACT",
+          "materiality": "IMPORTANT"
+        }
+      ]
+    },
+    {
+      "name": "EXPLANATION",
+      "sentences": [
+        {
+          "text": "There is another boundary: the preview handles plain text, not PDFs.",
+          "claim_ids": [
+            "c4"
+          ],
+          "source_ids": [
+            "src-nacre"
+          ],
+          "evidence_passage_ids": [
+            "passage-ed5e69374a13a9c1"
+          ],
+          "sentence_id": "s6",
+          "statement_type": "FACT",
+          "materiality": "IMPORTANT"
+        }
+      ]
+    },
+    {
+      "name": "PAYOFF",
+      "sentences": [
+        {
+          "text": "So picture a searchable copy of one folder, with a refresh button you control.",
+          "claim_ids": [
+            "c1",
+            "c3",
+            "c4"
+          ],
+          "source_ids": [
+            "src-nacre"
+          ],
+          "evidence_passage_ids": [
+            "passage-4a2ca5fe7fef180f",
+            "passage-00e7a08c882c40f0",
+            "passage-ed5e69374a13a9c1"
+          ],
+          "sentence_id": "s7",
+          "statement_type": "FACT",
+          "materiality": "IMPORTANT"
+        }
+      ]
+    },
+    {
+      "name": "PAYOFF",
+      "sentences": [
+        {
+          "text": "The useful distinction is where your data lives versus when your search last caught up.",
+          "claim_ids": [
+            "c2",
+            "c3"
+          ],
+          "source_ids": [
+            "src-nacre"
+          ],
+          "evidence_passage_ids": [
+            "passage-e35f87a409cfa45f",
+            "passage-00e7a08c882c40f0"
+          ],
+          "sentence_id": "s8",
+          "statement_type": "FACT",
+          "materiality": "IMPORTANT"
+        }
+      ]
+    }
+  ],
+  "visual_notes": [
+    "Draw folder → local index; animate an edit and the Rebuild button."
+  ],
+  "pronunciation_notes": [
+    "Nacre: NAY-ker."
+  ],
+  "uncertainty_notes": [
+    "Fictional fixture; no real product claim."
+  ],
+  "on_screen_text": []
+}
