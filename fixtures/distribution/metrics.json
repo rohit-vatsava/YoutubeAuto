@@ -1,0 +1,7 @@
+{
+  "synthetic": true,
+  "measurements": [
+    {"platform":"youtube","measurement_window":"first_7_days","measured_at":"2026-09-29T00:00:00Z","metrics":{"published_at":"2026-09-22T00:00:00Z","views":1200,"estimatedMinutesWatched":660,"averageViewDuration":33,"averageViewPercentage":60,"likes":54,"comments":8,"shares":10,"subscribersGained":5}},
+    {"platform":"instagram","measurement_window":"first_7_days","measured_at":"2026-09-29T00:00:00Z","metrics":{"published_at":"2026-09-22T00:00:00Z","views":900,"watch_time_seconds":27000,"average_watch_time_seconds":30,"likes":61,"comments":6,"shares":17,"saved":22,"follows":3}}
+  ]
+}

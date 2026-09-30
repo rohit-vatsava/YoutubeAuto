@@ -15,12 +15,19 @@ TARGETS=TARGET+r'(?:(?:,? (?:and|or) |, )'+TARGET+r')*'
 OBSERVATION=r'(?:(?:the |this |listed |documented )*(?:support|prices|pricing|capabilities|specifications|documentation|evidence|constraints|scope|limits))'
 OBSERVATIONS=OBSERVATION+r'(?: (?:and|or) '+OBSERVATION+r')*'
 CAUTIONS=[
+    r'not a guarantee',
     r'(?:this )?does not prove better performance',
     r'listed support is not a guarantee of reliability',
-    r'not reliable', r'not necessarily available',r'does not prove',r'cannot conclude',r'no evidence shows',
+    r'not reliable',
+    r'not necessarily available',
+    r'does not prove(?: reliability)?',
+    r'does not establish reliability',
+    r'cannot conclude(?: reliability)?',
+    r'no evidence shows(?: reliability)?',
     r'listed tool support does not show that a tool is enabled, appropriate, or reliable in every deployment',
     r'(?:the supplied documentation )?does not prove a specific workflow payoff',
     r'listed support ≠ guaranteed availability, appropriateness, reliability, or workflow payoff',
+    r'not reliable', r'not necessarily available',r'does not prove',r'cannot conclude',r'no evidence shows',
     r'documentation ≠ workflow guarantee',
     r'(?:that is |this is |it is )?not (?:the same as )?(?:a )?(?:proven workflow result|workflow guarantee|guarantee)',
     r'(?:the documentation |the supplied evidence |this |it )?does not prove (?:reliability|a workflow result|a specific workflow payoff)',
@@ -45,8 +52,11 @@ def clauses(text):
 
 
 def caution_clause(text):
-    t=normalize(text).strip(' ,;')
+    # Only unwrap boundary punctuation/quotes. Finding a caution somewhere inside
+    # a larger assertion must never exempt the rest of that assertion.
+    t=normalize(text).strip(" \t\r\n,;:.!?-–—()[]{}\"'“”‘’")
     t=re.sub(r'^(?:but|however|yet|although|and)\s+','',t)
+    t=t.strip(" \t\r\n,;:.!?-–—()[]{}\"'“”‘’")
     return any(re.fullmatch(pattern,t) for pattern in CAUTIONS)
 
 
@@ -56,6 +66,11 @@ def polarity(text, forbidden):
         for match in re.finditer(pattern,text,re.I):
             clause=next((c for c in spans if c.start()<=match.start()<c.end()),None)
             cautious=bool(clause and caution_clause(clause.group()))
+            # A quoted caution scopes only occurrences inside that quotation.
+            # Positive language outside it must still be independently blocked.
+            for quoted in re.finditer(r'["“]([^"”]+)["”]',text):
+                if quoted.start(1)<=match.start()<quoted.end(1) and caution_clause(quoted.group(1)):
+                    cautious=True
             # Negation scopes only the guarantee occurrence, not preceding facts.
             negated=re.search(r'not a (?:workflow )?guarantee\b',text,re.I)
             if negated and negated.start()<=match.start()<negated.end():cautious=True
@@ -71,8 +86,49 @@ def entirely_cautionary(text):
     return bool(parts) and all(caution_clause(c.group()) for c in parts)
 
 
+def production_direction(text):
+    """Recognize a closed choreography grammar, never arbitrary imperative payloads.
+
+    Objects are visual primitives, not product names or display contents. Every
+    modifier and trailing clause must belong to the grammar; quoted text and
+    unrecognized additions remain evidence-bound. Counts describe layout only.
+    """
+    t=normalize(text)
+    if re.search(r"[\"'“”‘’:]",t):return False
+    count=r'(?:one|two|three|four|five|six|seven|eight|nine|ten)'
+    ordinal=r'(?:first|second|third|next|previous)'
+    obj=(r'(?:the |an? )?(?:'+count+r' )?(?:'+ordinal+r' )?(?:existing )?'
+         r'(?:on-screen )?(?:text elements?|cards?|labels?|screenshots?|panels?|frames?|images?|text|headings?|captions?)')
+    place=r'(?:on the (?:left|right)|at the (?:top|bottom|center)|side by side|vertically|horizontally|visually separate|aligned|centered)'
+    patterns=[
+        r'use (?:a |an |the )?(?:(?:'+count+r'|single|multi)-(?:card|panel|column) |grid |split-screen )?layout',
+        r'(?:keep|place|position|arrange|group|align) '+obj+r' '+place,
+        r'(?:highlight|emphasize|underline|bold|italicize|center) '+obj,
+        r'zoom (?:into|in on|out from) '+obj,
+        r'fade '+obj+r' (?:in|out)(?: before showing (?:'+obj+r'|the '+ordinal+r'))?',
+        r'(?:show|reveal|animate) '+obj+r'(?: one (?:line|element|card) at a time)?',
+        r'(?:cut|transition|pan) to '+obj,
+    ]
+    return any(re.fullmatch(pattern,t) for pattern in patterns)
+
+
+def evaluation_guidance(text):
+    """Closed evaluation-action grammar; factual reasons/results are not exempt."""
+    t=normalize(text)
+    objects=r'(?:the |your )?(?:documented )?(?:settings(?: and tools)?|tools|configuration|parameters)'
+    patterns=[
+        r'(?:pick|choose|select) '+objects+r'(?: you need)?',
+        r'(?:test|evaluate) (?:it|them|the configuration|the tools) in (?:your|the actual|the target) environment',
+        r'(?:consider measuring|measure|evaluate) (?:task success|latency|tool behavior)',
+        r'compare (?:the |your )?results? with (?:your|the) requirements',
+        r'verify (?:the |its )?behavior before deployment',
+    ]
+    return any(re.fullmatch(pattern,t) for pattern in patterns)
+
+
 def editorial(text,known):
     t=normalize(text)
+    if production_direction(text) or evaluation_guidance(text):return True
     if t in known:return True
     if t in {"here's what the documentation actually says","test this before assuming it works",
              "use this as a checklist","the important part is what you still need to verify"}:return True

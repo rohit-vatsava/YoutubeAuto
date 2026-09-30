@@ -2,7 +2,7 @@
 import json
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
-from ..models import PACKET_EXAMPLE, ANGLE_EXAMPLE, DRAFT_EXAMPLE, CHECK_EXAMPLE, QUALITY_EXAMPLE, json_schema
+from ..models import PACKET_EXAMPLE, ANGLE_EXAMPLE, DRAFT_EXAMPLE, CHECK_EXAMPLE, CHECK_MODEL_EXAMPLE, QUALITY_EXAMPLE, json_schema
 from ..costs import ProviderFailure, LimitReached
 from ..sources import fetch_document
 
@@ -194,7 +194,7 @@ class ModelScriptGenerator:
             example.update(scope_contract_version=2,title_proposition=PROPOSITION)
             for row in example['hook_candidates']+example['on_screen_text']+[s for section in example['sections'] for s in section['sentences']]:row['factual']=True
         return self.model.request('script_generation',
-            'Write one Tech Uncovered Short for tech-curious adults within the supplied word/duration bounds and delivery rate. '
+            'Write one Tech Uncovered Short for tech-curious adults within the supplied word/duration bounds and delivery rate. Target 130–140 words including the selected hook. Hard maximum: 150 words. Do not exceed 150 words. '
             'Sound natural aloud: short varied sentences, immediate payoff, concrete language, no generic AI phrases, hype, or robotic CTA. '
             'Provide exactly FIVE distinct evidence-safe hooks with all seven scores 0–100 and rationale. Hook weights: Clarity .20, Specificity .15, Curiosity .15, Stakes .10, Novelty .10, FactualSafety .20, Brevity .10. '
             'Exclude HOOK from sections; the system inserts the selected hook. Each sentence must have its own ID and map to exact claim, source and passage IDs. '
@@ -213,8 +213,40 @@ class ModelScriptFactChecker:
             'Verify semantic entailment from exact passages, quantity, time, actor, attribution, causality, interpretation and uncertainty. '
             'For an accepted pivot, reject any material statement outside pivot_acceptance.allowed_claim_scope, even if another part of a source mentions it. Enforce forbidden_claims and evergreen framing. '
             'A mapped ID alone is not proof. Reject ungrounded extrapolation. Return every sentence ID with actual claim/source mappings and every hook ID. Include a supported/unsupported judgment for visual_notes. '
+            'All findings in issue arrays, corrections, new_material_claims, sentence_checks.issues and hook_checks.issues must be objects with category, severity, blocking, text. Use empty arrays when none exist. '
+            'Severity must be INFO, WARNING or ERROR. INFO is informational and nonblocking; WARNING is a minor/editorial concern and normally nonblocking; ERROR is a factual defect and blocking. '
+            'Only actual factual defects should use blocking=true. Reassuring observations, confirmations, caveats and statements that the script correctly avoids an unsupported claim must use blocking=false. '
+            'Example observation: {"category":"TIMELINE","severity":"INFO","blocking":false,"text":"No unsupported launch timing claim appears."} '
+            'Example defect: {"category":"UNSUPPORTED_CLAIM","severity":"ERROR","blocking":true,"text":"Sentence 4 claims improved reliability without evidence."} '
+            'Nonblocking observations do not prevent PASS. Word count is an editorial readiness gate, not a factual defect; do not turn word count alone into FAIL or RESEARCH_REQUIRED. '
             'Use FAIL for false/overstated material wording, RESEARCH_REQUIRED for missing evidence, PASS_WITH_MINOR_EDITS only for explicit required corrections; PASS only without outstanding issues.',
-            dict(generation_context(packet,self.model.config),draft=draft,angle=angle,as_of=now),CHECK_EXAMPLE)
+            dict(generation_context(packet,self.model.config),draft=draft,angle=angle,as_of=now),CHECK_MODEL_EXAMPLE)
+
+
+def originality_context(selected):
+    """Compact persisted comparison context; metadata never certifies originality."""
+    from copy import deepcopy
+    idea=selected.get('idea',{})
+    trend=selected.get('trend',{})
+    return deepcopy(dict(
+        idea_id=idea.get('idea_id'),
+        intelligence_run_id=selected.get('intelligence_run_id'),
+        radar_run_id=selected.get('radar_run_id'),
+        original_m2_originality_status=idea.get('originality_status'),
+        similarity_status=idea.get('similarity_status'),
+        similarity_details=idea.get('similarity_details',{}),
+        differentiation_rationale=idea.get('originality_notes'),
+        original_angle=idea.get('proposed_angle'),
+        canonical_story_id=idea.get('canonical_story_id'),
+        canonical_story_label=idea.get('canonical_story_label'),
+        competitor_references=selected.get('competitor_references',[]),
+        story_context=[{k:b.get(k) for k in ('video_id','canonical_subject','competitor_angle','hook_pattern','context_summary','flags')}
+                       for b in idea.get('story_context',[])],
+        trend={k:trend.get(k) for k in ('cluster_id','supporting_video_ids','supporting_channels','observed_angles','repeated_angles','missing_angles','saturation_level','saturation_score','saturation_uncertain','opportunity_notes')},
+        do_not_copy=idea.get('do_not_copy',[]),
+        limitations=['Use only the supplied persisted comparisons; missing execution samples or channel history remain unknown.',
+                    'Lexical CLEAR and missing angles do not certify originality or an unoccupied market gap.']
+    ))
 
 
 class ModelScriptQualityReviewer:
@@ -223,6 +255,9 @@ class ModelScriptQualityReviewer:
     def review(self,draft,packet,selected):
         return self.model.request('editorial_review',
             'Review narrative quality separately from fact checking, using the eight supplied 0–100 components. '
-            'Perform a spoken read-through. spoken_naturalness flags must identify long sentences, unnatural transitions, repeated structure, jargon, delayed payoff, generic AI phrases, unnecessary adjectives/superlatives and robotic CTA when present. '
-            'Compare originality with competitor context. Do not claim CLEAR if insufficient context prevents meaningful comparison. Explain each score. Do not reward hype.',
-            dict(generation_context(packet,self.model.config),draft=draft,selected=({'accepted_angle':packet['safe_angle'],'competitor_execution_context':'Unavailable in compact pivot scope; do not assume originality CLEAR'} if packet.get('pivot_acceptance') else selected)),QUALITY_EXAMPLE)
+            'Warnings must be objects with category, severity (INFO/WARNING/ERROR), blocking (boolean), and text. Use blocking=true for outstanding actionable defects; production cautions and already-satisfied factual constraints are nonblocking and remain visible. Do not infer a defect merely because a caution is useful. '
+            'Analyze only spoken hook, narration, and explicitly spoken CTA for naturalness; exclude on-screen text, visual notes, display captions, and pronunciation metadata. '
+            'Emit spoken_naturalness.findings as objects with category, severity (INFO/WARNING/ERROR), blocking (boolean), and text; flags must be empty. Jargon, mild delayed payoff, repeated structure and minor awkwardness are normally advisory. Mark blocking=true only for severe usability defects such as unusable narration, severe readability failure, fragmented output or severe robotic repetition. '
+            'Perform a spoken read-through. spoken_naturalness findings must identify long sentences, unnatural transitions, repeated structure, jargon, delayed payoff, generic AI phrases, unnecessary adjectives/superlatives and robotic CTA when present. '
+            'Compare originality with originality_context and the final script angle. Metadata is framing evidence, not competitor execution evidence. Independently choose CLEAR, REVIEW, or REJECT; upstream lexical CLEAR never forces CLEAR. Do not claim CLEAR if insufficient context prevents meaningful comparison. Explain each score. Do not reward hype.',
+            dict(generation_context(packet,self.model.config),draft=draft,originality_context=originality_context(selected),selected=({'accepted_angle':packet['safe_angle']} if packet.get('pivot_acceptance') else selected)),QUALITY_EXAMPLE)

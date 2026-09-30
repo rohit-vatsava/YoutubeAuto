@@ -3,6 +3,39 @@ from .generation import sentences
 from .hooks import mapping_errors
 
 
+FINDING_FIELDS=('unsupported_sentences','overstated_sentences','attribution_issues',
+                'timeline_issues','numerical_issues','ambiguity_issues','new_material_claims','corrections')
+
+
+def normalize_findings(values,category):
+    """Normalize types, never infer whether arbitrary prose describes a defect."""
+    from copy import deepcopy
+    if values is None:return []
+    if not isinstance(values,list):values=[values]
+    findings=[]
+    for value in values:
+        if not isinstance(value,dict):
+            findings.append(dict(category=category,severity='ERROR',blocking=True,
+                text=value if isinstance(value,str) else repr(value),legacy_untyped=True))
+            continue
+        item=deepcopy(value)
+        item['category']=item.get('category') if isinstance(item.get('category'),str) and item['category'] else category
+        severity=item.get('severity')
+        if severity not in ('INFO','WARNING','ERROR'):
+            item['normalization_warning']='Missing or invalid severity; defaulted to ERROR'
+            severity='ERROR'
+        item['severity']=severity
+        # Only real JSON booleans are explicit authorization to make it nonblocking.
+        item['blocking']=item['blocking'] if isinstance(item.get('blocking'),bool) else (
+            True if 'blocking' in item else severity=='ERROR')
+        if not isinstance(item.get('text'),str):
+            item['text']=repr(item.get('text'))
+            item['blocking']=True
+            item['normalization_warning']='Missing or invalid finding text'
+        findings.append(item)
+    return findings
+
+
 def validate_check(raw,draft,packet,now):
     """Independent semantic verdict AND deterministic traceability must both pass."""
     from .pivot_acceptance import scope_issues
@@ -11,10 +44,32 @@ def validate_check(raw,draft,packet,now):
     # Rejected alternatives are retained for audit, never publishable claims.
     checked_draft['hook_candidates']=[h for h in draft['hook_candidates'] if h.get('eligible')]
     issues=scope_issues(checked_draft,packet,draft=True);checks={r['sentence_id']:r for r in raw.get('sentence_checks',[])}
+    findings=[]
+    for key in FINDING_FIELDS:
+        normalized=normalize_findings(raw.get(key,[]),key.upper())
+        raw[key]=normalized;findings.extend(normalized)
+    for group in ('sentence_checks','hook_checks'):
+        for entry in raw.get(group,[]):
+            entry['issues']=normalize_findings(entry.get('issues',[]),group.upper())
+            findings.extend(entry['issues'])
     claims={c['claim_id']:c for c in packet['claims']}
+    display_ids={s['sentence_id'] for s in draft.get('on_screen_text',[])}
     for s in sentences(draft):
         check=checks.get(s['sentence_id'])
-        if not check or not check.get('supported') or check.get('issues'):issues.append(s['sentence_id']+':SEMANTIC_SUPPORT_MISSING')
+        # The model may return narration-only sentence checks. Resolve omitted
+        # display checks through the canonical classifier with saved mappings;
+        # never replace an explicit model rejection or waive traceability.
+        display_supported=False
+        if check is None and s['sentence_id'] in display_ids:
+            from .pivot_scope import classify
+            decision=classify(dict(text=s['text'],factual=s.get('factual',True),
+                claim_ids=s.get('claim_ids',[]),evidence_ids=s.get('source_ids',[]),
+                passage_ids=s.get('evidence_passage_ids',[])),packet)
+            display_supported=(not mapping_errors(s,packet) and decision['classification'] in
+                ('SUPPORTED_EXACT','SUPPORTED_PARAPHRASE','SUPPORTED_COMPOSITE_PARAPHRASE','NONFACTUAL_EDITORIAL'))
+        if (check is None and not display_supported) or (check is not None and
+                (not check.get('supported') or any(x['blocking'] for x in check.get('issues',[])))):
+            issues.append(s['sentence_id']+':SEMANTIC_SUPPORT_MISSING')
         # Every sentence is checked, even one the generator labels opinion/nonmaterial.
         if s.get('statement_type') not in ('OPINION','PREDICTION') or (check and check.get('material',True)):
             issues.extend(s['sentence_id']+':'+e for e in mapping_errors(s,packet))
@@ -39,12 +94,18 @@ def validate_check(raw,draft,packet,now):
     for h in draft['hook_candidates']:
         if not h.get('eligible'):continue
         c=hooks.get(h['hook_id'])
-        if not c or not c.get('supported') or c.get('issues') or not h['eligible']:issues.append(h['hook_id']+':UNSAFE_HOOK')
+        if not c or not c.get('supported') or any(x['blocking'] for x in c.get('issues',[])) or not h['eligible']:issues.append(h['hook_id']+':UNSAFE_HOOK')
     if not raw.get('title_supported') or not draft.get('title_claim_ids') or any(cid not in claims or claims[cid]['status'] not in ('VERIFIED','PARTIALLY_VERIFIED') for cid in draft.get('title_claim_ids',[])):issues.append('UNSUPPORTED_TITLE')
-    for key in ('unsupported_sentences','overstated_sentences','attribution_issues','timeline_issues','numerical_issues','ambiguity_issues','new_material_claims'):
-        issues.extend(str(x) for x in raw.get(key,[]))
     if not raw.get('visual_notes_supported'):issues.append('UNSUPPORTED_VISUAL_NOTES')
-    verdict=raw.get('verdict','RESEARCH_REQUIRED')
+    model_verdict=raw.get('model_verdict',raw.get('verdict','RESEARCH_REQUIRED'))
+    raw['model_verdict']=model_verdict
+    blocking=[x for x in findings if x['blocking']]
+    observations=[x for x in findings if not x['blocking']]
+    issues=list(dict.fromkeys(issues))  # Same per-item defect may be found by both scope and sentence checks.
+    raw['blocking_issues']=[dict(category='DETERMINISTIC',severity='ERROR',blocking=True,text=x) for x in issues]+blocking
+    raw['observations']=observations
+    issues.extend(blocking)
+    verdict=model_verdict
     if issues:verdict='FAIL'
     elif verdict not in ('PASS','PASS_WITH_MINOR_EDITS','FAIL','RESEARCH_REQUIRED'):verdict='RESEARCH_REQUIRED'
     raw.update(script_id=draft['script_id'],revision=draft['revision'],checked_at=now,claims_checked=len(sentences(draft)),deterministic_issues=issues,verdict=verdict)

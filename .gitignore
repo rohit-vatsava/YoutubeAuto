@@ -18,3 +18,7 @@ evidence/
 *.pre-v2.bak
 *.pre-v3.bak
 *.pre-v4.bak
+reports/
+*.mp4
+*.mov
+*.webm

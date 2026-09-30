@@ -51,3 +51,11 @@ def scope_propositions(raw):
         for j,text in enumerate(re.findall(r'“([^”]+)”|"([^"]+)"',note)):
             add(dict(text=next(x for x in text if x),factual=False),f'visual_notes/{i}/display/{j}')
     return rows
+
+
+def refresh_script_text(draft,config):
+    """Recompute derived text metrics without selecting hooks or changing mappings."""
+    full=' '.join(s['text'].strip() for section in draft['sections'] for s in section['sentences'])
+    count=len(re.findall(r"\b[\w]+(?:['’−-][\w]+)*\b",full))
+    draft.update(full_script=full,word_count=count,estimated_duration=round(count/config['words_per_minute']*60,1))
+    return draft

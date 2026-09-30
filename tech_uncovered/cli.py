@@ -20,6 +20,9 @@ def main(argv=None):
     add_parser(sub)
     from .scripting.cli import add_parser as add_script_parser, execute as execute_script
     add_script_parser(sub)
+    from .production.cli import add_parser as add_production_parser,execute as execute_production
+    from .distribution.cli import add_parser as add_performance_parser,execute as execute_performance
+    add_production_parser(sub);add_performance_parser(sub)
     research = sub.add_parser("research", help="Collect competitor metadata and rank outliers")
     mode = research.add_mutually_exclusive_group()
     mode.add_argument("--offline", action="store_true", help="Analyze stored observations without network")
@@ -39,6 +42,8 @@ def main(argv=None):
     research.add_argument("--min-sample", type=int, default=10)
     research.add_argument("--request-budget", type=int, default=100)
     args = parser.parse_args(argv)
+    if args.command == "produce":return execute_production(args)
+    if args.command == "performance":return execute_performance(args)
     if args.command == "script":
         return execute_script(args)
     if args.command == "intelligence":

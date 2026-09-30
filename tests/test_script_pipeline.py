@@ -61,7 +61,7 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(self.db.connection.execute('SELECT count(*) FROM script_drafts').fetchone()[0],2)
         with self.assertRaises(sqlite3.IntegrityError):self.db.connection.execute("UPDATE script_drafts SET payload='{}'")
     def test_one_bounded_editorial_revision(self):
-        bundle=fixture();bundle['quality']['spoken_naturalness']['flags']=['NEEDS_READ_THROUGH']
+        bundle=fixture();bundle['quality']['spoken_naturalness']['flags']=[dict(category='READABILITY',severity='ERROR',blocking=True,text='Unusable aloud; requires revision')]
         r=self.run_fixture(bundle=bundle);self.assertEqual(len(r['revisions']),2);self.assertEqual(r['readiness']['status'],'EDITORIAL_REVIEW')
         self.assertEqual(self.db.connection.execute('SELECT count(*) FROM script_drafts').fetchone()[0],2)
     def test_offline_no_network_and_zero_billing(self):

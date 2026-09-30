@@ -56,12 +56,12 @@ class GenerationTests(unittest.TestCase):
     def decide(self):return decide(self.r['packet'],self.r['draft'],self.r['check'],self.r['quality'],self.r['angle'],config())
     def test_minor_edits_need_explicit_acceptance(self):
         self.r['check']['verdict']='PASS_WITH_MINOR_EDITS';self.assertEqual(self.decide()['status'],'EDITORIAL_REVIEW')
-    def test_originality_review_blocks_readiness(self):
-        self.r['angle']['originality_status']='REVIEW';self.assertEqual(self.decide()['status'],'EDITORIAL_REVIEW')
+    def test_final_originality_review_is_advisory(self):
+        self.r['quality']['originality_status']='REVIEW';self.assertEqual(self.decide()['status'],'READY_FOR_PRODUCTION')
     def test_originality_reject(self):
         self.r['quality']['originality_status']='REJECT';self.assertEqual(self.decide()['status'],'REJECTED')
     def test_spoken_warning_blocks_readiness(self):
-        self.r['quality']['spoken_naturalness']['flags']=['ROBOTIC_CTA'];self.assertEqual(self.decide()['status'],'EDITORIAL_REVIEW')
+        self.r['quality']['spoken_naturalness']['flags']=[dict(category='ROBOTIC',severity='ERROR',blocking=True,text='Unusable robotic narration')];self.assertEqual(self.decide()['status'],'EDITORIAL_REVIEW')
     def test_long_script_blocks_readiness(self):
         self.r['draft']['word_count']=151;self.assertEqual(self.decide()['status'],'EDITORIAL_REVIEW')
     def test_factual_visual_note_fails(self):

@@ -1,7 +1,7 @@
 import copy
 import unittest
 from unittest.mock import patch
-from test_evidence_linking import inputs
+from tests.test_evidence_linking import inputs
 from tech_uncovered.scripting.claims import validate_packet
 from tech_uncovered.scripting.pivots import recommend_pivot
 from tech_uncovered.scripting.pivot_acceptance import accept, SKIPPED, STAGES

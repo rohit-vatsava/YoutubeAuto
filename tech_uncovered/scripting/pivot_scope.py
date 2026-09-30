@@ -22,7 +22,7 @@ FORBIDDEN={
  'SUPERIORITY':r'\b(best|most capable|superiority|superior|outperforms?|beats?|better than)\b',
  'BENCHMARK':r'\b(benchmarks?|benchmarking)\b',
  'COMPETITOR_COMPARISON':r'\b(competing models|competitors?|compared (?:with|to)|versus|vs\.?)\b',
- 'RELIABILITY':r'\b(reliab\w*|guarantee\w*|autonomously|any computer)\b',
+ 'RELIABILITY': r'\b(reliab\w*|guarantee\w*|autonomously|any computer|always works)\b',
  'BROAD_AVAILABILITY':r'\b(broad availability|broadly available|universal availability|universally available|generally available|available to (?:everyone|anyone))\b',
  'SAFETY_CONCLUSION':r'\b(safer|safest|safe to|secure|risk.free|safety proven)\b'}
 EDITORIAL={"here is what the docs actually say","here's what the docs actually say","there is a catch",
@@ -128,7 +128,8 @@ def classify(proposition,packet):
         p['atomic_units']=units
         p['polarity_analysis']=[x for u in units for x in u.get('polarity_analysis',[])]
         bad=[u for u in units if u['classification'] in FAILURES]
-        return finish(bad[0]['classification'] if bad else 'SUPPORTED_COMPOSITE_PARAPHRASE',
+        category=('NONFACTUAL_EDITORIAL' if all(u['classification']=='NONFACTUAL_EDITORIAL' for u in units) else 'SUPPORTED_COMPOSITE_PARAPHRASE')
+        return finish(bad[0]['classification'] if bad else category,
                       'Every sentence is independently classified with parent-authorized mappings.')
     p['polarity_analysis']=polarity(p['text'],FORBIDDEN)
     # Complete framing labels/questions assert no product capability.

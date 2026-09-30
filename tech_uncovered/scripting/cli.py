@@ -23,6 +23,11 @@ def add_parser(sub):
     parser.add_argument('--include-backlog', action='store_true', help='Include visibly labelled BACKLOG research leads; never review/rejected ideas')
     parser.add_argument('--idea-id')
     parser.add_argument('--resume',metavar='SCRIPT_ID',help='Revalidate saved angle and continue at outline generation')
+    parser.add_argument('--continue-review',metavar='SCRIPT_ID',help='Continue an editorial revision at quality review only; supports --dry-run')
+    parser.add_argument('--revise',metavar='SCRIPT_ID',help='Create an offline body-text revision; preserve evidence and hooks')
+    parser.add_argument('--edits',type=Path,help='JSON body sentence replacements and optional visual_note_replacements (zero-based) / pronunciation_notes')
+    parser.add_argument('--base-revision',type=int,help='Base saved revision for --revise; omitted uses original script')
+    parser.add_argument('--revision',type=int,help='Explicit editorial revision to review; requires --resume')
     parser.add_argument('--accept-pivot',action='store_true',help='Accept a compatible saved evidence pivot; skip all research')
     parser.add_argument('--pivot-dir',type=Path,help='Explicit saved pivot artifact directory')
     parser.add_argument('--dry-run',action='store_true',help='Offline pivot acceptance and cost/stage projection only')
@@ -64,6 +69,11 @@ def configuration(path):
 def execute(args):
     db=None
     try:
+        if getattr(args,'continue_review',None):return execute_continue_review(args)
+        if getattr(args,'revise',None):return execute_revise(args)
+        if getattr(args,'base_revision',None) is not None:raise ValueError('--base-revision requires --revise')
+        if getattr(args,'edits',None):raise ValueError('--edits requires --revise')
+        if getattr(args,'revision',None) is not None and not getattr(args,'resume',None):raise ValueError('--revision requires --resume')
         if getattr(args,'resume',None):return execute_resume(args)
         if getattr(args,'accept_pivot',False):return execute_pivot(args)
         if getattr(args,'dry_run',False) or getattr(args,'pivot_dir',None):raise ValueError('--dry-run and --pivot-dir require --accept-pivot')
@@ -209,6 +219,18 @@ def execute_resume(args):
     root=args.reports_dir or ROOT/'reports/scripts'
     db=Database(args.db or ROOT/'data/intelligence.sqlite3')
     try:
+        if getattr(args,'revision',None) is not None:
+            from .editorial_revision import load,review
+            loaded=load(root,args.resume,args.revision,db,now,cfg)
+            if loaded['data']['run']['mode']!='live':raise ValueError('Live review cannot consume synthetic data')
+            if cfg['model_provider']!='openai':raise ValueError('Configured provider unavailable')
+            key=os.getenv('OPENAI_API_KEY','').strip()
+            if not key:raise ValueError('Set OPENAI_API_KEY to explicitly run revision review')
+            from .providers.openai_live import OpenAIModel,ModelScriptFactChecker,ModelScriptQualityReviewer
+            budget=Budget(cfg);model=OpenAIModel(key,cfg,budget)
+            result=review(loaded,db,ModelScriptFactChecker(model),ModelScriptQualityReviewer(model),budget,now,cfg)
+            print('Status: '+result['readiness']['status']);print('Reports: '+str(loaded['folder'].resolve()))
+            return 2 if result['failures'] else 0
         resume=load_resume(root,args.resume,db,now,cfg)  # wholly offline, before model construction
         if resume['run']['mode']!='live':raise ValueError('Live resume cannot consume fictional fixtures')
         if cfg['model_provider']!='openai':raise ValueError('Configured generation provider is not implemented')
@@ -222,5 +244,52 @@ def execute_resume(args):
         folder=export(result,root)
         print('Status: '+result['readiness']['status']);print('Resumed from: '+args.resume)
         print('Reports: '+str(folder.resolve()));print('New-stage cost record: '+json.dumps(result['cost'],sort_keys=True))
+        return 2 if result['failures'] else 0
+    finally:db.close()
+
+
+def execute_revise(args):
+    from .editorial_revision import create
+    if not args.edits or any((args.resume,args.revision,args.accept_pivot,args.idea_id,args.intelligence_run_id,
+                             args.preview,args.refresh_research,args.research_file,args.pivot_dir,args.offline,args.dry_run)) or args.top!=1:
+        raise ValueError('--revise requires --edits and cannot combine with run/selection options')
+    cfg=configuration(args.config);db=Database(args.db or ROOT/'data/intelligence.sqlite3')
+    try:
+        manifest,folder=create(args.reports_dir or ROOT/'reports/scripts',args.revise,
+            json.loads(args.edits.read_text()),db,datetime.now(timezone.utc).isoformat(),cfg,
+            base_revision=getattr(args,'base_revision',None))
+        print('Revision: '+str(manifest['revision']))
+        print('Status: AWAITING_FACT_CHECK')
+        print('Reports: '+str(folder.resolve()))
+        print('Resume: python main.py script --resume '+args.revise+' --revision '+str(manifest['revision']))
+        return 0
+    finally:db.close()
+
+
+def execute_continue_review(args):
+    from .review_continuation import prepare,continue_quality
+    if args.revision is None or args.revision<1 or any((args.resume,args.revise,args.edits,args.base_revision,
+            args.accept_pivot,args.idea_id,args.intelligence_run_id,args.preview,args.refresh_research,
+            args.research_file,args.pivot_dir,args.offline)) or args.top!=1:
+        raise ValueError('--continue-review requires --revision and cannot combine with other operations')
+    from dotenv import load_dotenv
+    load_dotenv(ROOT/'.env')
+    cfg=configuration(args.config);now=datetime.now(timezone.utc).isoformat()
+    db=Database(args.db or ROOT/'data/intelligence.sqlite3')
+    try:
+        loaded=prepare(args.reports_dir or ROOT/'reports/scripts',args.continue_review,args.revision,db,now,cfg)
+        if args.dry_run:
+            print(json.dumps({k:loaded[k] for k in ('eligible_to_continue','next_stage','fact_check_call_required')}))
+            return 0
+        if loaded['data']['run']['mode']!='live':raise ValueError('Live review cannot consume synthetic data')
+        if cfg['model_provider']!='openai':raise ValueError('Configured provider unavailable')
+        key=os.getenv('OPENAI_API_KEY','').strip()
+        if not key:raise ValueError('Set OPENAI_API_KEY to explicitly run quality review')
+        from .providers.openai_live import OpenAIModel,ModelScriptQualityReviewer
+        cfg=dict(cfg,max_attempts=1)  # Exactly one new request; no automatic retries.
+        budget=Budget(cfg);reviewer=ModelScriptQualityReviewer(OpenAIModel(key,cfg,budget))
+        result=continue_quality(loaded,db,reviewer,budget,now,cfg)
+        print('Status: '+result['readiness']['status'])
+        print('Reports: '+str((loaded['folder']/'quality-continuation').resolve()))
         return 2 if result['failures'] else 0
     finally:db.close()

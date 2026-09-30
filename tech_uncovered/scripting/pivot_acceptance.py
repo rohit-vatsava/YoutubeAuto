@@ -148,7 +148,8 @@ def scope_issues(value, packet, *, draft=False):
         from .generation import sentences
         claims={c['claim_id']:c for c in packet['claims']}
         for item in sentences(value)+value.get('hook_candidates',[]):
-            issues.extend(mapping_errors(item,packet))
+            identity=item.get('sentence_id',item.get('hook_id'))
+            issues.extend((identity+':' if identity else '')+error for error in mapping_errors(item,packet))
             for cid in item.get('claim_ids',[]):
                 c=claims.get(cid,{})
                 if not any(p['passage_id'] in item.get('evidence_passage_ids',[]) and

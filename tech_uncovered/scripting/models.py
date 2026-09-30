@@ -113,8 +113,9 @@ CHECK_EXAMPLE = dict(sentence_checks=[{'sentence_id':'s1','supported':False,'mat
 QUALITY_WEIGHTS = {'HookStrength':.15,'Clarity':.20,'NarrativeFlow':.15,'InformationDensity':.10,
                    'Originality':.15,'AudienceFit':.10,'PayoffStrength':.10,'ProductionFeasibility':.05}
 QUALITY_EXAMPLE = dict(components={k:0.0 for k in QUALITY_WEIGHTS}, rationale={k:'Reason' for k in QUALITY_WEIGHTS},
-    spoken_naturalness={'flags':[],'notes':'Spoken read-through assessment'}, originality_status='REVIEW',
-    originality_rationale='Compare final wording with competitor references',warnings=[])
+    spoken_naturalness={'findings':[dict(category='JARGON',severity='INFO',blocking=False,text='Audience-appropriate technical terms')],'flags':[],'notes':'Spoken read-through assessment'}, originality_status='REVIEW',
+    originality_rationale='Compare final wording with competitor references',
+    warnings=[dict(category='PRODUCTION_CAUTION',severity='INFO',blocking=False,text='Production guidance; not an outstanding defect')])
 
 
 def json_schema(example):
@@ -139,3 +140,15 @@ PACKET_EXAMPLE['early_stop_reason']=''
 PACKET_EXAMPLE['comparison_evidence'] = dict(
     decision='', alternative='', criterion='', conditions='', like_for_like=False,
     selection_claim_ids=[], subject_claim_ids=[], alternative_claim_ids=[], rationale='')
+
+
+# Model-facing example supplies typed array items; fixture defaults remain empty.
+from copy import deepcopy
+FINDING_EXAMPLE=dict(category='TIMELINE',severity='INFO',blocking=False,
+                    text='No unsupported launch timing claim appears.')
+CHECK_MODEL_EXAMPLE=deepcopy(CHECK_EXAMPLE)
+for _field in ('unsupported_sentences','overstated_sentences','attribution_issues',
+               'timeline_issues','numerical_issues','ambiguity_issues','new_material_claims','corrections'):
+    CHECK_MODEL_EXAMPLE[_field]=[deepcopy(FINDING_EXAMPLE)]
+for _field in ('sentence_checks','hook_checks'):
+    CHECK_MODEL_EXAMPLE[_field][0]['issues']=[deepcopy(FINDING_EXAMPLE)]

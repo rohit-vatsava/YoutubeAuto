@@ -108,6 +108,8 @@ def boundary(db,result,stage):
         executed.append(stage)
     snapshot=deepcopy({k:v for k,v in result.items() if not k.startswith('_') and k!='resume_snapshot'})
     result['resume_snapshot']=snapshot
+    if db is None:
+        return
     row=db.connection.execute('SELECT payload FROM script_runs WHERE script_run_id=?',(result['script_id'],)).fetchone()
     payload=json.loads(row[0]) if row else {}
     payload['checkpoint']=snapshot;payload['checkpoint_hash']=digest(snapshot)
