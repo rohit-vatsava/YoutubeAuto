@@ -7,6 +7,11 @@ def add_parser(sub):
     p=sub.add_parser('produce',help='M4 offline production spec and render bundle')
     mode=p.add_mutually_exclusive_group(required=True)
     mode.add_argument('--fixture',type=Path);mode.add_argument('--script-id')
+    p.add_argument('--narration',type=Path,help='Local NarrationResult JSON with word/sentence timestamps')
+    p.add_argument('--mock-narration',action='store_true',help='Deterministic silent WAV and timestamps; preview only')
+    p.add_argument('--avatar',type=Path,help='Local AvatarAsset JSON; omit for placeholder')
+    p.add_argument('--avatar-placeholder',action='store_true')
+    p.add_argument('--creative-director',action='store_true',help='M4.1 offline validated visual direction')
     p.add_argument('--revision',type=int);p.add_argument('--preview',action='store_true')
     p.add_argument('--output',type=Path,required=True)
     p.add_argument('--db',type=Path,default=Path('data/intelligence.sqlite3'))
@@ -32,7 +37,27 @@ def execute(args):
                 reviewfolder=folder/'quality-continuation'
                 readiness=read((reviewfolder if (reviewfolder/'readiness.json').exists() else folder)/'readiness.json')
             finally:db.close()
-        spec=build(draft,packet,readiness,args.output,preview=args.preview,selected=selected).to_dict()
+        from .narration import NarrationResult,MockNarrationProvider
+        from .assets import AvatarAsset
+        narration=None;avatar=None
+        if getattr(args,'narration',None) and getattr(args,'mock_narration',False):raise ValueError('Choose local timestamps or mock narration, not both')
+        if getattr(args,'mock_narration',False):
+            if not args.preview:raise ValueError('Mock narration requires --preview')
+            narration=MockNarrationProvider().narrate(draft,args.output/'assets/narration.wav')
+        elif getattr(args,'narration',None):narration=NarrationResult.from_dict(json.loads(args.narration.read_text()))
+        elif args.fixture and data.get('narration'):narration=NarrationResult.from_dict(data['narration'])
+        if getattr(args,'avatar',None):avatar=AvatarAsset(**json.loads(args.avatar.read_text()))
+        elif getattr(args,'avatar_placeholder',False):avatar=AvatarAsset('host-placeholder')
+        spec=build(draft,packet,readiness,args.output,preview=args.preview,selected=selected,narration=narration,avatar=avatar).to_dict()
+        if getattr(args,'creative_director',False):
+            from .creative import input_from_spec,DeterministicCreativeDirector,apply_plan,markdown
+            context=input_from_spec(spec,draft)
+            creative=DeterministicCreativeDirector().direct(context)
+            spec=apply_plan(spec,creative,context)
+            (args.output/'creative-plan.json').write_text(json.dumps(creative.to_dict(),indent=2,ensure_ascii=False)+'\n')
+            (args.output/'creative-plan.md').write_text(markdown(creative))
+            (args.output/'creative-input.json').write_text(json.dumps(__import__('dataclasses').asdict(context),indent=2,ensure_ascii=False)+'\n')
+        if narration:(args.output/'narration.json').write_text(json.dumps(narration.to_dict(),indent=2)+'\n')
         qa=check(spec,draft,packet,args.output)
         if not qa['passed']:raise ValueError('Production QA failed: '+str(qa['errors']))
         for name,value in [('production-spec',spec),('render-props',{'spec':spec}),('qa',qa),('source-draft',draft),('source-packet',packet),('creative-dna',spec['creative_dna']),('storyboard',spec['scenes']),('asset-plan',spec['assets'])]:

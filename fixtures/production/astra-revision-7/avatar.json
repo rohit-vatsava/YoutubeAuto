@@ -1,0 +1,12 @@
+{
+  "asset_id": "host-placeholder",
+  "source_path": null,
+  "position": "right",
+  "width_fraction": 0.3,
+  "style": "host-cutout",
+  "version": "1",
+  "provenance": {
+    "status": "PLACEHOLDER",
+    "note": "Awaiting user image; no avatar generated"
+  }
+}

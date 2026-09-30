@@ -1,0 +1,2703 @@
+{
+  "synthetic": true,
+  "fixture_note": "Real approved M3 revision-7 wording/evidence; only voice timing/audio and avatar are synthetic placeholders.",
+  "draft": {
+    "title_working": "GPT-6 Astra: What the Docs Actually List",
+    "title_claim_ids": [
+      "claim-6508cc49e0d34119",
+      "claim-api-capabilities"
+    ],
+    "hook_candidates": [
+      {
+        "hook_id": "hook-1",
+        "text": "GPT-6 Astra’s documentation lists a lot of tools. That is not the same as a proven workflow result.",
+        "claim_ids": [
+          "claim-6508cc49e0d34119",
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-e1afa9ae3b02daae",
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "scores": {
+          "Clarity": 95,
+          "Specificity": 88,
+          "Curiosity": 82,
+          "Stakes": 76,
+          "Novelty": 72,
+          "FactualSafety": 99,
+          "Brevity": 93
+        },
+        "rationale": "Sets the documentation-first frame and immediately distinguishes listed support from an unproven outcome.",
+        "factual": true,
+        "scope_eligible": false,
+        "eligibility_reasons": [
+          "HOOK_SCOPE_REJECTED"
+        ],
+        "eligible": false,
+        "score": 88.4
+      },
+      {
+        "hook_id": "hook-2",
+        "text": "OpenAI lists five reasoning settings for GPT-6 Astra. Here’s what the documentation actually establishes.",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-beac863116ee521a"
+        ],
+        "scores": {
+          "Clarity": 91,
+          "Specificity": 94,
+          "Curiosity": 81,
+          "Stakes": 65,
+          "Novelty": 78,
+          "FactualSafety": 99,
+          "Brevity": 91
+        },
+        "rationale": "Leads with a concrete documented control while avoiding claims about its effects.",
+        "factual": true,
+        "scope_eligible": true,
+        "eligibility_reasons": [],
+        "eligible": true,
+        "score": 87.65
+      },
+      {
+        "hook_id": "hook-3",
+        "text": "Web search, code tools, computer use: OpenAI lists them for GPT-6 Astra in the Responses API. Test before you assume.",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "scores": {
+          "Clarity": 93,
+          "Specificity": 96,
+          "Curiosity": 80,
+          "Stakes": 79,
+          "Novelty": 74,
+          "FactualSafety": 98,
+          "Brevity": 88
+        },
+        "rationale": "Names documented tool categories, preserves the Responses API scope, and introduces the deployment-testing boundary.",
+        "factual": true,
+        "scope_eligible": false,
+        "eligibility_reasons": [
+          "HOOK_SCOPE_REJECTED"
+        ],
+        "eligible": false,
+        "score": 88.7
+      },
+      {
+        "hook_id": "hook-4",
+        "text": "What can GPT-6 Astra be configured to use? OpenAI’s documentation gives a list, not a workflow guarantee.",
+        "claim_ids": [
+          "claim-6508cc49e0d34119",
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-e1afa9ae3b02daae",
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "scores": {
+          "Clarity": 94,
+          "Specificity": 84,
+          "Curiosity": 85,
+          "Stakes": 78,
+          "Novelty": 77,
+          "FactualSafety": 99,
+          "Brevity": 95
+        },
+        "rationale": "Directly answers the audience question and maintains the stated evidence boundary.",
+        "factual": true,
+        "scope_eligible": false,
+        "eligibility_reasons": [
+          "HOOK_SCOPE_REJECTED"
+        ],
+        "eligible": false,
+        "score": 88.95
+      },
+      {
+        "hook_id": "hook-5",
+        "text": "GPT-6 Astra is documented for research, coding, and computer use. The important part is what you still need to test.",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-624e95628ac6987c",
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "scores": {
+          "Clarity": 92,
+          "Specificity": 89,
+          "Curiosity": 86,
+          "Stakes": 80,
+          "Novelty": 73,
+          "FactualSafety": 98,
+          "Brevity": 90
+        },
+        "rationale": "Uses OpenAI’s documented use list as a concrete entry point, then pivots safely to evaluation.",
+        "factual": true,
+        "scope_eligible": true,
+        "eligibility_reasons": [],
+        "eligible": true,
+        "score": 88.55
+      }
+    ],
+    "selected_hook_id": "hook-5",
+    "sections": [
+      {
+        "name": "HOOK",
+        "sentences": [
+          {
+            "text": "GPT-6 Astra is documented for research, coding, and computer use. The important part is what you still need to test.",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "source_ids": [
+              "source-9942c8c35a485d17"
+            ],
+            "evidence_passage_ids": [
+              "passage-624e95628ac6987c",
+              "passage-cb0d63f9c9fe4d3b"
+            ],
+            "factual": true,
+            "sentence_id": "selected-hook",
+            "statement_type": "FACT",
+            "materiality": "CRITICAL"
+          }
+        ]
+      },
+      {
+        "name": "Setup",
+        "sentences": [
+          {
+            "sentence_id": "s1",
+            "text": "OpenAI’s documentation identifies GPT-6 Astra as a model for complex reasoning, coding, computer use, research, and document creation.",
+            "statement_type": "attributed documentation observation",
+            "materiality": "material",
+            "claim_ids": [
+              "claim-6508cc49e0d34119",
+              "claim-api-capabilities"
+            ],
+            "source_ids": [
+              "source-9942c8c35a485d17"
+            ],
+            "evidence_passage_ids": [
+              "passage-e1afa9ae3b02daae",
+              "passage-624e95628ac6987c"
+            ],
+            "factual": true
+          }
+        ]
+      },
+      {
+        "name": "Explanation",
+        "sentences": [
+          {
+            "sentence_id": "s2",
+            "text": "For the Responses API, the documentation lists web search, file search, and Code Interpreter.",
+            "statement_type": "attributed documentation observation",
+            "materiality": "material",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "source_ids": [
+              "source-9942c8c35a485d17"
+            ],
+            "evidence_passage_ids": [
+              "passage-cb0d63f9c9fe4d3b"
+            ],
+            "factual": true
+          },
+          {
+            "sentence_id": "s3",
+            "text": "It also lists reasoning.effort settings: low, medium, high, xhigh, and max.",
+            "statement_type": "attributed documentation observation",
+            "materiality": "material",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "source_ids": [
+              "source-9942c8c35a485d17"
+            ],
+            "evidence_passage_ids": [
+              "passage-beac863116ee521a"
+            ],
+            "factual": true
+          },
+          {
+            "sentence_id": "s7",
+            "text": "Pick the documented settings and tools you need. Test them in your environment. Measure task success. Compare the result with your requirements.",
+            "statement_type": "editorial guidance",
+            "materiality": "material",
+            "claim_ids": [],
+            "source_ids": [],
+            "evidence_passage_ids": [],
+            "factual": false
+          },
+          {
+            "sentence_id": "s4",
+            "text": "Think of those as a configuration checklist, not a verdict on what will work for your deployment.",
+            "statement_type": "editorial guidance",
+            "materiality": "material",
+            "claim_ids": [],
+            "source_ids": [],
+            "evidence_passage_ids": [],
+            "factual": false
+          }
+        ]
+      },
+      {
+        "name": "Boundary",
+        "sentences": [
+          {
+            "sentence_id": "s5",
+            "text": "Listed tool support does not show that a tool is enabled, appropriate, or reliable in every deployment.",
+            "statement_type": "evidence limitation",
+            "materiality": "material",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "source_ids": [
+              "source-9942c8c35a485d17"
+            ],
+            "evidence_passage_ids": [
+              "passage-cb0d63f9c9fe4d3b"
+            ],
+            "factual": true
+          },
+          {
+            "sentence_id": "s6",
+            "text": "The supplied documentation does not prove a specific workflow payoff.",
+            "statement_type": "evidence limitation",
+            "materiality": "material",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "source_ids": [
+              "source-9942c8c35a485d17"
+            ],
+            "evidence_passage_ids": [
+              "passage-cb0d63f9c9fe4d3b"
+            ],
+            "factual": true
+          }
+        ]
+      },
+      {
+        "name": "Payoff",
+        "sentences": [
+          {
+            "sentence_id": "s8",
+            "text": "That is the gap between an API feature list and a deployment decision.",
+            "statement_type": "editorial framing",
+            "materiality": "material",
+            "claim_ids": [],
+            "source_ids": [],
+            "evidence_passage_ids": [],
+            "factual": false
+          }
+        ]
+      }
+    ],
+    "visual_notes": [
+      "Open on a restrained card reading “Documentation ≠ workflow guarantee.”",
+      "Use a two-card layout. Keep the two existing on-screen text elements visually separate.",
+      "Animate the full reasoning range in order: low, medium, high, xhigh, max.",
+      "Display the tool list as grouped labels rather than implying every tool is enabled in every deployment.",
+      "End on a three-step frame: “Documented configuration → deployment test → measured result.”"
+    ],
+    "pronunciation_notes": [],
+    "uncertainty_notes": [
+      "All capability statements are attributed to OpenAI’s documentation.",
+      "Tool support is explicitly limited to use with the Responses API.",
+      "Listed support does not establish deployment-specific availability, appropriateness, or reliability.",
+      "The supplied evidence establishes no specific workflow payoff.",
+      "The documentation was observed at 2026-09-22T03:00:09.615656+00:00; this is not evidence of launch timing or independent performance."
+    ],
+    "on_screen_text": [
+      {
+        "sentence_id": "ost-1",
+        "text": "OpenAI documentation: GPT-6 Astra",
+        "statement_type": "attributed documentation label",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-6508cc49e0d34119"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-e1afa9ae3b02daae"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "ost-2",
+        "text": "Responses API listed tools: web search • file search • image generation • Code Interpreter • hosted shell • apply patch • skills • computer use • MCP • tool search",
+        "statement_type": "attributed documentation observation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "ost-3",
+        "text": "reasoning.effort: low • medium • high • xhigh • max",
+        "statement_type": "attributed documentation observation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-beac863116ee521a"
+        ],
+        "factual": true
+      },
+      {
+        "sentence_id": "ost-4",
+        "text": "Listed support ≠ guaranteed availability, appropriateness, reliability, or workflow payoff.",
+        "statement_type": "evidence limitation",
+        "materiality": "material",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "source_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "evidence_passage_ids": [
+          "passage-cb0d63f9c9fe4d3b"
+        ],
+        "factual": true
+      }
+    ],
+    "scope_contract_version": 2,
+    "title_proposition": {
+      "text": "GPT-6 Astra: What the Docs Actually List",
+      "claim_ids": [
+        "claim-6508cc49e0d34119",
+        "claim-api-capabilities"
+      ],
+      "evidence_ids": [
+        "source-9942c8c35a485d17"
+      ],
+      "passage_ids": [
+        "passage-e1afa9ae3b02daae",
+        "passage-624e95628ac6987c",
+        "passage-beac863116ee521a",
+        "passage-cb0d63f9c9fe4d3b"
+      ],
+      "factual": true
+    },
+    "script_id": "script-a6d1cd2b-929d-456c-9536-9f396267e359",
+    "revision": 7,
+    "idea_id": "idea-b3dae3b3cbeae769",
+    "research_packet_id": "packet-8cef678d-f8c6-47ef-b7d6-b837990d64a7",
+    "final_angle": {
+      "scope_contract_version": 2,
+      "angle": "A documentation-first guide to GPT-6 Astra’s stated API configuration surface—not a promise of workflow results. OpenAI’s documentation identifies GPT-6 Astra as a model and lists it for complex reasoning, coding, computer use, research, and document creation. For developers using the Responses API, the documentation lists support for web search, file search, image generation, Code Interpreter, hosted shell, apply patch, skills, computer use, MCP, and tool search. It also lists five reasoning.effort settings: low, medium, high, xhigh, and max. The useful editorial question is how to translate those documented controls and integrations into an evaluation plan for a particular deployment. Tool support alone does not establish that a tool is appropriate, reliable, or enabled in every deployment, and the supplied evidence provides no specific workflow payoff.",
+      "audience_question": "What does OpenAI’s documentation actually say GPT-6 Astra can be configured to use through the Responses API, and what should a team test rather than assume?",
+      "payoff": "A bounded, documentation-based checklist for scoping a GPT-6 Astra evaluation without treating listed capabilities as proven workflow outcomes.",
+      "why_this_angle": "It stays within the supplied documentation, foregrounds the Responses API scope, and turns the absence of proven workflow outcomes into a practical evaluation boundary rather than a performance claim.",
+      "evidence_basis": [
+        "claim-6508cc49e0d34119",
+        "claim-api-capabilities"
+      ],
+      "propositions": [
+        {
+          "text": "A documentation-first guide to GPT-6 Astra’s stated API configuration surface—not a promise of workflow results.",
+          "claim_ids": [],
+          "evidence_ids": [],
+          "passage_ids": [],
+          "factual": false,
+          "surface": "angle"
+        },
+        {
+          "text": "OpenAI’s documentation identifies GPT-6 Astra as a model and lists it for complex reasoning, coding, computer use, research, and document creation.",
+          "claim_ids": [
+            "claim-6508cc49e0d34119",
+            "claim-api-capabilities"
+          ],
+          "evidence_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "passage_ids": [
+            "passage-e1afa9ae3b02daae",
+            "passage-624e95628ac6987c"
+          ],
+          "factual": true,
+          "surface": "angle"
+        },
+        {
+          "text": "For developers using the Responses API, the documentation lists support for web search, file search, image generation, Code Interpreter, hosted shell, apply patch, skills, computer use, MCP, and tool search.",
+          "claim_ids": [
+            "claim-api-capabilities"
+          ],
+          "evidence_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "passage_ids": [
+            "passage-cb0d63f9c9fe4d3b"
+          ],
+          "factual": true,
+          "surface": "angle"
+        },
+        {
+          "text": "It also lists five reasoning.effort settings: low, medium, high, xhigh, and max.",
+          "claim_ids": [
+            "claim-api-capabilities"
+          ],
+          "evidence_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "passage_ids": [
+            "passage-beac863116ee521a"
+          ],
+          "factual": true,
+          "surface": "angle"
+        },
+        {
+          "text": "The useful editorial question is how to translate those documented controls and integrations into an evaluation plan for a particular deployment.",
+          "claim_ids": [],
+          "evidence_ids": [],
+          "passage_ids": [],
+          "factual": false,
+          "surface": "angle"
+        },
+        {
+          "text": "Tool support alone does not establish that a tool is appropriate, reliable, or enabled in every deployment, and the supplied evidence provides no specific workflow payoff.",
+          "claim_ids": [
+            "claim-api-capabilities"
+          ],
+          "evidence_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "passage_ids": [
+            "passage-cb0d63f9c9fe4d3b"
+          ],
+          "factual": true,
+          "surface": "angle"
+        },
+        {
+          "text": "A bounded, documentation-based checklist for scoping a GPT-6 Astra evaluation without treating listed capabilities as proven workflow outcomes.",
+          "claim_ids": [],
+          "evidence_ids": [],
+          "passage_ids": [],
+          "factual": false,
+          "surface": "payoff"
+        }
+      ],
+      "do_not_say": [
+        "Do not present GPT-6 Astra as newly launched or released; the supplied documentation has no publication date and does not establish announcement or release timing.",
+        "Do not repeat “most capable” as an independent fact; it is OpenAI’s vendor characterization, not an independently verified comparison.",
+        "Do not claim listed tools are reliable, appropriate, enabled in every deployment, or sufficient to deliver a workflow result.",
+        "Do not claim productivity improvement, workflow transformation, benchmark leadership, superiority, safety, or AGI."
+      ],
+      "required_nuance": [
+        "Attribute all capability statements to OpenAI’s documentation.",
+        "Keep tool claims explicitly scoped to use with the Responses API.",
+        "Retain the full documented reasoning.effort range: low, medium, high, xhigh, and max.",
+        "State that listed tool support does not establish deployment-specific availability, appropriateness, or reliability.",
+        "State that no specific workflow payoff is proven by the supplied evidence.",
+        "The evidence was observed at 2026-09-22T03:00:09.615656+00:00, which is not evidence of launch timing or independent performance."
+      ],
+      "visual_opportunities": [
+        "A simple Responses API capability map: reasoning.effort settings on one side and the documented tool list on the other.",
+        "A three-column evaluation frame: documented configuration, deployment-specific test, and unproven outcome.",
+        "An on-screen qualifier card: “Listed support ≠ guaranteed availability, reliability, or workflow payoff.”"
+      ],
+      "refinement_status": "READY",
+      "originality_status": "REVIEW",
+      "originality_rationale": "No competitor or prior-content context is supplied, so originality cannot be established from this bundle alone.",
+      "forbidden_claim_self_check": {
+        "passed": true,
+        "notes": "The angle makes no launch, superiority, benchmark, reliability, safety, productivity, workflow-transformation, or competitor claim. Capability statements are attributed to OpenAI documentation and scoped to the Responses API where applicable."
+      },
+      "editorial_status": "READY",
+      "required_research_assertions": [],
+      "original_proposed_angle": "OpenAI’s documentation lists GPT-6 Astra as an API model with configurable reasoning effort and Responses-API tool support; what remains unproven is any specific workflow payoff."
+    },
+    "selected_hook": {
+      "hook_id": "hook-5",
+      "text": "GPT-6 Astra is documented for research, coding, and computer use. The important part is what you still need to test.",
+      "claim_ids": [
+        "claim-api-capabilities"
+      ],
+      "source_ids": [
+        "source-9942c8c35a485d17"
+      ],
+      "evidence_passage_ids": [
+        "passage-624e95628ac6987c",
+        "passage-cb0d63f9c9fe4d3b"
+      ],
+      "scores": {
+        "Clarity": 92,
+        "Specificity": 89,
+        "Curiosity": 86,
+        "Stakes": 80,
+        "Novelty": 73,
+        "FactualSafety": 98,
+        "Brevity": 90
+      },
+      "rationale": "Uses OpenAI’s documented use list as a concrete entry point, then pivots safely to evaluation.",
+      "factual": true,
+      "scope_eligible": true,
+      "eligibility_reasons": [],
+      "eligible": true,
+      "score": 88.55
+    },
+    "full_script": "GPT-6 Astra is documented for research, coding, and computer use. The important part is what you still need to test. OpenAI’s documentation identifies GPT-6 Astra as a model for complex reasoning, coding, computer use, research, and document creation. For the Responses API, the documentation lists web search, file search, and Code Interpreter. It also lists reasoning.effort settings: low, medium, high, xhigh, and max. Pick the documented settings and tools you need. Test them in your environment. Measure task success. Compare the result with your requirements. Think of those as a configuration checklist, not a verdict on what will work for your deployment. Listed tool support does not show that a tool is enabled, appropriate, or reliable in every deployment. The supplied documentation does not prove a specific workflow payoff. That is the gap between an API feature list and a deployment decision.",
+    "word_count": 143,
+    "estimated_duration": 57.2,
+    "material_claim_ids": [
+      "claim-6508cc49e0d34119",
+      "claim-api-capabilities"
+    ],
+    "generation_version": "1.0"
+  },
+  "packet": {
+    "idea_id": "idea-b3dae3b3cbeae769",
+    "topic": "GPT-6 Astra",
+    "claims": [
+      {
+        "claim_id": "claim-6508cc49e0d34119",
+        "text": "The publisher’s documentation identifies GPT-6 Astra as a model.",
+        "materiality": "CRITICAL",
+        "claim_type": "IDENTITY_AVAILABILITY",
+        "evidence_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "contradicting_evidence_ids": [],
+        "status": "PARTIALLY_VERIFIED",
+        "confidence": 0.91,
+        "rationale": "Two retrieved OpenAI developer-documentation pages explicitly list GPT-6 Astra. They establish the documented product identity and strongly indicate availability in OpenAI’s API documentation, but neither page supplies an announcement or release date.",
+        "passages": [
+          {
+            "passage_id": "passage-e1afa9ae3b02daae",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-6508cc49e0d34119"
+            ],
+            "text": "GPT-6 Astra is our most capable model, built for the hardest end-to-end work.",
+            "start_offset": 11303,
+            "end_offset": 11380,
+            "support_type": "PARTIAL",
+            "quote": "GPT-6 Astra is our most capable model, built for the hardest end-to-end work.",
+            "relation": "SUPPORTS"
+          }
+        ],
+        "supported_wording": "The publisher’s documentation identifies GPT-6 Astra as a model.",
+        "limitations": [
+          "The supplied documentation has no publication date.",
+          "The supplied evidence does not say when the model was announced or released.",
+          "The phrase “most capable” is OpenAI’s vendor characterization, not an independently verified comparative finding.",
+          "Verification is limited to the exact attributed documentation observations; broader original wording is not established.",
+          "Observed at 2026-09-22T03:00:09.615656+00:00; not evidence of launch timing or independent performance."
+        ],
+        "requires_attribution": true,
+        "original_supported_wording": "OpenAI’s API documentation lists GPT-6 Astra as a model.",
+        "verification_scope": "SUPPORTED_WORDING_ONLY",
+        "evidence_link_method": "STRUCTURED_DOCUMENTATION_OBSERVATION",
+        "documented_topics": [
+          "documented identity"
+        ],
+        "passage_ids": [
+          "passage-e1afa9ae3b02daae"
+        ]
+      },
+      {
+        "claim_id": "claim-api-capabilities",
+        "text": "OpenAI’s documentation for GPT-6 Astra lists: “Use it for complex reasoning, coding, computer use, research, and document creation.”; “reasoning.effort supports low , medium , high , xhigh , and max .”; “Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported ”.",
+        "materiality": "HIGH",
+        "claim_type": "TECHNICAL_DOCUMENTATION",
+        "evidence_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "contradicting_evidence_ids": [],
+        "status": "VERIFIED",
+        "confidence": 0.88,
+        "rationale": "The dedicated OpenAI model page explicitly names the described intended uses, reasoning-effort values, and supported API tools. These are product-documentation claims rather than independent performance validation.",
+        "passages": [
+          {
+            "passage_id": "passage-624e95628ac6987c",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "text": "Use it for complex reasoning, coding, computer use, research, and document creation.",
+            "start_offset": 11381,
+            "end_offset": 11465,
+            "support_type": "DIRECT",
+            "quote": "Use it for complex reasoning, coding, computer use, research, and document creation.",
+            "relation": "SUPPORTS"
+          },
+          {
+            "passage_id": "passage-beac863116ee521a",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "text": "reasoning.effort supports low , medium , high , xhigh , and max .",
+            "start_offset": 11466,
+            "end_offset": 11531,
+            "support_type": "DIRECT",
+            "quote": "reasoning.effort supports low , medium , high , xhigh , and max .",
+            "relation": "SUPPORTS"
+          },
+          {
+            "passage_id": "passage-cb0d63f9c9fe4d3b",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "text": "Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported",
+            "start_offset": 13047,
+            "end_offset": 13324,
+            "support_type": "DIRECT",
+            "quote": "Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported",
+            "relation": "SUPPORTS"
+          }
+        ],
+        "supported_wording": "OpenAI’s documentation for GPT-6 Astra lists: “Use it for complex reasoning, coding, computer use, research, and document creation.”; “reasoning.effort supports low , medium , high , xhigh , and max .”; “Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported ”.",
+        "limitations": [
+          "The source does not explain model architecture or provide a technical mechanism for the capabilities.",
+          "Supported tool availability does not show a tool will be appropriate, reliable, or enabled in every deployment.",
+          "No independent benchmark or comparable test is supplied.",
+          "Verification is limited to the exact attributed documentation observations; broader original wording is not established.",
+          "Observed at 2026-09-22T03:00:09.615656+00:00; not evidence of launch timing or independent performance."
+        ],
+        "requires_attribution": true,
+        "original_supported_wording": "According to OpenAI’s API documentation, GPT-6 Astra can be used for complex reasoning, coding, computer use, research, and document creation; its listed tool support applies when using the Responses API.",
+        "verification_scope": "SUPPORTED_WORDING_ONLY",
+        "evidence_link_method": "STRUCTURED_DOCUMENTATION_OBSERVATION",
+        "documented_topics": [
+          "documented intended uses",
+          "configurable reasoning effort",
+          "Responses API tool support"
+        ],
+        "passage_ids": [
+          "passage-624e95628ac6987c",
+          "passage-beac863116ee521a",
+          "passage-cb0d63f9c9fe4d3b"
+        ]
+      }
+    ],
+    "source_records": [
+      {
+        "source_id": "source-9942c8c35a485d17",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+        "title": "GPT-6 Astra Model | OpenAI API",
+        "publisher": "OpenAI Developers",
+        "publication_date": null,
+        "retrieved_at": "2026-09-22T03:00:09.615656+00:00",
+        "source_type": "DOCUMENTATION",
+        "primary_or_secondary": "PRIMARY",
+        "authority_score": 97,
+        "freshness_score": 10,
+        "relevance_score": 98,
+        "source_priority": 79.9,
+        "notes": [
+          "Publisher/date are document assertions; authority must be assessed claim by claim.",
+          "Claim-relative model/fixture assessment: A first-party OpenAI model page is authoritative for documented identity, listed specifications, intended uses, pricing, and supported features. It lacks a publication date and cannot establish the timing of an announcement or release."
+        ],
+        "text": "GPT-6 Astra Model | OpenAI API For the complete documentation index, see llms.txt . Markdown versions of documentation pages are available by appending .md to the page URL. ChatGPT Start searching API Dashboard Try ChatGPT Home API Codex Docs Guides, concepts, and product docs for Codex Use cases Example workflows and tasks teams can take on with ChatGPT or Codex Docs Use cases Training Resources ChatGPT Plugins Extend ChatGPT and Codex Workspace Agents Trigger published ChatGPT workspace agents Commerce Build commerce flows in ChatGPT Ads Publish and measure ads in ChatGPT Resources Showcase Demo apps to get inspired Blog Learnings and experiences from developers Cookbook Notebook examples for building with OpenAI models Learn Docs, videos, and demo apps for building with OpenAI Community Programs, meetups, and support for builders Overview Models Agents Tools Audio & voice Production API reference Search the API docs Search docs Suggested responses create reasoning_effort realtime prompt caching Primary navigation API Codex ChatGPT Docs Use cases Training Resources Resources Search docs Suggested responses create reasoning_effort realtime prompt caching Overview Models Agents Tools Audio & voice Production API reference Overview Models Agents Tools Audio & voice Production API reference Docs Models Home Get started Quickstart Using GPT-6 Astra Key concepts Core concepts Responses API Conversation state Background mode Streaming WebSocket mode Mid-turn steering Multi-agent Webhooks File inputs Compaction Counting tokens SDKs and CLI OpenAI SDK OpenAI CLI Resources Changelog Deprecations Supported countries OpenAI Crawlers Terms and policies Legacy APIs Agent Builder Overview Migration guide Node reference Safety in building agents Evals Getting started Working with evals Prompt optimizer External models Best practices Graders Fine-tuning Optimization cycle Supervised fine-tuning Vision fine-tuning Direct preference optimization Reinforcement fine-tuning RFT use cases Best practices Assistants API Migration guide Model catalog Choose a model Pricing Model selection Text and code Text generation Code generation Structured output Prompting Overview Prompt engineering Citation formatting Migration guide Prompt generation Frontend prompting Reasoning Reasoning models Reasoning best practices Images and video Images and vision Image input cost calculator Image generation Overview Image prompting Video generation Realtime and audio Audio and speech Getting started Voice agents Specialized models Deep research Embeddings Moderation Overview Agents API Overview Quickstart Architecture Configuring Agents Sessions Run and continue sessions Events and items Manage sessions Webhooks Environments and sandboxes OpenAI-hosted sandboxes Self-hosted sandboxes Sandbox lifecycle Sandbox security Files and artifacts Tools and integrations Web search Functions MCP connections Plugins Vaults Multi-agent Observability and usage Tracing Agents SDK Overview Quickstart Agent definitions Models and providers Running agents Sandbox agents Orchestration Guardrails Results and state Integrations and observability Evaluate agent workflows ChatKit Overview Customize Widgets Actions Advanced integrations Overview Function calling Search and retrieval Web search File search Retrieval Connect tools and data MCP servers Secure MCP Tunnel Build tool workflows Skills Tool search Programmatic tool calling Async tool calling Computer and code Shell Computer use Apply Patch Local shell Code interpreter Media Image generation Overview GPT-Live Getting started Prompting Managing sessions Delegation and tools Migrate to GPT-Live Partner integrations Realtime API Getting started Prompting Managing conversations Voice activity detection Tools and MCP Build with voice Voice agents Custom voices Cost optimization Connections WebRTC WebRTC with WARP WebSockets Telephony and SIP Server-side controls Audio processing File transcription Live transcription Live translation Text to speech Audio in Chat Completions Go live Production best practices Deployment checklist Performance and quality Latency optimization Predicted Outputs Fast mode Accuracy optimization Cost and throughput Cost optimization Prompt caching Prompt cache diagnostics Batch Flex processing Safety and governance Safety best practices Red teaming Safety checks Safety classifiers Cybersecurity checks Misalignment monitoring Under-18 guidance CSAM guidance Content provenance Your data Permissions Infrastructure and access Terraform provider Overview Projects and access Service accounts Rate limits and spend Model, tool, and data controls Import and reconciliation Private Link IP allowlist Mutual TLS Workload identity federation Federation rules X.509 certificates Kubernetes AWS Microsoft Azure Google Cloud Oracle Cloud Infrastructure GitHub Actions SPIFFE IP egress ranges Amazon Bedrock Operations Rate limits Spend limits Admin APIs Error codes Docs Use cases Docs Use cases Docs Docs Plugins Workspace Agents Commerce Ads Plugins Workspace Agents Commerce Ads Docs Select... Home Quickstart Core concepts Plugin architecture Skills MCP server Plan Brainstorm use cases Define tools Build Build an MCP server Add UI to your MCP server (optional) Authenticate users Build skills Package your plugin Examples Test and publish Connect and test your plugin Submit and publish Submission error reference Conversion specs Restaurant reservation spec Get Quote spec Product checkout spec Guides UI guidelines Optimize Metadata Submit a Claude Code plugin Security & Privacy Troubleshooting Resources Changelog Plugin guidelines MCP server review requirements Plugin UI reference Checkout API reference Home Get started Trigger workspace agent runs Authenticate with Workspace Agent access tokens Home Guides Get started Best practices File Upload Overview Products API Overview Feeds Products Promotions Ads Overview Measurement Measurement Pixel Multiple Pixels (Advanced) Image Tag Conversions API Supported Events Advertiser API Overview Campaign Management Bidding & Budgets Targeting Product Feeds Conversion Tracking Reporting Troubleshooting Account Management API Reference Authentication Ad Account Campaigns Ad Groups Ads Insights Files Conversion Setup Overview Features Configuration Developers Security Administration Use Cases Resources Overview Features Configuration Developers Security Administration Use Cases Resources Docs Overview Home Get started Quickstart Use ChatGPT Get started with Work Import from another agent Foundations Prompting Personalize ChatGPT Skills & Plugins Permissions Explore What's new Models Pricing Glossary Available on ChatGPT desktop app Remote ChatGPT on the web Codex CLI Codex IDE extension Codex cloud Releases Changelog Feature Maturity Open Source Overview Workflows Projects and chats Sites Visualizations Scheduled tasks Long-running work Notifications Pets Codex Micro Capabilities Browser Computer use Voice Plugins Web search Image generation Image inputs Appshots Browser extension Work with files Reference Commands Slash commands Settings Troubleshooting Overview Customization Overview Memories Computer History Config file Config Basics Advanced Config Config Reference Environment Variables Sample Config Agent configuration AGENTS.md Subagents Speed Rules Extend ChatGPT and Codex Record & Replay MCP Linux Desktop app Windows Desktop app Windows sandbox WSL Overview Development workflows Code review Integrated terminal Extend and automate Build skills Build plugins Site tools (WebMCP) Hooks Environments Modes Local environments Cloud environment Git worktrees Build with Codex Codex SDK App Server GitHub Action Non-interactive mode Third-party integrations GitHub GitLab (Beta) Slack Linear Reference CLI customization Developer commands Developer settings Overview Permissions Profiles Sandboxing Auto-review Agent approvals & security Internet access Codex Security Overview Codex Security plugin Quickstart Run a security scan Run a deep scan Review code changes Use the Security workbench Triage a backlog Fix findings Propose security hardening Write vulnerability reports Export and track findings Changelog Codex Security CLI Quickstart Run bulk scans Run scans in CI GitLab CI/CD Reference FAQ TypeScript SDK Codex Security cloud Setup Security Review Improving the threat model FAQ Cyber safety Models & Trusted Access Recommended configuration Overview Getting started Admin rollout guide ChatGPT Work ChatGPT Work Overview ChatGPT Work cloud security ChatGPT Work local security ChatGPT Work admin FAQ ChatGPT Work: usage and cost Identity and authentication Authentication overview Personal Access Tokens Service accounts Workspace access, policy, and models Groups and provisioning User lifecycle management Roles and workspace permissions GPTs and Sharing Managed configuration Prisma AIRS HIPAA configuration Workspace model availability Plugin and connector controls Plugin controls Plugin management Skill controls Usage, governance, and compliance Governance Admin plugin Workspace analytics Usage Insights Analytics API Compliance API and audit events Deployment and model providers Manage app updates Windows app deployment Remote connections Amazon Bedrock Explore use cases Collections Home Videos Showcase OpenAI Academy Online trainings Community Codex Ambassadors Codex for Students Codex for Open Source Events Blog Company blog Developer blog Explore use cases Collections Home Videos Showcase OpenAI Academy Online trainings Community Codex Ambassadors Codex for Students Codex for Open Source Events Blog Company blog Developer blog Showcase Blog Cookbook Learn Community Showcase Blog Cookbook Learn Community Docs Select... All posts Recent Rethinking skills and prompts for GPT-6 Astra Architectural visualization with Astra Building games with Astra Meet Rosalind Workbench: Empowering every scientist to be their own research team Automating repetitive work at OpenAI with Codex Topics General API Apps SDK Audio Codex Life sciences Home Topics Agents Evals Multimodal Text Guardrails Optimization ChatGPT Codex gpt-oss Contribute Cookbook on GitHub Home OpenAI Developers plugin Docs MCP Categories Demo apps Videos Topics Agents Audio & Voice Computer Use Codex Evals gpt-oss Fine-tuning Image generation Scaling Tools Video generation Community Programs Codex Ambassadors Codex for Students Codex for Open Source OpenAI for Startups Spaces Events Developer Forum Discord Reddit X API Dashboard Try ChatGPT Model catalog Choose a model Pricing Model selection Text and code Text generation Code generation Structured output Prompting Overview Prompt engineering Citation formatting Migration guide Prompt generation Frontend prompting Reasoning Reasoning models Reasoning best practices Images and video Images and vision Image input cost calculator Image generation Overview Image prompting Video generation Realtime and audio Audio and speech Getting started Voice agents Specialized models Deep research Embeddings Moderation Models GPT-6 Astra Default Our most capable model, built for the hardest end-to-end work Our most capable model, built for the hardest end-to-end work Compare Try in Playground Reasoning Highest Speed Fast Price $10 • $50 Input • Output Input Text, Image Output Text GPT-6 Astra is our most capable model, built for the hardest end-to-end work. Use it for complex reasoning, coding, computer use, research, and document creation. reasoning.effort supports low , medium , high , xhigh , and max . Get started with GPT-6 Astra using the model guide . 1,050,000 context window 128,000 max output tokens Apr 30, 2026 knowledge cutoff Reasoning token support Pricing Pricing is based on the number of tokens used, or other metrics based on the model type. For tool-specific models, like search and computer use, there’s a fee per tool call. See details in the pricing page . Text tokens Per 1M tokens Input $10.00 Cached input $1.00 Cache writes $12.50 Output $50.00 Prompts with more than 272K input tokens are priced at 2x input and cache rates and 1.5x output for the full request. Cache writes are billed at 1.25x the uncached input token rate. Batch and Flex are priced at 50% of Standard rates. Fast mode is priced at 2x the applicable rates. Modalities Text Input and output Image Input only Audio Not supported Video Not supported Endpoints Live v1/live/sessions Chat Completions v1/chat/completions Responses v1/responses Realtime v1/realtime Realtime translation v1/realtime/translations Realtime transcription v1/realtime/transcription_sessions Assistants v1/assistants Batch v1/batch Fine-tuning v1/fine-tuning Embeddings v1/embeddings Image generation v1/images/generations Videos v1/videos Image edit v1/images/edits Speech generation v1/audio/speech Transcription v1/audio/transcriptions Translation v1/audio/translations Moderation v1/moderations Completions (legacy) v1/completions Features Streaming Supported Function calling Supported Structured outputs Supported Fine-tuning Not supported Tools Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported Snapshots Snapshots let you lock in a specific version of the model so that performance and behavior remain consistent. Below is a list of all available snapshots and aliases for GPT-6 Astra. gpt-6-astra gpt-6-astra gpt-6-astra Rate limits Rate limits ensure fair and reliable access to the API by placing specific caps on requests, tokens, audio duration, or other usage within a given time period. Your usage tier determines how high these limits are set and automatically increases as you send more requests and spend more on the API. Tier RPM TPM Batch queue limit Free Not supported Tier 1 500 500,000 1,500,000 Tier 2 5,000 1,000,000 3,000,000 Tier 3 5,000 2,000,000 100,000,000 Tier 4 10,000 4,000,000 200,000,000 Tier 5 15,000 40,000,000 15,000,000,000 Ask AI Docs agent Loading docs agent...",
+        "content_hash": "d9b9f9f6c68c99e1ee41526472d717cd2da5a04de6fec7369a461d5b990887fb",
+        "syndication_group": "",
+        "metadata_basis": "retrieved_document",
+        "canonical_url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+        "retrieved_url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+        "headings": [
+          " Search the API docs ",
+          "\nDocs agent\n"
+        ],
+        "source_owner": "OpenAI",
+        "authority_type": "FIRST_PARTY",
+        "selection_warnings": [],
+        "source_topic_relevance": 86.36,
+        "selection_components": {
+          "requirement_match": 95,
+          "entity_match": 100,
+          "authority": 95,
+          "document_type_fit": 95,
+          "freshness": 0
+        },
+        "selection_score": 91.75,
+        "eligible_for_primary_identity": true,
+        "exact_entity_match": true,
+        "document_type": "PRODUCT"
+      },
+      {
+        "source_id": "source-c41a0804517643f8",
+        "url": "https://developers.openai.com/api/docs/models/all",
+        "title": "All models | OpenAI API",
+        "publisher": "OpenAI Developers",
+        "publication_date": null,
+        "retrieved_at": "2026-09-22T03:00:09.615656+00:00",
+        "source_type": "DOCUMENTATION",
+        "primary_or_secondary": "PRIMARY",
+        "authority_score": 95,
+        "freshness_score": 10,
+        "relevance_score": 81,
+        "source_priority": 73.8,
+        "notes": [
+          "Publisher/date are document assertions; authority must be assessed claim by claim.",
+          "Claim-relative model/fixture assessment: A first-party OpenAI model catalog corroborates that GPT-6 Astra is listed. It is less specific than the dedicated model page and is undated."
+        ],
+        "text": "All models | OpenAI API For the complete documentation index, see llms.txt . Markdown versions of documentation pages are available by appending .md to the page URL. ChatGPT Start searching API Dashboard Try ChatGPT Home API Codex Docs Guides, concepts, and product docs for Codex Use cases Example workflows and tasks teams can take on with ChatGPT or Codex Docs Use cases Training Resources ChatGPT Plugins Extend ChatGPT and Codex Workspace Agents Trigger published ChatGPT workspace agents Commerce Build commerce flows in ChatGPT Ads Publish and measure ads in ChatGPT Resources Showcase Demo apps to get inspired Blog Learnings and experiences from developers Cookbook Notebook examples for building with OpenAI models Learn Docs, videos, and demo apps for building with OpenAI Community Programs, meetups, and support for builders Overview Models Agents Tools Audio & voice Production API reference Search the API docs Search docs Suggested responses create reasoning_effort realtime prompt caching Primary navigation API Codex ChatGPT Docs Use cases Training Resources Resources Search docs Suggested responses create reasoning_effort realtime prompt caching Overview Models Agents Tools Audio & voice Production API reference Overview Models Agents Tools Audio & voice Production API reference Docs Models Home Get started Quickstart Using GPT-6 Astra Key concepts Core concepts Responses API Conversation state Background mode Streaming WebSocket mode Mid-turn steering Multi-agent Webhooks File inputs Compaction Counting tokens SDKs and CLI OpenAI SDK OpenAI CLI Resources Changelog Deprecations Supported countries OpenAI Crawlers Terms and policies Legacy APIs Agent Builder Overview Migration guide Node reference Safety in building agents Evals Getting started Working with evals Prompt optimizer External models Best practices Graders Fine-tuning Optimization cycle Supervised fine-tuning Vision fine-tuning Direct preference optimization Reinforcement fine-tuning RFT use cases Best practices Assistants API Migration guide Model catalog Choose a model Pricing Model selection Text and code Text generation Code generation Structured output Prompting Overview Prompt engineering Citation formatting Migration guide Prompt generation Frontend prompting Reasoning Reasoning models Reasoning best practices Images and video Images and vision Image input cost calculator Image generation Overview Image prompting Video generation Realtime and audio Audio and speech Getting started Voice agents Specialized models Deep research Embeddings Moderation Overview Agents API Overview Quickstart Architecture Configuring Agents Sessions Run and continue sessions Events and items Manage sessions Webhooks Environments and sandboxes OpenAI-hosted sandboxes Self-hosted sandboxes Sandbox lifecycle Sandbox security Files and artifacts Tools and integrations Web search Functions MCP connections Plugins Vaults Multi-agent Observability and usage Tracing Agents SDK Overview Quickstart Agent definitions Models and providers Running agents Sandbox agents Orchestration Guardrails Results and state Integrations and observability Evaluate agent workflows ChatKit Overview Customize Widgets Actions Advanced integrations Overview Function calling Search and retrieval Web search File search Retrieval Connect tools and data MCP servers Secure MCP Tunnel Build tool workflows Skills Tool search Programmatic tool calling Async tool calling Computer and code Shell Computer use Apply Patch Local shell Code interpreter Media Image generation Overview GPT-Live Getting started Prompting Managing sessions Delegation and tools Migrate to GPT-Live Partner integrations Realtime API Getting started Prompting Managing conversations Voice activity detection Tools and MCP Build with voice Voice agents Custom voices Cost optimization Connections WebRTC WebRTC with WARP WebSockets Telephony and SIP Server-side controls Audio processing File transcription Live transcription Live translation Text to speech Audio in Chat Completions Go live Production best practices Deployment checklist Performance and quality Latency optimization Predicted Outputs Fast mode Accuracy optimization Cost and throughput Cost optimization Prompt caching Prompt cache diagnostics Batch Flex processing Safety and governance Safety best practices Red teaming Safety checks Safety classifiers Cybersecurity checks Misalignment monitoring Under-18 guidance CSAM guidance Content provenance Your data Permissions Infrastructure and access Terraform provider Overview Projects and access Service accounts Rate limits and spend Model, tool, and data controls Import and reconciliation Private Link IP allowlist Mutual TLS Workload identity federation Federation rules X.509 certificates Kubernetes AWS Microsoft Azure Google Cloud Oracle Cloud Infrastructure GitHub Actions SPIFFE IP egress ranges Amazon Bedrock Operations Rate limits Spend limits Admin APIs Error codes Docs Use cases Docs Use cases Docs Docs Plugins Workspace Agents Commerce Ads Plugins Workspace Agents Commerce Ads Docs Select... Home Quickstart Core concepts Plugin architecture Skills MCP server Plan Brainstorm use cases Define tools Build Build an MCP server Add UI to your MCP server (optional) Authenticate users Build skills Package your plugin Examples Test and publish Connect and test your plugin Submit and publish Submission error reference Conversion specs Restaurant reservation spec Get Quote spec Product checkout spec Guides UI guidelines Optimize Metadata Submit a Claude Code plugin Security & Privacy Troubleshooting Resources Changelog Plugin guidelines MCP server review requirements Plugin UI reference Checkout API reference Home Get started Trigger workspace agent runs Authenticate with Workspace Agent access tokens Home Guides Get started Best practices File Upload Overview Products API Overview Feeds Products Promotions Ads Overview Measurement Measurement Pixel Multiple Pixels (Advanced) Image Tag Conversions API Supported Events Advertiser API Overview Campaign Management Bidding & Budgets Targeting Product Feeds Conversion Tracking Reporting Troubleshooting Account Management API Reference Authentication Ad Account Campaigns Ad Groups Ads Insights Files Conversion Setup Overview Features Configuration Developers Security Administration Use Cases Resources Overview Features Configuration Developers Security Administration Use Cases Resources Docs Overview Home Get started Quickstart Use ChatGPT Get started with Work Import from another agent Foundations Prompting Personalize ChatGPT Skills & Plugins Permissions Explore What's new Models Pricing Glossary Available on ChatGPT desktop app Remote ChatGPT on the web Codex CLI Codex IDE extension Codex cloud Releases Changelog Feature Maturity Open Source Overview Workflows Projects and chats Sites Visualizations Scheduled tasks Long-running work Notifications Pets Codex Micro Capabilities Browser Computer use Voice Plugins Web search Image generation Image inputs Appshots Browser extension Work with files Reference Commands Slash commands Settings Troubleshooting Overview Customization Overview Memories Computer History Config file Config Basics Advanced Config Config Reference Environment Variables Sample Config Agent configuration AGENTS.md Subagents Speed Rules Extend ChatGPT and Codex Record & Replay MCP Linux Desktop app Windows Desktop app Windows sandbox WSL Overview Development workflows Code review Integrated terminal Extend and automate Build skills Build plugins Site tools (WebMCP) Hooks Environments Modes Local environments Cloud environment Git worktrees Build with Codex Codex SDK App Server GitHub Action Non-interactive mode Third-party integrations GitHub GitLab (Beta) Slack Linear Reference CLI customization Developer commands Developer settings Overview Permissions Profiles Sandboxing Auto-review Agent approvals & security Internet access Codex Security Overview Codex Security plugin Quickstart Run a security scan Run a deep scan Review code changes Use the Security workbench Triage a backlog Fix findings Propose security hardening Write vulnerability reports Export and track findings Changelog Codex Security CLI Quickstart Run bulk scans Run scans in CI GitLab CI/CD Reference FAQ TypeScript SDK Codex Security cloud Setup Security Review Improving the threat model FAQ Cyber safety Models & Trusted Access Recommended configuration Overview Getting started Admin rollout guide ChatGPT Work ChatGPT Work Overview ChatGPT Work cloud security ChatGPT Work local security ChatGPT Work admin FAQ ChatGPT Work: usage and cost Identity and authentication Authentication overview Personal Access Tokens Service accounts Workspace access, policy, and models Groups and provisioning User lifecycle management Roles and workspace permissions GPTs and Sharing Managed configuration Prisma AIRS HIPAA configuration Workspace model availability Plugin and connector controls Plugin controls Plugin management Skill controls Usage, governance, and compliance Governance Admin plugin Workspace analytics Usage Insights Analytics API Compliance API and audit events Deployment and model providers Manage app updates Windows app deployment Remote connections Amazon Bedrock Explore use cases Collections Home Videos Showcase OpenAI Academy Online trainings Community Codex Ambassadors Codex for Students Codex for Open Source Events Blog Company blog Developer blog Explore use cases Collections Home Videos Showcase OpenAI Academy Online trainings Community Codex Ambassadors Codex for Students Codex for Open Source Events Blog Company blog Developer blog Showcase Blog Cookbook Learn Community Showcase Blog Cookbook Learn Community Docs Select... All posts Recent Rethinking skills and prompts for GPT-6 Astra Architectural visualization with Astra Building games with Astra Meet Rosalind Workbench: Empowering every scientist to be their own research team Automating repetitive work at OpenAI with Codex Topics General API Apps SDK Audio Codex Life sciences Home Topics Agents Evals Multimodal Text Guardrails Optimization ChatGPT Codex gpt-oss Contribute Cookbook on GitHub Home OpenAI Developers plugin Docs MCP Categories Demo apps Videos Topics Agents Audio & Voice Computer Use Codex Evals gpt-oss Fine-tuning Image generation Scaling Tools Video generation Community Programs Codex Ambassadors Codex for Students Codex for Open Source OpenAI for Startups Spaces Events Developer Forum Discord Reddit X API Dashboard Try ChatGPT Model catalog Choose a model Pricing Model selection Text and code Text generation Code generation Structured output Prompting Overview Prompt engineering Citation formatting Migration guide Prompt generation Frontend prompting Reasoning Reasoning models Reasoning best practices Images and video Images and vision Image input cost calculator Image generation Overview Image prompting Video generation Realtime and audio Audio and speech Getting started Voice agents Specialized models Deep research Embeddings Moderation Models All models Browse models and compare their capabilities. Compare models Flagship models Compare capabilities and specifications. GPT-6 Astra Our most capable model, built for the hardest end-to-end work GPT-5.6 Sol Flagship model for complex professional work GPT-5.6 Terra GPT-5.6 model that balances intelligence and cost GPT-5.6 Luna GPT-5.6 model optimized for cost-sensitive workloads Image Models for image generation and editing. GPT-Image-2.5 Sunburst Our most capable model for image generation and editing GPT-Image-2.5 Flare Fast, high-quality everyday image generation GPT-Image-2 State-of-the-art image generation model Realtime & audio Models for realtime, speech, and audio workflows. GPT-Live 1 Our premier model for natural, expressive voice conversations with smooth interruption handling. GPT-Realtime-2.1 Reasoning model with tool use GPT-Realtime-2.1 Mini Reasoning model with tool use GPT-Realtime-2 Reasoning model with tool use GPT-Realtime-Translate Streaming speech-to-speech translation model GPT-Live-Transcribe Low-latency speech-to-text model for realtime transcription GPT-Realtime-Whisper Streaming speech-to-text model for realtime transcription GPT-Realtime-1.5 The best voice model for audio in, audio out GPT-Audio-1.5 The best voice model for audio in, audio out with Chat Completions. GPT-Transcribe High-accuracy speech-to-text model for file and Realtime input transcription GPT-4o Transcribe Speech-to-text model powered by GPT-4o GPT-4o Mini Transcribe Speech-to-text model powered by GPT-4o Mini GPT-4o Transcribe Diarize Transcription model that identifies who's speaking when TTS-1 Text-to-speech model optimized for speed TTS-1 HD Text-to-speech model optimized for quality Whisper General-purpose speech recognition model GPT-4o Mini TTS Text-to-speech model powered by GPT-4o Mini OpenAI Daybreak Advanced cyber models for defenders GPT-5.6 Cyber Our most advanced cybersecurity model for authorized vulnerability research and security testing. Daybreak Red An alias for advanced cybersecurity models for authorized vulnerability research and security testing. Daybreak Blue An alias for flagship general-purpose models with safeguards for defensive cybersecurity work. Life sciences Models for life sciences research GPT-Rosalind Life sciences reasoning for approved organizations Open-weight models Open-weight models under a permissive Apache 2.0 license. gpt-oss-120b Most powerful open-weight model, fits into an H100 GPU gpt-oss-20b Medium-sized open-weight model for low latency Embedding models Models for embedding text into vector representations. text-embedding-3-large Most capable embedding model text-embedding-3-small Small embedding model text-embedding-ada-002 Older embedding model More models Diverse models for a variety of tasks. GPT-5.5 A new class of intelligence for coding and professional work. GPT-5.5 Pro Version of GPT-5.5 that produces smarter and more precise responses. GPT-5.4 A more affordable model for coding and professional work. GPT-5.4 Pro Version of GPT-5.4 that produces smarter and more precise responses. GPT-5.4 Mini Our strongest mini model yet for coding, computer use, and subagents GPT-5.4 nano Our cheapest GPT-5.4-class model for simple high-volume tasks GPT-5.3-Codex The most capable agentic coding model to date. GPT-5.2 Previous flagship model for professional work with configurable reasoning effort GPT-5.2 Pro Previous pro model for professional work that produces smarter and more precise responses. GPT-5.1 The best model for coding and agentic tasks with configurable reasoning effort GPT-5 Previous intelligent reasoning model for coding and agentic tasks with configurable reasoning effort GPT-5 Mini Strong intelligence for cost sensitive, low latency, high volume workloads GPT-5 nano Fastest, most cost-efficient version of GPT-5 GPT-5 Pro Version of GPT-5 that produces smarter and more precise responses o3-pro Version of o3 with more compute for better responses o3 Reasoning model for complex tasks, succeeded by GPT-5 GPT-4.1 Smartest non-reasoning model GPT-4.1 Mini Smaller, faster version of GPT-4.1 omni-moderation Identify potentially harmful content in text and images GPT-4o Mini Fast, affordable small model for focused tasks GPT-4o Fast, intelligent, flexible GPT model GPT-Realtime Deprecated Model capable of realtime text and audio inputs and outputs GPT-Audio Deprecated For audio inputs and outputs with Chat Completions API GPT-5.3 Chat Deprecated GPT-5.3 Instant model used in ChatGPT GPT-5.2 Chat Deprecated GPT-5.2 model used in ChatGPT GPT-5.2-Codex Deprecated Our most intelligent coding model optimized for long-horizon, agentic coding tasks. Sora 2 Deprecated Flagship video generation with synced audio Sora 2 Pro Deprecated Most advanced synced-audio video generation GPT-Image-1.5 Deprecated Our previous image generation model chatgpt-image-latest Deprecated Previous image model used in ChatGPT. GPT-Image-1 Mini Depre",
+        "content_hash": "67d096deff6fd4cee4441e59ebf0bd8370cf167131cb40caf7bac023bf0e67e2",
+        "syndication_group": "",
+        "metadata_basis": "retrieved_document",
+        "canonical_url": "https://developers.openai.com/api/docs/models/all",
+        "retrieved_url": "https://developers.openai.com/api/docs/models/all",
+        "headings": [
+          " Search the API docs ",
+          "All models",
+          "\nDocs agent\n"
+        ],
+        "source_owner": "OpenAI",
+        "authority_type": "FIRST_PARTY",
+        "selection_warnings": [],
+        "source_topic_relevance": 86.36,
+        "selection_components": {
+          "requirement_match": 40,
+          "entity_match": 45,
+          "authority": 95,
+          "document_type_fit": 95,
+          "freshness": 0
+        },
+        "selection_score": 58.75,
+        "eligible_for_primary_identity": true,
+        "exact_entity_match": false,
+        "document_type": "PRODUCT"
+      },
+      {
+        "source_id": "source-b325ff4a99b6be5f",
+        "url": "https://developers.openai.com/api/docs/models/compare",
+        "title": "Compare models | OpenAI API",
+        "publisher": "OpenAI Developers",
+        "publication_date": null,
+        "retrieved_at": "2026-09-22T03:00:09.615656+00:00",
+        "source_type": "DOCUMENTATION",
+        "primary_or_secondary": "PRIMARY",
+        "authority_score": 94,
+        "freshness_score": 10,
+        "relevance_score": 73,
+        "source_priority": 70.9,
+        "notes": [
+          "Publisher/date are document assertions; authority must be assessed claim by claim.",
+          "Claim-relative model/fixture assessment: A first-party comparison page corroborates several listed specifications and pricing fields. It is not evidence for a dated product event or a real-world workflow outcome."
+        ],
+        "text": "Compare models | OpenAI API For the complete documentation index, see llms.txt . Markdown versions of documentation pages are available by appending .md to the page URL. ChatGPT Start searching API Dashboard Try ChatGPT Home API Codex Docs Guides, concepts, and product docs for Codex Use cases Example workflows and tasks teams can take on with ChatGPT or Codex Docs Use cases Training Resources ChatGPT Plugins Extend ChatGPT and Codex Workspace Agents Trigger published ChatGPT workspace agents Commerce Build commerce flows in ChatGPT Ads Publish and measure ads in ChatGPT Resources Showcase Demo apps to get inspired Blog Learnings and experiences from developers Cookbook Notebook examples for building with OpenAI models Learn Docs, videos, and demo apps for building with OpenAI Community Programs, meetups, and support for builders Overview Models Agents Tools Audio & voice Production API reference Search the API docs Search docs Suggested responses create reasoning_effort realtime prompt caching Primary navigation API Codex ChatGPT Docs Use cases Training Resources Resources Search docs Suggested responses create reasoning_effort realtime prompt caching Overview Models Agents Tools Audio & voice Production API reference Overview Models Agents Tools Audio & voice Production API reference Docs Models Home Get started Quickstart Using GPT-6 Astra Key concepts Core concepts Responses API Conversation state Background mode Streaming WebSocket mode Mid-turn steering Multi-agent Webhooks File inputs Compaction Counting tokens SDKs and CLI OpenAI SDK OpenAI CLI Resources Changelog Deprecations Supported countries OpenAI Crawlers Terms and policies Legacy APIs Agent Builder Overview Migration guide Node reference Safety in building agents Evals Getting started Working with evals Prompt optimizer External models Best practices Graders Fine-tuning Optimization cycle Supervised fine-tuning Vision fine-tuning Direct preference optimization Reinforcement fine-tuning RFT use cases Best practices Assistants API Migration guide Model catalog Choose a model Pricing Model selection Text and code Text generation Code generation Structured output Prompting Overview Prompt engineering Citation formatting Migration guide Prompt generation Frontend prompting Reasoning Reasoning models Reasoning best practices Images and video Images and vision Image input cost calculator Image generation Overview Image prompting Video generation Realtime and audio Audio and speech Getting started Voice agents Specialized models Deep research Embeddings Moderation Overview Agents API Overview Quickstart Architecture Configuring Agents Sessions Run and continue sessions Events and items Manage sessions Webhooks Environments and sandboxes OpenAI-hosted sandboxes Self-hosted sandboxes Sandbox lifecycle Sandbox security Files and artifacts Tools and integrations Web search Functions MCP connections Plugins Vaults Multi-agent Observability and usage Tracing Agents SDK Overview Quickstart Agent definitions Models and providers Running agents Sandbox agents Orchestration Guardrails Results and state Integrations and observability Evaluate agent workflows ChatKit Overview Customize Widgets Actions Advanced integrations Overview Function calling Search and retrieval Web search File search Retrieval Connect tools and data MCP servers Secure MCP Tunnel Build tool workflows Skills Tool search Programmatic tool calling Async tool calling Computer and code Shell Computer use Apply Patch Local shell Code interpreter Media Image generation Overview GPT-Live Getting started Prompting Managing sessions Delegation and tools Migrate to GPT-Live Partner integrations Realtime API Getting started Prompting Managing conversations Voice activity detection Tools and MCP Build with voice Voice agents Custom voices Cost optimization Connections WebRTC WebRTC with WARP WebSockets Telephony and SIP Server-side controls Audio processing File transcription Live transcription Live translation Text to speech Audio in Chat Completions Go live Production best practices Deployment checklist Performance and quality Latency optimization Predicted Outputs Fast mode Accuracy optimization Cost and throughput Cost optimization Prompt caching Prompt cache diagnostics Batch Flex processing Safety and governance Safety best practices Red teaming Safety checks Safety classifiers Cybersecurity checks Misalignment monitoring Under-18 guidance CSAM guidance Content provenance Your data Permissions Infrastructure and access Terraform provider Overview Projects and access Service accounts Rate limits and spend Model, tool, and data controls Import and reconciliation Private Link IP allowlist Mutual TLS Workload identity federation Federation rules X.509 certificates Kubernetes AWS Microsoft Azure Google Cloud Oracle Cloud Infrastructure GitHub Actions SPIFFE IP egress ranges Amazon Bedrock Operations Rate limits Spend limits Admin APIs Error codes Docs Use cases Docs Use cases Docs Docs Plugins Workspace Agents Commerce Ads Plugins Workspace Agents Commerce Ads Docs Select... Home Quickstart Core concepts Plugin architecture Skills MCP server Plan Brainstorm use cases Define tools Build Build an MCP server Add UI to your MCP server (optional) Authenticate users Build skills Package your plugin Examples Test and publish Connect and test your plugin Submit and publish Submission error reference Conversion specs Restaurant reservation spec Get Quote spec Product checkout spec Guides UI guidelines Optimize Metadata Submit a Claude Code plugin Security & Privacy Troubleshooting Resources Changelog Plugin guidelines MCP server review requirements Plugin UI reference Checkout API reference Home Get started Trigger workspace agent runs Authenticate with Workspace Agent access tokens Home Guides Get started Best practices File Upload Overview Products API Overview Feeds Products Promotions Ads Overview Measurement Measurement Pixel Multiple Pixels (Advanced) Image Tag Conversions API Supported Events Advertiser API Overview Campaign Management Bidding & Budgets Targeting Product Feeds Conversion Tracking Reporting Troubleshooting Account Management API Reference Authentication Ad Account Campaigns Ad Groups Ads Insights Files Conversion Setup Overview Features Configuration Developers Security Administration Use Cases Resources Overview Features Configuration Developers Security Administration Use Cases Resources Docs Overview Home Get started Quickstart Use ChatGPT Get started with Work Import from another agent Foundations Prompting Personalize ChatGPT Skills & Plugins Permissions Explore What's new Models Pricing Glossary Available on ChatGPT desktop app Remote ChatGPT on the web Codex CLI Codex IDE extension Codex cloud Releases Changelog Feature Maturity Open Source Overview Workflows Projects and chats Sites Visualizations Scheduled tasks Long-running work Notifications Pets Codex Micro Capabilities Browser Computer use Voice Plugins Web search Image generation Image inputs Appshots Browser extension Work with files Reference Commands Slash commands Settings Troubleshooting Overview Customization Overview Memories Computer History Config file Config Basics Advanced Config Config Reference Environment Variables Sample Config Agent configuration AGENTS.md Subagents Speed Rules Extend ChatGPT and Codex Record & Replay MCP Linux Desktop app Windows Desktop app Windows sandbox WSL Overview Development workflows Code review Integrated terminal Extend and automate Build skills Build plugins Site tools (WebMCP) Hooks Environments Modes Local environments Cloud environment Git worktrees Build with Codex Codex SDK App Server GitHub Action Non-interactive mode Third-party integrations GitHub GitLab (Beta) Slack Linear Reference CLI customization Developer commands Developer settings Overview Permissions Profiles Sandboxing Auto-review Agent approvals & security Internet access Codex Security Overview Codex Security plugin Quickstart Run a security scan Run a deep scan Review code changes Use the Security workbench Triage a backlog Fix findings Propose security hardening Write vulnerability reports Export and track findings Changelog Codex Security CLI Quickstart Run bulk scans Run scans in CI GitLab CI/CD Reference FAQ TypeScript SDK Codex Security cloud Setup Security Review Improving the threat model FAQ Cyber safety Models & Trusted Access Recommended configuration Overview Getting started Admin rollout guide ChatGPT Work ChatGPT Work Overview ChatGPT Work cloud security ChatGPT Work local security ChatGPT Work admin FAQ ChatGPT Work: usage and cost Identity and authentication Authentication overview Personal Access Tokens Service accounts Workspace access, policy, and models Groups and provisioning User lifecycle management Roles and workspace permissions GPTs and Sharing Managed configuration Prisma AIRS HIPAA configuration Workspace model availability Plugin and connector controls Plugin controls Plugin management Skill controls Usage, governance, and compliance Governance Admin plugin Workspace analytics Usage Insights Analytics API Compliance API and audit events Deployment and model providers Manage app updates Windows app deployment Remote connections Amazon Bedrock Explore use cases Collections Home Videos Showcase OpenAI Academy Online trainings Community Codex Ambassadors Codex for Students Codex for Open Source Events Blog Company blog Developer blog Explore use cases Collections Home Videos Showcase OpenAI Academy Online trainings Community Codex Ambassadors Codex for Students Codex for Open Source Events Blog Company blog Developer blog Showcase Blog Cookbook Learn Community Showcase Blog Cookbook Learn Community Docs Select... All posts Recent Rethinking skills and prompts for GPT-6 Astra Architectural visualization with Astra Building games with Astra Meet Rosalind Workbench: Empowering every scientist to be their own research team Automating repetitive work at OpenAI with Codex Topics General API Apps SDK Audio Codex Life sciences Home Topics Agents Evals Multimodal Text Guardrails Optimization ChatGPT Codex gpt-oss Contribute Cookbook on GitHub Home OpenAI Developers plugin Docs MCP Categories Demo apps Videos Topics Agents Audio & Voice Computer Use Codex Evals gpt-oss Fine-tuning Image generation Scaling Tools Video generation Community Programs Codex Ambassadors Codex for Students Codex for Open Source OpenAI for Startups Spaces Events Developer Forum Discord Reddit X API Dashboard Try ChatGPT Model catalog Choose a model Pricing Model selection Text and code Text generation Code generation Structured output Prompting Overview Prompt engineering Citation formatting Migration guide Prompt generation Frontend prompting Reasoning Reasoning models Reasoning best practices Images and video Images and vision Image input cost calculator Image generation Overview Image prompting Video generation Realtime and audio Audio and speech Getting started Voice agents Specialized models Deep research Embeddings Moderation Models Compare models GPT-6 Astra Astra Our most capable model, built for the hardest end-to-end work Learn more Playground Reasoning Speed Input Output Reasoning tokens Pricing Text tokens Input / 1M tokens $10.00 Cached input / 1M tokens $1.00 Cache writes / 1M tokens $12.50 Output / 1M tokens $50.00 Context Window 1,050,000 Max Output Tokens 128,000 Knowledge Cutoff Apr 30, 2026 Endpoints v1/chat/completions v1/responses v1/batch Supported Features Streaming Function calling Structured outputs Image input Rate Limits TPM Free - Tier 1 500,000 Tier 2 1,000,000 Tier 3 2,000,000 Tier 4 4,000,000 Tier 5 40,000,000 Learn more Playground GPT-5.6 Sol Flagship model for complex professional work Learn more Playground Reasoning Speed Input Output Reasoning tokens Pricing Text tokens Input / 1M tokens $4.00 Cached input / 1M tokens $0.40 Cache writes / 1M tokens - Output / 1M tokens $20.00 Context Window 1,050,000 Max Output Tokens 128,000 Knowledge Cutoff Feb 16, 2026 Endpoints v1/chat/completions v1/responses v1/batch Supported Features Streaming Function calling Structured outputs Image input Rate Limits TPM Free - Tier 1 500,000 Tier 2 1,000,000 Tier 3 2,000,000 Tier 4 4,000,000 Tier 5 40,000,000 Learn more Playground GPT-5.6 Terra GPT-5.6 model that balances intelligence and cost Learn more Playground Reasoning Speed Input Output Reasoning tokens Pricing Text tokens Input / 1M tokens $2.00 Cached input / 1M tokens $0.20 Cache writes / 1M tokens - Output / 1M tokens $12.00 Context Window 1,050,000 Max Output Tokens 128,000 Knowledge Cutoff Feb 16, 2026 Endpoints v1/chat/completions v1/responses v1/batch Supported Features Streaming Function calling Structured outputs Image input Rate Limits TPM Free - Tier 1 500,000 Tier 2 1,000,000 Tier 3 2,000,000 Tier 4 4,000,000 Tier 5 40,000,000 Learn more Playground Ask AI Docs agent Loading docs agent...",
+        "content_hash": "a19aebe0be18e39e8c13be0b051f95f3f6c70ec0bf2e58c9391268f4ad5f4858",
+        "syndication_group": "",
+        "metadata_basis": "retrieved_document",
+        "canonical_url": "https://developers.openai.com/api/docs/models/compare",
+        "retrieved_url": "https://developers.openai.com/api/docs/models/compare",
+        "headings": [
+          " Search the API docs ",
+          "\nDocs agent\n"
+        ],
+        "source_owner": "OpenAI",
+        "authority_type": "FIRST_PARTY",
+        "selection_warnings": [],
+        "source_topic_relevance": 86.36,
+        "selection_components": {
+          "requirement_match": 40,
+          "entity_match": 45,
+          "authority": 95,
+          "document_type_fit": 95,
+          "freshness": 0
+        },
+        "selection_score": 58.75,
+        "eligible_for_primary_identity": true,
+        "exact_entity_match": false,
+        "document_type": "PRODUCT"
+      }
+    ],
+    "research_status": "SUFFICIENT",
+    "original_research_status": "PARTIAL",
+    "original_angle_outcome": "ANGLE_UNSUPPORTED",
+    "source_research_run_id": "research-b35c1191-2b9c-47f6-aaf0-bd4a2b981542",
+    "pivot_acceptance": {
+      "idea_id": "idea-b3dae3b3cbeae769",
+      "original_angle": "implications",
+      "accepted_angle": "OpenAI’s documentation lists GPT-6 Astra as an API model with configurable reasoning effort and Responses-API tool support; what remains unproven is any specific workflow payoff.",
+      "accepted_at": "2026-09-22T03:14:33.571972+00:00",
+      "source_research_run_id": "research-b35c1191-2b9c-47f6-aaf0-bd4a2b981542",
+      "verified_claim_ids": [
+        "claim-api-capabilities"
+      ],
+      "partially_verified_claim_ids": [
+        "claim-6508cc49e0d34119"
+      ],
+      "allowed_claim_scope": {
+        "claim-6508cc49e0d34119": {
+          "supported_wording": "The publisher’s documentation identifies GPT-6 Astra as a model.",
+          "limitations": [
+            "The supplied documentation has no publication date.",
+            "The supplied evidence does not say when the model was announced or released.",
+            "The phrase “most capable” is OpenAI’s vendor characterization, not an independently verified comparative finding.",
+            "Verification is limited to the exact attributed documentation observations; broader original wording is not established.",
+            "Observed at 2026-09-22T03:00:09.615656+00:00; not evidence of launch timing or independent performance."
+          ],
+          "evidence_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "passage_ids": [
+            "passage-e1afa9ae3b02daae"
+          ]
+        },
+        "claim-api-capabilities": {
+          "supported_wording": "OpenAI’s documentation for GPT-6 Astra lists: “Use it for complex reasoning, coding, computer use, research, and document creation.”; “reasoning.effort supports low , medium , high , xhigh , and max .”; “Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported ”.",
+          "limitations": [
+            "The source does not explain model architecture or provide a technical mechanism for the capabilities.",
+            "Supported tool availability does not show a tool will be appropriate, reliable, or enabled in every deployment.",
+            "No independent benchmark or comparable test is supplied.",
+            "Verification is limited to the exact attributed documentation observations; broader original wording is not established.",
+            "Observed at 2026-09-22T03:00:09.615656+00:00; not evidence of launch timing or independent performance."
+          ],
+          "evidence_ids": [
+            "source-9942c8c35a485d17"
+          ],
+          "passage_ids": [
+            "passage-624e95628ac6987c",
+            "passage-beac863116ee521a",
+            "passage-cb0d63f9c9fe4d3b"
+          ]
+        }
+      },
+      "forbidden_claims": [
+        "LAUNCH_DATE",
+        "BREAKING_NEWS",
+        "AGI",
+        "SUPERIORITY",
+        "BENCHMARK",
+        "COMPETITOR_COMPARISON",
+        "RELIABILITY",
+        "SAFETY_CONCLUSION",
+        "FINALLY_HERE",
+        "REALLY_GOOD",
+        "WORKFLOW_TRANSFORMATION",
+        "PRODUCTIVITY_IMPROVEMENT"
+      ],
+      "requires_new_research": false,
+      "editorial_status": "ACCEPTED",
+      "source_artifact_path": "/Users/rohit/Documents/ChatGPT/YouTube auto/reports/evidence-link-repair-fa04",
+      "source_artifact_hash": "7df783f761e23fc8f7d998161de3391f360fa428c9c537bb5b7d07ee1b7a5e1d"
+    },
+    "final_research_question": "OpenAI’s documentation lists GPT-6 Astra as an API model with configurable reasoning effort and Responses-API tool support; what remains unproven is any specific workflow payoff.",
+    "safe_angle": "OpenAI’s documentation lists GPT-6 Astra as an API model with configurable reasoning effort and Responses-API tool support; what remains unproven is any specific workflow payoff.",
+    "canonical_story_resolved": true,
+    "remaining_questions_material": false,
+    "research_gaps": [],
+    "unresolved_requirements": [],
+    "core_claim_ids": [
+      "claim-api-capabilities"
+    ],
+    "freshness": {
+      "mode": "EVERGREEN",
+      "established": true,
+      "event_date": "",
+      "evidence_ids": [
+        "source-9942c8c35a485d17"
+      ]
+    },
+    "why_now": "Evergreen documentation explainer using saved observations; no launch timing established.",
+    "confirmed_story": "OpenAI’s documentation lists GPT-6 Astra as an API model with configurable reasoning effort and Responses-API tool support; what remains unproven is any specific workflow payoff.",
+    "angles_to_avoid": [
+      "LAUNCH_DATE",
+      "BREAKING_NEWS",
+      "AGI",
+      "SUPERIORITY",
+      "BENCHMARK",
+      "COMPETITOR_COMPARISON",
+      "RELIABILITY",
+      "SAFETY_CONCLUSION",
+      "FINALLY_HERE",
+      "REALLY_GOOD",
+      "WORKFLOW_TRANSFORMATION",
+      "PRODUCTIVITY_IMPROVEMENT"
+    ],
+    "verified_claims": [
+      {
+        "claim_id": "claim-api-capabilities",
+        "text": "OpenAI’s documentation for GPT-6 Astra lists: “Use it for complex reasoning, coding, computer use, research, and document creation.”; “reasoning.effort supports low , medium , high , xhigh , and max .”; “Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported ”.",
+        "materiality": "HIGH",
+        "claim_type": "TECHNICAL_DOCUMENTATION",
+        "evidence_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "contradicting_evidence_ids": [],
+        "status": "VERIFIED",
+        "confidence": 0.88,
+        "rationale": "The dedicated OpenAI model page explicitly names the described intended uses, reasoning-effort values, and supported API tools. These are product-documentation claims rather than independent performance validation.",
+        "passages": [
+          {
+            "passage_id": "passage-624e95628ac6987c",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "text": "Use it for complex reasoning, coding, computer use, research, and document creation.",
+            "start_offset": 11381,
+            "end_offset": 11465,
+            "support_type": "DIRECT",
+            "quote": "Use it for complex reasoning, coding, computer use, research, and document creation.",
+            "relation": "SUPPORTS"
+          },
+          {
+            "passage_id": "passage-beac863116ee521a",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "text": "reasoning.effort supports low , medium , high , xhigh , and max .",
+            "start_offset": 11466,
+            "end_offset": 11531,
+            "support_type": "DIRECT",
+            "quote": "reasoning.effort supports low , medium , high , xhigh , and max .",
+            "relation": "SUPPORTS"
+          },
+          {
+            "passage_id": "passage-cb0d63f9c9fe4d3b",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-api-capabilities"
+            ],
+            "text": "Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported",
+            "start_offset": 13047,
+            "end_offset": 13324,
+            "support_type": "DIRECT",
+            "quote": "Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported",
+            "relation": "SUPPORTS"
+          }
+        ],
+        "supported_wording": "OpenAI’s documentation for GPT-6 Astra lists: “Use it for complex reasoning, coding, computer use, research, and document creation.”; “reasoning.effort supports low , medium , high , xhigh , and max .”; “Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported ”.",
+        "limitations": [
+          "The source does not explain model architecture or provide a technical mechanism for the capabilities.",
+          "Supported tool availability does not show a tool will be appropriate, reliable, or enabled in every deployment.",
+          "No independent benchmark or comparable test is supplied.",
+          "Verification is limited to the exact attributed documentation observations; broader original wording is not established.",
+          "Observed at 2026-09-22T03:00:09.615656+00:00; not evidence of launch timing or independent performance."
+        ],
+        "requires_attribution": true,
+        "original_supported_wording": "According to OpenAI’s API documentation, GPT-6 Astra can be used for complex reasoning, coding, computer use, research, and document creation; its listed tool support applies when using the Responses API.",
+        "verification_scope": "SUPPORTED_WORDING_ONLY",
+        "evidence_link_method": "STRUCTURED_DOCUMENTATION_OBSERVATION",
+        "documented_topics": [
+          "documented intended uses",
+          "configurable reasoning effort",
+          "Responses API tool support"
+        ],
+        "passage_ids": [
+          "passage-624e95628ac6987c",
+          "passage-beac863116ee521a",
+          "passage-cb0d63f9c9fe4d3b"
+        ]
+      }
+    ],
+    "uncertain_claims": [
+      {
+        "claim_id": "claim-6508cc49e0d34119",
+        "text": "The publisher’s documentation identifies GPT-6 Astra as a model.",
+        "materiality": "CRITICAL",
+        "claim_type": "IDENTITY_AVAILABILITY",
+        "evidence_ids": [
+          "source-9942c8c35a485d17"
+        ],
+        "contradicting_evidence_ids": [],
+        "status": "PARTIALLY_VERIFIED",
+        "confidence": 0.91,
+        "rationale": "Two retrieved OpenAI developer-documentation pages explicitly list GPT-6 Astra. They establish the documented product identity and strongly indicate availability in OpenAI’s API documentation, but neither page supplies an announcement or release date.",
+        "passages": [
+          {
+            "passage_id": "passage-e1afa9ae3b02daae",
+            "source_id": "source-9942c8c35a485d17",
+            "claim_ids": [
+              "claim-6508cc49e0d34119"
+            ],
+            "text": "GPT-6 Astra is our most capable model, built for the hardest end-to-end work.",
+            "start_offset": 11303,
+            "end_offset": 11380,
+            "support_type": "PARTIAL",
+            "quote": "GPT-6 Astra is our most capable model, built for the hardest end-to-end work.",
+            "relation": "SUPPORTS"
+          }
+        ],
+        "supported_wording": "The publisher’s documentation identifies GPT-6 Astra as a model.",
+        "limitations": [
+          "The supplied documentation has no publication date.",
+          "The supplied evidence does not say when the model was announced or released.",
+          "The phrase “most capable” is OpenAI’s vendor characterization, not an independently verified comparative finding.",
+          "Verification is limited to the exact attributed documentation observations; broader original wording is not established.",
+          "Observed at 2026-09-22T03:00:09.615656+00:00; not evidence of launch timing or independent performance."
+        ],
+        "requires_attribution": true,
+        "original_supported_wording": "OpenAI’s API documentation lists GPT-6 Astra as a model.",
+        "verification_scope": "SUPPORTED_WORDING_ONLY",
+        "evidence_link_method": "STRUCTURED_DOCUMENTATION_OBSERVATION",
+        "documented_topics": [
+          "documented identity"
+        ],
+        "passage_ids": [
+          "passage-e1afa9ae3b02daae"
+        ]
+      }
+    ],
+    "evidence_passages": [
+      {
+        "passage_id": "passage-e1afa9ae3b02daae",
+        "source_id": "source-9942c8c35a485d17",
+        "claim_ids": [
+          "claim-6508cc49e0d34119"
+        ],
+        "text": "GPT-6 Astra is our most capable model, built for the hardest end-to-end work.",
+        "start_offset": 11303,
+        "end_offset": 11380,
+        "support_type": "PARTIAL",
+        "quote": "GPT-6 Astra is our most capable model, built for the hardest end-to-end work.",
+        "relation": "SUPPORTS"
+      },
+      {
+        "passage_id": "passage-624e95628ac6987c",
+        "source_id": "source-9942c8c35a485d17",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "text": "Use it for complex reasoning, coding, computer use, research, and document creation.",
+        "start_offset": 11381,
+        "end_offset": 11465,
+        "support_type": "DIRECT",
+        "quote": "Use it for complex reasoning, coding, computer use, research, and document creation.",
+        "relation": "SUPPORTS"
+      },
+      {
+        "passage_id": "passage-beac863116ee521a",
+        "source_id": "source-9942c8c35a485d17",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "text": "reasoning.effort supports low , medium , high , xhigh , and max .",
+        "start_offset": 11466,
+        "end_offset": 11531,
+        "support_type": "DIRECT",
+        "quote": "reasoning.effort supports low , medium , high , xhigh , and max .",
+        "relation": "SUPPORTS"
+      },
+      {
+        "passage_id": "passage-cb0d63f9c9fe4d3b",
+        "source_id": "source-9942c8c35a485d17",
+        "claim_ids": [
+          "claim-api-capabilities"
+        ],
+        "text": "Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported",
+        "start_offset": 13047,
+        "end_offset": 13324,
+        "support_type": "DIRECT",
+        "quote": "Tools supported by this model when using the Responses API. Web search Supported File search Supported Image generation Supported Code interpreter Supported Hosted shell Supported Apply patch Supported Skills Supported Computer use Supported MCP Supported Tool search Supported",
+        "relation": "SUPPORTS"
+      }
+    ],
+    "research_packet_id": "packet-8cef678d-f8c6-47ef-b7d6-b837990d64a7",
+    "research_run_id": "research-c48128db-88b5-4243-99c9-48873482dd13",
+    "radar_run_id": "08fa34b9-4afd-437a-b5a2-784687ce5d3c",
+    "intelligence_run_id": "5c2883e3-c90f-4170-a32a-bd2345209a3e",
+    "created_at": "2026-09-22T15:34:46.322202+00:00"
+  },
+  "readiness": {
+    "status": "READY_FOR_PRODUCTION",
+    "reasons": [],
+    "advisories": [
+      "ORIGINALITY_REVIEW",
+      "SPOKEN_NATURALNESS_ADVISORY"
+    ]
+  },
+  "selected": {
+    "idea": {
+      "idea_id": "idea-b3dae3b3cbeae769",
+      "source_video_ids": [
+        "GGzT7zVrRTU"
+      ],
+      "topic": "GPT-6 Astra",
+      "proposed_angle": "implications",
+      "audience_question": "What would need to change in a workflow to use GPT-6 Astra?",
+      "one_sentence_premise": "Examine the workflow implications of GPT-6 Astra, separating documented capabilities from assumptions.",
+      "why_now": "Recent competitor coverage is an observation; current significance requires research.",
+      "originality_notes": "Changes the explanation objective to implications; no competitor title or script is used as generated copy.",
+      "required_research": [
+        "Validate the proposed workflow consequence with a concrete documented case.",
+        "Validate the underlying subject and development represented by this video."
+      ],
+      "potential_visuals": [
+        "Original labelled diagram",
+        "Self-created example with an annotated before/after"
+      ],
+      "canonical_subject": "GPT-6 Astra",
+      "named_entities": [
+        "GPT-6 Astra"
+      ],
+      "alleged_event": "release/announcement",
+      "source_opportunities": [
+        {
+          "market_cohort": "AI_TOOLS_SOFTWARE",
+          "opportunity_score": 72.24716192890858,
+          "normalized_radar_signal": 87.5837558902682,
+          "researchability_score": 45,
+          "researchability_reasons": [
+            "+25 named product/technology",
+            "+20 version/CVE/generation"
+          ],
+          "named_entity_hints": [
+            "GPT",
+            "GPT-6"
+          ],
+          "event_hints": [],
+          "production_fit": "GOOD",
+          "production_fit_reason": "Identifiable software/product/event can support a visual explanation",
+          "commercial_value_tag": "HIGH",
+          "cross_cohort_support": 64.1304809463054,
+          "source_role": "independent_creator",
+          "title": "GPT-6 Astra Is Finally Here (And It’s REALLY Good)",
+          "channel": "Matt Wolfe",
+          "video_id": "GGzT7zVrRTU",
+          "published_at": "2026-09-03T22:45:47Z",
+          "duration_seconds": 1172,
+          "velocity_adjusted_score": 5.851117722802005,
+          "canonical_topics": [
+            "identifier:gpt-6"
+          ],
+          "radar_run_id": "08fa34b9-4afd-437a-b5a2-784687ce5d3c",
+          "snapshot_hash": "7633e5aaa6a6af32e12a3e374af6b087609f2b689bac5818dec6787cdb30f6ee"
+        }
+      ],
+      "source_researchability_score": 45,
+      "idea_researchability_score": 62.5,
+      "story_type": "EVENT_STORY",
+      "story_context_status": "CONCRETE_STORY",
+      "canonical_story_id": "story-93ff05881e14b066",
+      "canonical_story_label": "GPT-6 Astra",
+      "angle_type": "implications",
+      "m2_researchability_score": 62.5,
+      "m2_researchability_version": "radar-context-v1",
+      "preview_researchability_score": 77.0,
+      "preview_researchability_version": "context-resolvability-v1",
+      "topic_rank": 4,
+      "angle_rank_within_topic": 1,
+      "preview_selection_phase": "STORY_FIRST",
+      "review_status": "RECOMMENDED_FOR_RESEARCH",
+      "format_fit": "Short",
+      "estimated_short_length": 45,
+      "long_form_expandable": true,
+      "risk_flags": [
+        "CONTEXT_LIMITED",
+        "RESEARCH_REQUIRED"
+      ],
+      "confidence": 0.2,
+      "production_ready": false,
+      "similarity_status": "CLEAR",
+      "similarity_details": {
+        "similarity": 42.22222222222222,
+        "reference": "idea-0ece93c0fd6092af",
+        "reason": "Character/trigram phrasing match",
+        "status": "CLEAR",
+        "limitation": "Deterministic baseline; CLEAR does not certify originality."
+      },
+      "cluster_id": "trend-b84819de9146e193",
+      "story_brief_ids": [
+        "GGzT7zVrRTU"
+      ],
+      "material_claim_ids": [
+        "claim-6508cc49e0d34119"
+      ],
+      "evidence_ids": [],
+      "do_not_copy": [
+        "Competitor title, distinctive phrasing, metaphors, examples, or claim sequence"
+      ],
+      "story_context": [
+        {
+          "video_id": "GGzT7zVrRTU",
+          "metadata_subject_resolution": {
+            "canonical_subject": "GPT-6 Astra",
+            "subject_type": "MODEL",
+            "named_entities": [
+              "GPT-6 Astra"
+            ],
+            "product_or_project": [
+              "GPT-6 Astra"
+            ],
+            "event_or_change": "release/announcement",
+            "version_or_generation": [
+              "GPT-6 Astra"
+            ],
+            "temporal_marker": [],
+            "confidence": "HIGH",
+            "extraction_method": "explicit_title_patterns",
+            "unresolved_reasons": [
+              "Event is a metadata allegation; independently verify details and date"
+            ],
+            "story_context_status": "CONCRETE_STORY",
+            "story_type": "EVENT_STORY",
+            "technologies": [],
+            "channel_context": {
+              "market_cohort": "AI_TOOLS_SOFTWARE",
+              "source_role": "independent_creator",
+              "source_owner": null
+            },
+            "resolver_version": "1.0"
+          },
+          "story_context_status": "CONCRETE_STORY",
+          "story_type": "EVENT_STORY",
+          "canonical_subject": "GPT-6 Astra",
+          "named_entities": [
+            "GPT-6 Astra"
+          ],
+          "alleged_event": "release/announcement",
+          "source_opportunity": {
+            "market_cohort": "AI_TOOLS_SOFTWARE",
+            "opportunity_score": 72.24716192890858,
+            "normalized_radar_signal": 87.5837558902682,
+            "researchability_score": 45,
+            "researchability_reasons": [
+              "+25 named product/technology",
+              "+20 version/CVE/generation"
+            ],
+            "named_entity_hints": [
+              "GPT",
+              "GPT-6"
+            ],
+            "event_hints": [],
+            "production_fit": "GOOD",
+            "production_fit_reason": "Identifiable software/product/event can support a visual explanation",
+            "commercial_value_tag": "HIGH",
+            "cross_cohort_support": 64.1304809463054,
+            "source_role": "independent_creator",
+            "title": "GPT-6 Astra Is Finally Here (And It’s REALLY Good)",
+            "channel": "Matt Wolfe",
+            "video_id": "GGzT7zVrRTU",
+            "published_at": "2026-09-03T22:45:47Z",
+            "duration_seconds": 1172,
+            "velocity_adjusted_score": 5.851117722802005,
+            "canonical_topics": [
+              "identifier:gpt-6"
+            ],
+            "radar_run_id": "08fa34b9-4afd-437a-b5a2-784687ce5d3c",
+            "snapshot_hash": "7633e5aaa6a6af32e12a3e374af6b087609f2b689bac5818dec6787cdb30f6ee"
+          },
+          "entities": [
+            "GPT-6 Astra"
+          ],
+          "technologies": [],
+          "companies": [],
+          "people": [],
+          "products_models": [
+            "GPT-6 Astra"
+          ],
+          "core_event": "release/announcement",
+          "what_changed": null,
+          "why_now": null,
+          "audience_relevance": null,
+          "factual_claims": [],
+          "uncertain_claims": [
+            {
+              "claim_id": "claim-6508cc49e0d34119",
+              "text": "Validate the underlying subject and development represented by this video.",
+              "material": true,
+              "assessment_question": true,
+              "status": "UNVERIFIED",
+              "statement_type": "UNVERIFIED_CLAIM",
+              "evidence_ids": [],
+              "origin": "metadata_research_question",
+              "verification_rationale": "No external verification available",
+              "assessment": {}
+            }
+          ],
+          "source_evidence": [
+            {
+              "evidence_id": "video:GGzT7zVrRTU",
+              "reference": "https://www.youtube.com/watch?v=GGzT7zVrRTU",
+              "source_type": "COMPETITOR",
+              "statement_type": "OBSERVATION",
+              "note": "Evidence of competitor framing; not independent factual verification"
+            }
+          ],
+          "competitor_angle": "unknown",
+          "hook_pattern": "unknown",
+          "emotional_frame": "unknown",
+          "novelty_type": "unknown",
+          "evergreen_or_news": "news",
+          "time_sensitivity": "unknown",
+          "content_depth": "unknown",
+          "confidence": 0.2,
+          "flags": [
+            "CONTEXT_LIMITED"
+          ],
+          "context_summary": null,
+          "event_key": null,
+          "event_type": null,
+          "event_date": null,
+          "mechanism_question": null,
+          "field_provenance": {
+            "canonical_subject": {
+              "type": "INFERENCE",
+              "basis": "explicit_title_patterns",
+              "resolver_version": "1.0",
+              "video_id": "GGzT7zVrRTU",
+              "snapshot_hash": "7633e5aaa6a6af32e12a3e374af6b087609f2b689bac5818dec6787cdb30f6ee",
+              "note": "Title-derived research lead; not factual evidence"
+            },
+            "competitor_angle": {
+              "type": "INFERENCE",
+              "basis": "title_pattern_not_causal"
+            },
+            "entities": {
+              "type": "INFERENCE",
+              "basis": "explicit_title_patterns",
+              "resolver_version": "1.0",
+              "video_id": "GGzT7zVrRTU",
+              "snapshot_hash": "7633e5aaa6a6af32e12a3e374af6b087609f2b689bac5818dec6787cdb30f6ee",
+              "note": "Title-derived research lead; not factual evidence"
+            },
+            "named_entities": {
+              "type": "INFERENCE",
+              "basis": "explicit_title_patterns",
+              "resolver_version": "1.0",
+              "video_id": "GGzT7zVrRTU",
+              "snapshot_hash": "7633e5aaa6a6af32e12a3e374af6b087609f2b689bac5818dec6787cdb30f6ee",
+              "note": "Title-derived research lead; not factual evidence"
+            },
+            "technologies": {
+              "type": "INFERENCE",
+              "basis": "explicit_title_patterns",
+              "resolver_version": "1.0",
+              "video_id": "GGzT7zVrRTU",
+              "snapshot_hash": "7633e5aaa6a6af32e12a3e374af6b087609f2b689bac5818dec6787cdb30f6ee",
+              "note": "Title-derived research lead; not factual evidence"
+            },
+            "products_models": {
+              "type": "INFERENCE",
+              "basis": "explicit_title_patterns",
+              "resolver_version": "1.0",
+              "video_id": "GGzT7zVrRTU",
+              "snapshot_hash": "7633e5aaa6a6af32e12a3e374af6b087609f2b689bac5818dec6787cdb30f6ee",
+              "note": "Title-derived research lead; not factual evidence"
+            },
+            "core_event": {
+              "type": "INFERENCE",
+              "basis": "explicit_title_patterns",
+              "resolver_version": "1.0",
+              "video_id": "GGzT7zVrRTU",
+              "snapshot_hash": "7633e5aaa6a6af32e12a3e374af6b087609f2b689bac5818dec6787cdb30f6ee",
+              "note": "Title-derived research lead; not factual evidence"
+            },
+            "alleged_event": {
+              "type": "INFERENCE",
+              "basis": "explicit_title_patterns",
+              "resolver_version": "1.0",
+              "video_id": "GGzT7zVrRTU",
+              "snapshot_hash": "7633e5aaa6a6af32e12a3e374af6b087609f2b689bac5818dec6787cdb30f6ee",
+              "note": "Title-derived research lead; not factual evidence"
+            },
+            "evergreen_or_news": {
+              "type": "INFERENCE",
+              "basis": "explicit_title_patterns",
+              "resolver_version": "1.0",
+              "video_id": "GGzT7zVrRTU",
+              "snapshot_hash": "7633e5aaa6a6af32e12a3e374af6b087609f2b689bac5818dec6787cdb30f6ee",
+              "note": "Title-derived research lead; not factual evidence"
+            }
+          },
+          "unknown_reasons": {
+            "metadata_subject_resolution": "Event is a metadata allegation; independently verify details and date",
+            "what_changed": "Not established by available context",
+            "why_now": "Not established by available context",
+            "event_date": "Not established by available context"
+          },
+          "radar_run_id": "08fa34b9-4afd-437a-b5a2-784687ce5d3c",
+          "intelligence_run_id": "5c2883e3-c90f-4170-a32a-bd2345209a3e",
+          "provider_versions": {
+            "transcript": {
+              "name": "unavailable",
+              "version": "1"
+            },
+            "research": {
+              "name": "no-op",
+              "version": "1"
+            },
+            "generator": {
+              "name": "adjacent-directions",
+              "version": "2.3"
+            },
+            "similarity": {
+              "name": "lexical-structured",
+              "version": "1"
+            }
+          }
+        }
+      ],
+      "transformation": "implications",
+      "production_assumptions": {
+        "single_question": true,
+        "single_mechanism_or_example": true,
+        "at_most_three_material_claims": true,
+        "achievable_diagrams_or_screens": true,
+        "no_bespoke_footage": true
+      },
+      "expansion_sections": [
+        "mechanism",
+        "comparison",
+        "application",
+        "limitations/history"
+      ],
+      "duplicate_of": null,
+      "scores": {
+        "DemandSignal": 64.56324289998264,
+        "Freshness": 41.52659078749569,
+        "Originality": 57.77777777777778,
+        "AudienceFit": 30,
+        "ProductionFit": 100,
+        "EvidenceQuality": 0.0,
+        "Expandability": 100,
+        "SaturationRisk": 50
+      },
+      "score_rationale": {
+        "radar_strength": 87.5837558902682,
+        "channel_breadth": 25,
+        "recency": 66.35682477424275,
+        "freshness_date_bases": [
+          "publication_date_proxy"
+        ],
+        "material_claim_count": 1,
+        "claim_statuses": {
+          "claim-6508cc49e0d34119": "UNVERIFIED"
+        },
+        "production_checks": {
+          "single_question": true,
+          "single_mechanism_or_example": true,
+          "at_most_three_material_claims": true,
+          "achievable_diagrams_or_screens": true,
+          "no_bespoke_footage": true
+        },
+        "weights": {
+          "DemandSignal": 0.22,
+          "Freshness": 0.15,
+          "Originality": 0.15,
+          "AudienceFit": 0.15,
+          "ProductionFit": 0.1,
+          "EvidenceQuality": 0.1,
+          "Expandability": 0.08,
+          "SaturationRisk": 0.05
+        },
+        "scoring_version": "1.0",
+        "note": "Editorial heuristic, not viral probability; readiness is a separate gate."
+      },
+      "idea_score": 54.099568722787204,
+      "category": "RECOMMENDED FOR RESEARCH",
+      "rank": 58,
+      "radar_run_id": "08fa34b9-4afd-437a-b5a2-784687ce5d3c",
+      "intelligence_run_id": "5c2883e3-c90f-4170-a32a-bd2345209a3e",
+      "scoring_version": "1.0",
+      "provider_versions": {
+        "transcript": {
+          "name": "unavailable",
+          "version": "1"
+        },
+        "research": {
+          "name": "no-op",
+          "version": "1"
+        },
+        "generator": {
+          "name": "adjacent-directions",
+          "version": "2.3"
+        },
+        "similarity": {
+          "name": "lexical-structured",
+          "version": "1"
+        }
+      }
+    },
+    "idea_snapshot_hash": "bdc9d0fb23576caea1840c0dc3fcffa3212858ae81a14f5a540e56abf48a9cb3",
+    "competitor_references": [
+      {
+        "video_id": "GGzT7zVrRTU",
+        "title": "GPT-6 Astra Is Finally Here (And It’s REALLY Good)",
+        "url": "https://www.youtube.com/watch?v=GGzT7zVrRTU",
+        "observed_at": "2026-09-20T10:16:04.513538+00:00",
+        "channel": "Matt Wolfe",
+        "snapshot_hash": "7633e5aaa6a6af32e12a3e374af6b087609f2b689bac5818dec6787cdb30f6ee"
+      }
+    ],
+    "trend": {
+      "cluster_id": "trend-b84819de9146e193",
+      "canonical_topic": "GPT-6 Astra",
+      "supporting_video_ids": [
+        "GGzT7zVrRTU"
+      ],
+      "supporting_channels": [
+        "Matt Wolfe"
+      ],
+      "independent_channel_count": 1,
+      "vendor_channel_count": 0,
+      "radar_cross_cohort_support": 64.1304809463054,
+      "supporting_channel_ids": [
+        "UChpleBmo18P08aKCIgti38g"
+      ],
+      "number_of_distinct_channels": 1,
+      "median_outlier_score": 5.851117722802005,
+      "max_velocity_score": 5.851117722802005,
+      "median_raw_outlier_ratio": 5.091953313795054,
+      "recency": {
+        "median_age_days": 17.750497230706017,
+        "as_of": "2026-09-21T16:46:29.960733+00:00"
+      },
+      "story_summary": "release/announcement",
+      "story_summary_type": "INFERENCE",
+      "repeated_angles": [],
+      "observed_angles": [],
+      "missing_angles": [
+        "comparison",
+        "implications",
+        "mechanism",
+        "practical example"
+      ],
+      "saturation_level": "MEDIUM",
+      "saturation_score": 50,
+      "saturation_uncertain": true,
+      "match_basis": [
+        "radar_subject",
+        [
+          "identifier:gpt-6"
+        ],
+        [
+          "release/announcement"
+        ]
+      ],
+      "opportunity_notes": "Missing angles are unobserved in this sample, not established market gaps. Channel breadth is not independent factual corroboration."
+    },
+    "radar_metadata": [
+      {
+        "video_id": "GGzT7zVrRTU",
+        "published_at": "2026-09-03T22:45:47Z",
+        "observed_at": "2026-09-20T10:16:04.513538+00:00",
+        "views": 495167,
+        "duration_seconds": 1172,
+        "cohort": "longer_video"
+      }
+    ],
+    "intelligence_run_id": "5c2883e3-c90f-4170-a32a-bd2345209a3e",
+    "radar_run_id": "08fa34b9-4afd-437a-b5a2-784687ce5d3c",
+    "source_observed_at": "2026-09-20T06:59:27.674692+00:00",
+    "mode": "offline",
+    "researchability_score": 77.0,
+    "unresolved_flags": [
+      "CONTEXT_LIMITED"
+    ],
+    "context_status": "CONTEXT_LIMITED",
+    "subject_type": "MODEL",
+    "story_requirement": "EVENT_REQUIRED",
+    "story_requirement_satisfied": true,
+    "story_resolution_mode": "EVENT",
+    "m3_entry_ready": true,
+    "m3_entry_blockers": [],
+    "m3_entry_contract_version": "m2-m3-entry-v1",
+    "canonical_story_id": "story-93ff05881e14b066",
+    "canonical_story_label": "GPT-6 Astra",
+    "angle_type": "implications",
+    "m2_researchability_score": 62.5,
+    "m2_researchability_version": "radar-context-v1",
+    "preview_researchability_score": 77.0,
+    "preview_researchability_version": "context-resolvability-v1",
+    "stored_editorial_state": "RECOMMENDED FOR RESEARCH",
+    "editorial_state": "RECOMMENDED FOR RESEARCH"
+  },
+  "narration": {
+    "audio_path": "fixtures/production/astra-revision-7/narration.wav",
+    "duration_seconds": 57.2,
+    "words": [
+      {
+        "text": "GPT-6",
+        "start_seconds": 0.0,
+        "end_seconds": 0.4028169014084507,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "Astra",
+        "start_seconds": 0.4028169014084507,
+        "end_seconds": 0.8056338028169014,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "is",
+        "start_seconds": 0.8056338028169014,
+        "end_seconds": 1.2084507042253523,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "documented",
+        "start_seconds": 1.2084507042253523,
+        "end_seconds": 1.611267605633803,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "for",
+        "start_seconds": 1.611267605633803,
+        "end_seconds": 2.0140845070422535,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "research,",
+        "start_seconds": 2.0140845070422535,
+        "end_seconds": 2.4169014084507046,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "coding,",
+        "start_seconds": 2.4169014084507046,
+        "end_seconds": 2.819718309859155,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "and",
+        "start_seconds": 2.819718309859155,
+        "end_seconds": 3.222535211267606,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "computer",
+        "start_seconds": 3.222535211267606,
+        "end_seconds": 3.6253521126760564,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "use.",
+        "start_seconds": 3.6253521126760564,
+        "end_seconds": 4.028169014084507,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "The",
+        "start_seconds": 4.028169014084507,
+        "end_seconds": 4.430985915492958,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "important",
+        "start_seconds": 4.430985915492958,
+        "end_seconds": 4.833802816901409,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "part",
+        "start_seconds": 4.833802816901409,
+        "end_seconds": 5.23661971830986,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "is",
+        "start_seconds": 5.23661971830986,
+        "end_seconds": 5.63943661971831,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "what",
+        "start_seconds": 5.63943661971831,
+        "end_seconds": 6.042253521126761,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "you",
+        "start_seconds": 6.042253521126761,
+        "end_seconds": 6.445070422535212,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "still",
+        "start_seconds": 6.445070422535212,
+        "end_seconds": 6.847887323943662,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "need",
+        "start_seconds": 6.847887323943662,
+        "end_seconds": 7.250704225352113,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "to",
+        "start_seconds": 7.250704225352113,
+        "end_seconds": 7.653521126760563,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "test.",
+        "start_seconds": 7.653521126760563,
+        "end_seconds": 8.056338028169014,
+        "sentence_id": "selected-hook",
+        "emphasis": false
+      },
+      {
+        "text": "OpenAI’s",
+        "start_seconds": 8.056338028169014,
+        "end_seconds": 8.459154929577466,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "documentation",
+        "start_seconds": 8.459154929577466,
+        "end_seconds": 8.861971830985915,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "identifies",
+        "start_seconds": 8.861971830985915,
+        "end_seconds": 9.264788732394367,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "GPT-6",
+        "start_seconds": 9.264788732394367,
+        "end_seconds": 9.667605633802818,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "Astra",
+        "start_seconds": 9.667605633802818,
+        "end_seconds": 10.070422535211268,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "as",
+        "start_seconds": 10.070422535211268,
+        "end_seconds": 10.47323943661972,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "a",
+        "start_seconds": 10.47323943661972,
+        "end_seconds": 10.87605633802817,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "model",
+        "start_seconds": 10.87605633802817,
+        "end_seconds": 11.27887323943662,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "for",
+        "start_seconds": 11.27887323943662,
+        "end_seconds": 11.68169014084507,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "complex",
+        "start_seconds": 11.68169014084507,
+        "end_seconds": 12.084507042253522,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "reasoning,",
+        "start_seconds": 12.084507042253522,
+        "end_seconds": 12.487323943661972,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "coding,",
+        "start_seconds": 12.487323943661972,
+        "end_seconds": 12.890140845070423,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "computer",
+        "start_seconds": 12.890140845070423,
+        "end_seconds": 13.292957746478875,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "use,",
+        "start_seconds": 13.292957746478875,
+        "end_seconds": 13.695774647887324,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "research,",
+        "start_seconds": 13.695774647887324,
+        "end_seconds": 14.098591549295776,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "and",
+        "start_seconds": 14.098591549295776,
+        "end_seconds": 14.501408450704226,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "document",
+        "start_seconds": 14.501408450704226,
+        "end_seconds": 14.904225352112677,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "creation.",
+        "start_seconds": 14.904225352112677,
+        "end_seconds": 15.307042253521127,
+        "sentence_id": "s1",
+        "emphasis": false
+      },
+      {
+        "text": "For",
+        "start_seconds": 15.307042253521127,
+        "end_seconds": 15.709859154929578,
+        "sentence_id": "s2",
+        "emphasis": false
+      },
+      {
+        "text": "the",
+        "start_seconds": 15.709859154929578,
+        "end_seconds": 16.112676056338028,
+        "sentence_id": "s2",
+        "emphasis": false
+      },
+      {
+        "text": "Responses",
+        "start_seconds": 16.112676056338028,
+        "end_seconds": 16.51549295774648,
+        "sentence_id": "s2",
+        "emphasis": false
+      },
+      {
+        "text": "API,",
+        "start_seconds": 16.51549295774648,
+        "end_seconds": 16.91830985915493,
+        "sentence_id": "s2",
+        "emphasis": false
+      },
+      {
+        "text": "the",
+        "start_seconds": 16.91830985915493,
+        "end_seconds": 17.32112676056338,
+        "sentence_id": "s2",
+        "emphasis": false
+      },
+      {
+        "text": "documentation",
+        "start_seconds": 17.32112676056338,
+        "end_seconds": 17.72394366197183,
+        "sentence_id": "s2",
+        "emphasis": false
+      },
+      {
+        "text": "lists",
+        "start_seconds": 17.72394366197183,
+        "end_seconds": 18.126760563380284,
+        "sentence_id": "s2",
+        "emphasis": false
+      },
+      {
+        "text": "web",
+        "start_seconds": 18.126760563380284,
+        "end_seconds": 18.529577464788733,
+        "sentence_id": "s2",
+        "emphasis": false
+      },
+      {
+        "text": "search,",
+        "start_seconds": 18.529577464788733,
+        "end_seconds": 18.932394366197183,
+        "sentence_id": "s2",
+        "emphasis": false
+      },
+      {
+        "text": "file",
+        "start_seconds": 18.932394366197183,
+        "end_seconds": 19.335211267605636,
+        "sentence_id": "s2",
+        "emphasis": false
+      },
+      {
+        "text": "search,",
+        "start_seconds": 19.335211267605636,
+        "end_seconds": 19.738028169014086,
+        "sentence_id": "s2",
+        "emphasis": false
+      },
+      {
+        "text": "and",
+        "start_seconds": 19.738028169014086,
+        "end_seconds": 20.140845070422536,
+        "sentence_id": "s2",
+        "emphasis": false
+      },
+      {
+        "text": "Code",
+        "start_seconds": 20.140845070422536,
+        "end_seconds": 20.543661971830986,
+        "sentence_id": "s2",
+        "emphasis": false
+      },
+      {
+        "text": "Interpreter.",
+        "start_seconds": 20.543661971830986,
+        "end_seconds": 20.94647887323944,
+        "sentence_id": "s2",
+        "emphasis": false
+      },
+      {
+        "text": "It",
+        "start_seconds": 20.94647887323944,
+        "end_seconds": 21.34929577464789,
+        "sentence_id": "s3",
+        "emphasis": false
+      },
+      {
+        "text": "also",
+        "start_seconds": 21.34929577464789,
+        "end_seconds": 21.75211267605634,
+        "sentence_id": "s3",
+        "emphasis": false
+      },
+      {
+        "text": "lists",
+        "start_seconds": 21.75211267605634,
+        "end_seconds": 22.154929577464788,
+        "sentence_id": "s3",
+        "emphasis": false
+      },
+      {
+        "text": "reasoning.effort",
+        "start_seconds": 22.154929577464788,
+        "end_seconds": 22.55774647887324,
+        "sentence_id": "s3",
+        "emphasis": false
+      },
+      {
+        "text": "settings:",
+        "start_seconds": 22.55774647887324,
+        "end_seconds": 22.96056338028169,
+        "sentence_id": "s3",
+        "emphasis": false
+      },
+      {
+        "text": "low,",
+        "start_seconds": 22.96056338028169,
+        "end_seconds": 23.36338028169014,
+        "sentence_id": "s3",
+        "emphasis": false
+      },
+      {
+        "text": "medium,",
+        "start_seconds": 23.36338028169014,
+        "end_seconds": 23.766197183098594,
+        "sentence_id": "s3",
+        "emphasis": false
+      },
+      {
+        "text": "high,",
+        "start_seconds": 23.766197183098594,
+        "end_seconds": 24.169014084507044,
+        "sentence_id": "s3",
+        "emphasis": false
+      },
+      {
+        "text": "xhigh,",
+        "start_seconds": 24.169014084507044,
+        "end_seconds": 24.571830985915494,
+        "sentence_id": "s3",
+        "emphasis": false
+      },
+      {
+        "text": "and",
+        "start_seconds": 24.571830985915494,
+        "end_seconds": 24.974647887323943,
+        "sentence_id": "s3",
+        "emphasis": false
+      },
+      {
+        "text": "max.",
+        "start_seconds": 24.974647887323943,
+        "end_seconds": 25.377464788732397,
+        "sentence_id": "s3",
+        "emphasis": false
+      },
+      {
+        "text": "Pick",
+        "start_seconds": 25.377464788732397,
+        "end_seconds": 25.780281690140846,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "the",
+        "start_seconds": 25.780281690140846,
+        "end_seconds": 26.183098591549296,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "documented",
+        "start_seconds": 26.183098591549296,
+        "end_seconds": 26.58591549295775,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "settings",
+        "start_seconds": 26.58591549295775,
+        "end_seconds": 26.9887323943662,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "and",
+        "start_seconds": 26.9887323943662,
+        "end_seconds": 27.39154929577465,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "tools",
+        "start_seconds": 27.39154929577465,
+        "end_seconds": 27.7943661971831,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "you",
+        "start_seconds": 27.7943661971831,
+        "end_seconds": 28.19718309859155,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "need.",
+        "start_seconds": 28.19718309859155,
+        "end_seconds": 28.6,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "Test",
+        "start_seconds": 28.6,
+        "end_seconds": 29.00281690140845,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "them",
+        "start_seconds": 29.00281690140845,
+        "end_seconds": 29.405633802816904,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "in",
+        "start_seconds": 29.405633802816904,
+        "end_seconds": 29.808450704225354,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "your",
+        "start_seconds": 29.808450704225354,
+        "end_seconds": 30.211267605633804,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "environment.",
+        "start_seconds": 30.211267605633804,
+        "end_seconds": 30.614084507042254,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "Measure",
+        "start_seconds": 30.614084507042254,
+        "end_seconds": 31.016901408450707,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "task",
+        "start_seconds": 31.016901408450707,
+        "end_seconds": 31.419718309859157,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "success.",
+        "start_seconds": 31.419718309859157,
+        "end_seconds": 31.822535211267606,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "Compare",
+        "start_seconds": 31.822535211267606,
+        "end_seconds": 32.225352112676056,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "the",
+        "start_seconds": 32.225352112676056,
+        "end_seconds": 32.628169014084506,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "result",
+        "start_seconds": 32.628169014084506,
+        "end_seconds": 33.03098591549296,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "with",
+        "start_seconds": 33.03098591549296,
+        "end_seconds": 33.43380281690141,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "your",
+        "start_seconds": 33.43380281690141,
+        "end_seconds": 33.83661971830986,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "requirements.",
+        "start_seconds": 33.83661971830986,
+        "end_seconds": 34.23943661971831,
+        "sentence_id": "s7",
+        "emphasis": false
+      },
+      {
+        "text": "Think",
+        "start_seconds": 34.23943661971831,
+        "end_seconds": 34.64225352112676,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "of",
+        "start_seconds": 34.64225352112676,
+        "end_seconds": 35.04507042253521,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "those",
+        "start_seconds": 35.04507042253521,
+        "end_seconds": 35.44788732394366,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "as",
+        "start_seconds": 35.44788732394366,
+        "end_seconds": 35.85070422535212,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "a",
+        "start_seconds": 35.85070422535212,
+        "end_seconds": 36.25352112676057,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "configuration",
+        "start_seconds": 36.25352112676057,
+        "end_seconds": 36.65633802816902,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "checklist,",
+        "start_seconds": 36.65633802816902,
+        "end_seconds": 37.05915492957747,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "not",
+        "start_seconds": 37.05915492957747,
+        "end_seconds": 37.46197183098592,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "a",
+        "start_seconds": 37.46197183098592,
+        "end_seconds": 37.864788732394366,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "verdict",
+        "start_seconds": 37.864788732394366,
+        "end_seconds": 38.267605633802816,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "on",
+        "start_seconds": 38.267605633802816,
+        "end_seconds": 38.67042253521127,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "what",
+        "start_seconds": 38.67042253521127,
+        "end_seconds": 39.07323943661972,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "will",
+        "start_seconds": 39.07323943661972,
+        "end_seconds": 39.47605633802817,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "work",
+        "start_seconds": 39.47605633802817,
+        "end_seconds": 39.87887323943662,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "for",
+        "start_seconds": 39.87887323943662,
+        "end_seconds": 40.28169014084507,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "your",
+        "start_seconds": 40.28169014084507,
+        "end_seconds": 40.68450704225352,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "deployment.",
+        "start_seconds": 40.68450704225352,
+        "end_seconds": 41.08732394366197,
+        "sentence_id": "s4",
+        "emphasis": false
+      },
+      {
+        "text": "Listed",
+        "start_seconds": 41.08732394366197,
+        "end_seconds": 41.49014084507042,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "tool",
+        "start_seconds": 41.49014084507042,
+        "end_seconds": 41.89295774647888,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "support",
+        "start_seconds": 41.89295774647888,
+        "end_seconds": 42.29577464788733,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "does",
+        "start_seconds": 42.29577464788733,
+        "end_seconds": 42.69859154929578,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "not",
+        "start_seconds": 42.69859154929578,
+        "end_seconds": 43.10140845070423,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "show",
+        "start_seconds": 43.10140845070423,
+        "end_seconds": 43.50422535211268,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "that",
+        "start_seconds": 43.50422535211268,
+        "end_seconds": 43.907042253521126,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "a",
+        "start_seconds": 43.907042253521126,
+        "end_seconds": 44.309859154929576,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "tool",
+        "start_seconds": 44.309859154929576,
+        "end_seconds": 44.71267605633803,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "is",
+        "start_seconds": 44.71267605633803,
+        "end_seconds": 45.11549295774648,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "enabled,",
+        "start_seconds": 45.11549295774648,
+        "end_seconds": 45.51830985915493,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "appropriate,",
+        "start_seconds": 45.51830985915493,
+        "end_seconds": 45.92112676056338,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "or",
+        "start_seconds": 45.92112676056338,
+        "end_seconds": 46.32394366197183,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "reliable",
+        "start_seconds": 46.32394366197183,
+        "end_seconds": 46.72676056338028,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "in",
+        "start_seconds": 46.72676056338028,
+        "end_seconds": 47.12957746478873,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "every",
+        "start_seconds": 47.12957746478873,
+        "end_seconds": 47.53239436619719,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "deployment.",
+        "start_seconds": 47.53239436619719,
+        "end_seconds": 47.93521126760564,
+        "sentence_id": "s5",
+        "emphasis": false
+      },
+      {
+        "text": "The",
+        "start_seconds": 47.93521126760564,
+        "end_seconds": 48.33802816901409,
+        "sentence_id": "s6",
+        "emphasis": false
+      },
+      {
+        "text": "supplied",
+        "start_seconds": 48.33802816901409,
+        "end_seconds": 48.74084507042254,
+        "sentence_id": "s6",
+        "emphasis": false
+      },
+      {
+        "text": "documentation",
+        "start_seconds": 48.74084507042254,
+        "end_seconds": 49.14366197183099,
+        "sentence_id": "s6",
+        "emphasis": false
+      },
+      {
+        "text": "does",
+        "start_seconds": 49.14366197183099,
+        "end_seconds": 49.54647887323944,
+        "sentence_id": "s6",
+        "emphasis": false
+      },
+      {
+        "text": "not",
+        "start_seconds": 49.54647887323944,
+        "end_seconds": 49.94929577464789,
+        "sentence_id": "s6",
+        "emphasis": false
+      },
+      {
+        "text": "prove",
+        "start_seconds": 49.94929577464789,
+        "end_seconds": 50.35211267605634,
+        "sentence_id": "s6",
+        "emphasis": false
+      },
+      {
+        "text": "a",
+        "start_seconds": 50.35211267605634,
+        "end_seconds": 50.75492957746479,
+        "sentence_id": "s6",
+        "emphasis": false
+      },
+      {
+        "text": "specific",
+        "start_seconds": 50.75492957746479,
+        "end_seconds": 51.15774647887324,
+        "sentence_id": "s6",
+        "emphasis": false
+      },
+      {
+        "text": "workflow",
+        "start_seconds": 51.15774647887324,
+        "end_seconds": 51.56056338028169,
+        "sentence_id": "s6",
+        "emphasis": false
+      },
+      {
+        "text": "payoff.",
+        "start_seconds": 51.56056338028169,
+        "end_seconds": 51.96338028169014,
+        "sentence_id": "s6",
+        "emphasis": false
+      },
+      {
+        "text": "That",
+        "start_seconds": 51.96338028169014,
+        "end_seconds": 52.36619718309859,
+        "sentence_id": "s8",
+        "emphasis": false
+      },
+      {
+        "text": "is",
+        "start_seconds": 52.36619718309859,
+        "end_seconds": 52.76901408450704,
+        "sentence_id": "s8",
+        "emphasis": false
+      },
+      {
+        "text": "the",
+        "start_seconds": 52.76901408450704,
+        "end_seconds": 53.1718309859155,
+        "sentence_id": "s8",
+        "emphasis": false
+      },
+      {
+        "text": "gap",
+        "start_seconds": 53.1718309859155,
+        "end_seconds": 53.57464788732395,
+        "sentence_id": "s8",
+        "emphasis": false
+      },
+      {
+        "text": "between",
+        "start_seconds": 53.57464788732395,
+        "end_seconds": 53.9774647887324,
+        "sentence_id": "s8",
+        "emphasis": false
+      },
+      {
+        "text": "an",
+        "start_seconds": 53.9774647887324,
+        "end_seconds": 54.38028169014085,
+        "sentence_id": "s8",
+        "emphasis": false
+      },
+      {
+        "text": "API",
+        "start_seconds": 54.38028169014085,
+        "end_seconds": 54.7830985915493,
+        "sentence_id": "s8",
+        "emphasis": false
+      },
+      {
+        "text": "feature",
+        "start_seconds": 54.7830985915493,
+        "end_seconds": 55.18591549295775,
+        "sentence_id": "s8",
+        "emphasis": false
+      },
+      {
+        "text": "list",
+        "start_seconds": 55.18591549295775,
+        "end_seconds": 55.5887323943662,
+        "sentence_id": "s8",
+        "emphasis": false
+      },
+      {
+        "text": "and",
+        "start_seconds": 55.5887323943662,
+        "end_seconds": 55.991549295774654,
+        "sentence_id": "s8",
+        "emphasis": false
+      },
+      {
+        "text": "a",
+        "start_seconds": 55.991549295774654,
+        "end_seconds": 56.3943661971831,
+        "sentence_id": "s8",
+        "emphasis": false
+      },
+      {
+        "text": "deployment",
+        "start_seconds": 56.3943661971831,
+        "end_seconds": 56.79718309859155,
+        "sentence_id": "s8",
+        "emphasis": false
+      },
+      {
+        "text": "decision.",
+        "start_seconds": 56.79718309859155,
+        "end_seconds": 57.2,
+        "sentence_id": "s8",
+        "emphasis": false
+      }
+    ],
+    "sentences": [
+      {
+        "sentence_id": "selected-hook",
+        "text": "GPT-6 Astra is documented for research, coding, and computer use. The important part is what you still need to test.",
+        "start_seconds": 0.0,
+        "end_seconds": 8.056338028169014
+      },
+      {
+        "sentence_id": "s1",
+        "text": "OpenAI’s documentation identifies GPT-6 Astra as a model for complex reasoning, coding, computer use, research, and document creation.",
+        "start_seconds": 8.056338028169014,
+        "end_seconds": 15.307042253521127
+      },
+      {
+        "sentence_id": "s2",
+        "text": "For the Responses API, the documentation lists web search, file search, and Code Interpreter.",
+        "start_seconds": 15.307042253521127,
+        "end_seconds": 20.94647887323944
+      },
+      {
+        "sentence_id": "s3",
+        "text": "It also lists reasoning.effort settings: low, medium, high, xhigh, and max.",
+        "start_seconds": 20.94647887323944,
+        "end_seconds": 25.377464788732397
+      },
+      {
+        "sentence_id": "s7",
+        "text": "Pick the documented settings and tools you need. Test them in your environment. Measure task success. Compare the result with your requirements.",
+        "start_seconds": 25.377464788732397,
+        "end_seconds": 34.23943661971831
+      },
+      {
+        "sentence_id": "s4",
+        "text": "Think of those as a configuration checklist, not a verdict on what will work for your deployment.",
+        "start_seconds": 34.23943661971831,
+        "end_seconds": 41.08732394366197
+      },
+      {
+        "sentence_id": "s5",
+        "text": "Listed tool support does not show that a tool is enabled, appropriate, or reliable in every deployment.",
+        "start_seconds": 41.08732394366197,
+        "end_seconds": 47.93521126760564
+      },
+      {
+        "sentence_id": "s6",
+        "text": "The supplied documentation does not prove a specific workflow payoff.",
+        "start_seconds": 47.93521126760564,
+        "end_seconds": 51.96338028169014
+      },
+      {
+        "sentence_id": "s8",
+        "text": "That is the gap between an API feature list and a deployment decision.",
+        "start_seconds": 51.96338028169014,
+        "end_seconds": 57.2
+      }
+    ],
+    "provider": "deterministic-mock",
+    "model_voice_id": "silence-v1",
+    "provenance": {
+      "script_sha256": "ee8b06786363ad68240b61821be92b2d48b711db1ffd945bef322cfa7ad29f0e",
+      "audio_sha256": "e889bf062be4f8c984a195b40733f265daf3af2a95b9d6cd13781193489ef52b",
+      "synthetic": true,
+      "notes": "Silence with synthetic alignment; replace with recorded narration and real word alignment"
+    }
+  }
+}

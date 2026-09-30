@@ -1,7 +1,7 @@
 from dataclasses import dataclass,field,asdict
 from typing import Protocol,Literal
 
-ARCHETYPES=('HeroReveal','ProductCard','DocumentationCard','ScreenshotFocus','FeatureList','ComparisonCards','ArchitectureDiagram','Timeline','MetricCounter','QuoteCard','ThreeStepProcess','FinalPayoff')
+ARCHETYPES=('HeroReveal','AvatarHost','ProductCard','DocumentationCard','ScreenshotFocus','FeatureList','ComparisonCards','ArchitectureDiagram','Timeline','MetricCounter','QuoteCard','ThreeStepProcess','FinalPayoff')
 
 @dataclass
 class VisualText:
@@ -18,6 +18,7 @@ class CaptionSegment:
     start_frame: int
     end_frame: int
     beat_id: str
+    emphasis_words: list[int]=field(default_factory=list)
 
 @dataclass
 class NarrationBeat:
@@ -56,6 +57,10 @@ class ScenePlan:
     claim_ids: list[str]
     music_slots: list[dict]=field(default_factory=list)
     sfx_slots: list[dict]=field(default_factory=list)
+    visual_events: list[dict]=field(default_factory=list)
+    creative_treatment: dict=field(default_factory=dict)
+    avatar: dict|None=None
+    caption_bounds: dict=field(default_factory=lambda:dict(x=104,y=1310,width=872,height=202))
 
 @dataclass
 class ProductionSpec:
@@ -70,7 +75,12 @@ class ProductionSpec:
     assets: list[AssetRequirement]
     provenance: dict
     creative_dna: dict
-    schema_version: str='1.0'
+    avatar_assets: list[dict]=field(default_factory=list)
+    routed_assets: list[dict]=field(default_factory=list)
+    audio_mix: dict=field(default_factory=dict)
+    retention_metadata: dict=field(default_factory=dict)
+    creative_asset_requests: list[dict]=field(default_factory=list)
+    schema_version: str='1.1'
     width: int=1080
     height: int=1920
     fps: int=30

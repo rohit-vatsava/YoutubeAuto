@@ -10,11 +10,15 @@ const browser=await chromium.launch({headless:true,executablePath:process.env.CH
 try{
  const page=await browser.newPage({viewport:{width:1080,height:1920},deviceScaleFactor:1});
  await page.route('**/*',r=>r.request().url().startsWith('file:')?r.continue():r.abort());
- const draw=fs.readFileSync('production/remotion/src/draw.js','utf8').replaceAll('export const ','const ').replaceAll('export function ','function ');
+ const draw=fs.readFileSync('production/remotion/src/draw.js','utf8').replaceAll('export const ','const ').replaceAll('export function ','function ').replaceAll('export async function ','async function ');
  const html=`<!doctype html><meta charset="utf-8"><style>body{margin:0;background:#081321}canvas{display:block}</style><canvas id="video"></canvas><script>${draw}\nwindow.draw=drawFrame;</script>`;
  const preview=path.join(out,'preview.html');fs.writeFileSync(preview,html);
- await page.goto('file://'+preview);await page.evaluate(s=>{window.spec=s;window.frame=0;window.draw(document.querySelector('canvas'),s,0);},spec);
+ await page.goto('file://'+preview);await page.evaluate(async s=>{window.spec=s;window.frame=0;window.productionImages=await loadAssets(s);window.draw(document.querySelector('canvas'),s,0);},spec);
  const qa=await page.evaluate(()=>{let overflows=[],scenes=new Set();const canvas=document.querySelector('canvas');for(let f=0;f<Math.round(spec.duration_target*spec.fps);f++){const r=draw(canvas,spec,f);scenes.add(r.scene_id);if(r.overflow.length)overflows.push(r);}return {frames_checked:Math.round(spec.duration_target*spec.fps),overflow_count:overflows.length,examples:overflows.slice(0,3),scenes_checked:scenes.size,webcodecs:typeof VideoEncoder!=='undefined'};});
+ if((spec.avatar_assets||[]).length){
+  qa.avatar_layouts=await page.evaluate(()=>{let checked=0,failures=[];for(const position of ['left','right','center'])for(const fraction of [.2,.3,.4]){const test=structuredClone(spec);const width=1080*fraction,x={left:104,right:976-width,center:540-width/2}[position];for(const scene of test.scenes){if(!scene.avatar)continue;scene.avatar.position=position;scene.avatar.bounds={x,y:300,width,height:650};for(const frame of [scene.avatar.start_frame,Math.floor((scene.avatar.start_frame+scene.avatar.end_frame)/2),scene.avatar.end_frame-1]){const r=draw(document.querySelector('canvas'),test,frame);checked++;if(r.overflow.length)failures.push({position,fraction,frame,overflow:r.overflow});}}}return {checked,failures};});
+  if(qa.avatar_layouts.failures.length)throw Error('Avatar layout safe bounds failed');
+ }
  fs.writeFileSync(path.join(out,'render-qa.json'),JSON.stringify(qa,null,2));if(qa.overflow_count)throw Error('Text safe-bound overflow');
  for(const scene of spec.scenes){await page.evaluate(f=>draw(document.querySelector('canvas'),spec,f),Math.floor((scene.start_frame+scene.end_frame)/2));await page.screenshot({path:path.join(out,scene.scene_id+'.png')});}
  if(args.includes('--render')){
@@ -41,7 +45,7 @@ try{
   }
  }else console.log(JSON.stringify(qa,null,2));
  // Preview file can be opened locally and played without Node or external assets.
- fs.writeFileSync(preview,html.replace('</script>',`window.spec=${JSON.stringify(spec).replaceAll('<','\\u003c')};let started=null;function tick(t){if(started===null)started=t;draw(document.querySelector('canvas'),spec,Math.floor((t-started)*spec.fps/1000)%Math.round(spec.duration_target*spec.fps));requestAnimationFrame(tick);}requestAnimationFrame(tick);</script>`));
+ fs.writeFileSync(preview,html.replace('</script>',`window.spec=${JSON.stringify(spec).replaceAll('<','\\u003c')};let started=null;function tick(t){if(started===null)started=t;draw(document.querySelector('canvas'),spec,Math.floor((t-started)*spec.fps/1000)%Math.round(spec.duration_target*spec.fps));requestAnimationFrame(tick);}loadAssets(spec).then(images=>{window.productionImages=images;requestAnimationFrame(tick);});</script>`));
 }finally{await browser.close();}
 
 function mux(encoded,spec){
